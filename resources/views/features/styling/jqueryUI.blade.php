@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - jQuery UI ThemeRoller</title>
+	<title>DataTables feature - jQuery UI ThemeRoller</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.jqueryui.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example dt-example-jqueryui">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>jQuery UI ThemeRoller</span></h1>
+			<h1>DataTables feature <span>jQuery UI ThemeRoller</span></h1>
 			<div class="info">
 				<p>DataTables has the ability to integrate seamlessly with almost any styling library, and integration files are provided for several of the popular styling
 				libraries, including <a href="//jqueryui.com">jQuery UI</a>.</p>

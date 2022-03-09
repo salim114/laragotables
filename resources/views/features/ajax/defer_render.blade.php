@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Deferred rendering for speed</title>
+	<title>DataTables feature - Deferred rendering for speed</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -32,7 +32,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Deferred rendering for speed</span></h1>
+			<h1>DataTables feature <span>Deferred rendering for speed</span></h1>
 			<div class="info">
 				<p>When working with large data sources, you might seek to improve the speed at which DataTables runs. One method to do this is to make use of the built-in
 				deferred rendering option in DataTables with the <a href="//datatables.net/reference/option/deferRender"><code class="option" title=

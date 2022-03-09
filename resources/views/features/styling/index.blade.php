@@ -15,7 +15,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Styling</span></h1>
+			<h1>DataTables feature <span>Styling</span></h1>
 			<div class="info">
 				<p>When using DataTables, you want your tables to fit in with your site / app to make the end user experience as seamless as possible. For this reason, DataTables
 				provides an easy to customise core stylesheet, which has a number of features that you can enable or disable as you required. Additionally there are a number of

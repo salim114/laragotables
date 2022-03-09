@@ -18,7 +18,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Advanced initialisation</span></h1>
+			<h1>DataTables feature <span>Advanced initialisation</span></h1>
 			<div class="info">
 				<p>The configuration options offered by DataTables extend much further than the options shown in the basic initialisation of this documentation. Through
 				combinations of the options available and the use of callbacks, DataTables is completely customisable and will fit into exactly what you need for your table

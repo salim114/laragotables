@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Multi-column ordering</title>
+	<title>DataTables feature - Multi-column ordering</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -40,7 +40,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Multi-column ordering</span></h1>
+			<h1>DataTables feature <span>Multi-column ordering</span></h1>
 			<div class="info">
 				<p>DataTables allows ordering by multiple columns at the same time, which can be activated in a number of different ways:</p>
 				<ul class="markdown">

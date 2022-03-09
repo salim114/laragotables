@@ -15,7 +15,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>plug_ins</span></h1>
+			<h1>DataTables feature <span>plug_ins</span></h1>
 			<div class="info">
 				<p>While DataTables has a wide range of options and data type support built in, it can never cater for every type of data out of the box. For this reason,
 				DataTables exposes an extension API which allows you, the developers using DataTables, to add support for your own data types, searching, ordering and feature

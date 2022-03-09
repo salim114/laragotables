@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Options</title>
+	<title>DataTables feature - Options</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -32,7 +32,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Options</span></h1>
+			<h1>DataTables feature <span>Options</span></h1>
 			<div class="info">
 				<p>Just as with the jQuery initialisation of DataTables, you can pass in configuration options to the <code>new DataTable()</code> constructor, allowing the table
 				to be configured to meet your needs. The <a href="https://datatables.net/reference/option/">full range of DataTables options</a> is available while using this

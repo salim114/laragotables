@@ -165,7 +165,10 @@ div.box {
 	border: 1px solid #e0e0e0;
 	margin-bottom: 2em;
 }
-
+.tx{
+	font-weight: normal;
+	color: #333;
+}
 
 code {
 	font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Courier New", monospace;

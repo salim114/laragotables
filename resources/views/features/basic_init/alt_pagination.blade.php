@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Alternative pagination</title>
+	<title>DataTables feature - Alternative pagination</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Alternative pagination</span></h1>
+			<h1>DataTables feature <span>Alternative pagination</span></h1>
 			<div class="info">
 				<p>The default page control presented by DataTables (forward and backward buttons with up to 7 page numbers in-between) is fine for most situations, but there are
 				cases where you may wish to customise the options presented to the end user. This is done through DataTables' extensible pagination mechanism, the <a href=

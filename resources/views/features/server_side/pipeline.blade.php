@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Pipelining data to reduce Ajax calls for paging</title>
+	<title>DataTables feature - Pipelining data to reduce Ajax calls for paging</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -169,7 +169,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Pipelining data to reduce Ajax calls for paging</span></h1>
+			<h1>DataTables feature <span>Pipelining data to reduce Ajax calls for paging</span></h1>
 			<div class="info">
 				<p>Server-side processing can be quite hard on your server, since it makes an Ajax call to the server for every draw request that is made. On sites with a large
 				number of page views, you could potentially end up DDoSing your own server with your own applications!</p>

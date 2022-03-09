@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Language - Comma decimal place</title>
+	<title>DataTables feature - Language - Comma decimal place</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -34,7 +34,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Language - Comma decimal place</span></h1>
+			<h1>DataTables feature <span>Language - Comma decimal place</span></h1>
 			<div class="info">
 				<p>A dot (<code>.</code>) is used to mark the decimal place in Javascript, however, <a href="http://en.wikipedia.org/wiki/Decimal_mark">many parts of the world use
 				a comma</a> (<code>,</code>) and other characters such as the Unicode decimal separator (<code>⎖</code>) or a dash (<code>-</code>) are often used to show the

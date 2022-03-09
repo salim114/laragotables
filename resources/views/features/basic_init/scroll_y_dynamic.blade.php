@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Scroll - vertical, dynamic height</title>
+	<title>DataTables feature - Scroll - vertical, dynamic height</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -33,7 +33,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Scroll - vertical, dynamic height</span></h1>
+			<h1>DataTables feature <span>Scroll - vertical, dynamic height</span></h1>
 			<div class="info">
 				<p>This example shows a vertically scrolling DataTable that makes use of the CSS3 <code>vh</code> unit in order to dynamically resize the viewport based on the
 				browser window height. The <a href="https://developer.mozilla.org/en/docs/Web/CSS/length#Viewport-percentage_lengths"><code>vh</code> unit</a> is effectively a

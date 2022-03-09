@@ -18,7 +18,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Basic initialisation</span></h1>
+			<h1>DataTables feature <span>Basic initialisation</span></h1>
 			<div class="info">
 				<p>DataTables is a simple-to-use jQuery plug-in with a huge range of customisable options. The features in this section demonstrate basic initialisation of
 				DataTables and how it can be easily customised by passing an object with the options you want.</p>

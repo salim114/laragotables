@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Using API in callbacks</title>
+	<title>DataTables feature - Using API in callbacks</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -36,7 +36,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Using API in callbacks</span></h1>
+			<h1>DataTables feature <span>Using API in callbacks</span></h1>
 			<div class="info">
 				<p>There are times when you may wish to call API functions inside the DataTables callback functions (for example <a href=
 				"//datatables.net/reference/option/initComplete"><code class="option" title="DataTables initialisation option">initComplete</code></a>, <a href=

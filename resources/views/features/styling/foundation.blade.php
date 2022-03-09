@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Foundation</title>
+	<title>DataTables feature - Foundation</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.foundation.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example dt-example-foundation">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Foundation</span></h1>
+			<h1>DataTables feature <span>Foundation</span></h1>
 			<div class="info">
 				<p>DataTables can integrate seamlessly with <a href="http://foundation.zurb.com/">Foundation</a> using Foundations's <a href=
 				"http://foundation.zurb.com/docs/components/tables.html">table styling options</a> to present a consistent interface with your Foundation driven site / app.</p>

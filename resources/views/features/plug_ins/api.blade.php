@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - API plug-in methods</title>
+	<title>DataTables feature - API plug-in methods</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -50,7 +50,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>API plug-in methods</span></h1>
+			<h1>DataTables feature <span>API plug-in methods</span></h1>
 			<div class="info">
 				<p>The DataTables API is designed to be fully extensible, with custom functions being very easy to add using the <code>$.fn.dataTable.Api.register</code> function.
 				This function takes two arguments; the first being the name of the method to be added and its chaining hierarchy, and the second the function itself.</p>

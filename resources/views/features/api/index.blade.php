@@ -15,7 +15,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>API</span></h1>
+			<h1>DataTables feature <span>API</span></h1>
 			<div class="info">
 				<p>The real power of DataTables can be exploited through the use of the API that it presents. The DataTables API is designed to be simple, consistent and easy to
 				use. The features in this section show how the API may be used.</p>

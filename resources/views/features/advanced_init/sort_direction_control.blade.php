@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Order direction sequence control</title>
+	<title>DataTables feature - Order direction sequence control</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -38,7 +38,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Order direction sequence control</span></h1>
+			<h1>DataTables feature <span>Order direction sequence control</span></h1>
 			<div class="info">
 				<p>At times you may wish to change the default ordering direction sequence for columns (some or all of them) to be 'descending' rather than DataTables' default
 				ascending. This can be done through the use of the <a href="//datatables.net/reference/option/columns.orderSequence"><code class="option" title=

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Custom filtering - range search</title>
+	<title>DataTables feature - Custom filtering - range search</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -52,7 +52,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Custom filtering - range search</span></h1>
+			<h1>DataTables feature <span>Custom filtering - range search</span></h1>
 			<div class="info">
 				<p>There may be occasions when you wish to search data presented to the end user in your own manner, common features are number range searches (in between two
 				numbers) and date range searches. DataTables provides an API method to add your own search functions, <code>$.fn.dataTable.ext.search</code>. This is an array of

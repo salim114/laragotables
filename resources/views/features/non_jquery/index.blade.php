@@ -10,12 +10,12 @@
 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script type="text/javascript" language="javascript" src="{{ asset('js/shCore.js') }}"></script>
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
-	<title>DataTables example - Non-jQuery initialisation</title>
+	<title>DataTables feature - Non-jQuery initialisation</title>
 </head>
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Non-jQuery initialisation</span></h1>
+			<h1>DataTables feature <span>Non-jQuery initialisation</span></h1>
 			<div class="info">
 				<p>As of v1.11, DataTables can be initialised without using jQuery through the <code>new DataTable()</code> constructor. This class takes two parameters:</p>
 				<ul class="markdown">

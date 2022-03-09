@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - UIKit 3 (Tech. preview)</title>
+	<title>DataTables feature - UIKit 3 (Tech. preview)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.uikit.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example dt-example-uikit">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>UIKit 3 (Tech. preview)</span></h1>
+			<h1>DataTables feature <span>UIKit 3 (Tech. preview)</span></h1>
 			<div class="info">
 				<p>This example shows DataTables integrated with <a href="http://getuikit.com/">UIKit 3</a>.</p>
 				<p>The DataTables integration with UIKit is still in development and not all elements might work correctly yet. Only once all of DataTables extensions fully

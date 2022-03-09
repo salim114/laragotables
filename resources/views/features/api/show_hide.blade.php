@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Show / hide columns dynamically</title>
+	<title>DataTables feature - Show / hide columns dynamically</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -42,7 +42,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Show / hide columns dynamically</span></h1>
+			<h1>DataTables feature <span>Show / hide columns dynamically</span></h1>
 			<div class="info">
 				<p>This example shows how you can make use of the <a href="//datatables.net/reference/api/column().visible()"><code class="api" title=
 				"DataTables API method">column().visible()</code></a> API method to dynamically show and hide columns in a table. Also included here is scrolling, just to show it

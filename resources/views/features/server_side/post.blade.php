@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - POST data</title>
+	<title>DataTables feature - POST data</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -50,7 +50,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>POST data</span></h1>
+			<h1>DataTables feature <span>POST data</span></h1>
 			<div class="info">
 				<p>By default, the Ajax request that DataTables makes to obtain server-side processing data is an HTTP GET request. However, there are times when you might wish to
 				use POST. This is very easily done by using the <code>type</code> option of the <a href="//datatables.net/reference/option/ajax"><code class="option" title=

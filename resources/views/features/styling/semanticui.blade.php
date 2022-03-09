@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Fomantic-UI (formally Semantic-UI)</title>
+	<title>DataTables feature - Fomantic-UI (formally Semantic-UI)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.semanticui.css') }}">
@@ -32,7 +32,7 @@
 <body class="dt-example dt-example-semanticui">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Fomantic-UI (formally Semantic-UI)</span></h1>
+			<h1>DataTables feature <span>Fomantic-UI (formally Semantic-UI)</span></h1>
 			<div class="info">
 				<p>This example shows DataTables integrated with <a href="https://fomantic-ui.com/">Fomantic-UI</a> (a maintained community fork of <a href=
 				"http://semantic-ui.com/">Semantic-UI</a>). Fomantic-UI is a comprehensive framework that uses CSS class names like words to create natural language styling

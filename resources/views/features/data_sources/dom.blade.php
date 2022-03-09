@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - HTML (DOM) sourced data</title>
+	<title>DataTables feature - HTML (DOM) sourced data</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -29,7 +29,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>HTML (DOM) sourced data</span></h1>
+			<h1>DataTables feature <span>HTML (DOM) sourced data</span></h1>
 			<div class="info">
 				<p>The foundation for DataTables is progressive enhancement, so it is very adept at reading table information directly from the DOM. This example shows how easy it
 				is to add searching, ordering and paging to your HTML table by simply running DataTables on it.</p>

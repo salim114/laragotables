@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Footer callback</title>
+	<title>DataTables feature - Footer callback</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -66,7 +66,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Footer callback</span></h1>
+			<h1>DataTables feature <span>Footer callback</span></h1>
 			<div class="info">
 				<p>Through the use of the header and footer callback manipulation functions provided by DataTables (<a href=
 				"//datatables.net/reference/option/headerCallback"><code class="option" title="DataTables initialisation option">headerCallback</code></a> and <a href=

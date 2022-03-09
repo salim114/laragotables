@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Highlighting rows and columns</title>
+	<title>DataTables feature - Highlighting rows and columns</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -41,7 +41,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Highlighting rows and columns</span></h1>
+			<h1>DataTables feature <span>Highlighting rows and columns</span></h1>
 			<div class="info">
 				<p>Highlighting rows and columns can be useful for drawing attention to where the user's cursor is in a table, particularly if you have a lot of narrow columns.
 				Highlighting a row is easy using CSS, but for column highlighting, you need to use a little bit of Javascript.</p>

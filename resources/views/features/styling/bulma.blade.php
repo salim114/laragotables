@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Bulma</title>
+	<title>DataTables feature - Bulma</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.bulma.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example dt-example-bulma">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Bulma</span></h1>
+			<h1>DataTables feature <span>Bulma</span></h1>
 			<div class="info">
 				<p>This example shows DataTables integrated with <a href="https://bulma.io/">Bulma</a> - an open source CSS framework.</p>
 				<p>DataTables Bulma integration is available for both DataTables core and all of its extensions. This integration is done simply by including the DataTables Bulma

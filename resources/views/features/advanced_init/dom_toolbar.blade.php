@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Custom toolbar elements</title>
+	<title>DataTables feature - Custom toolbar elements</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -37,7 +37,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Custom toolbar elements</span></h1>
+			<h1>DataTables feature <span>Custom toolbar elements</span></h1>
 			<div class="info">
 				<p>DataTables inserts DOM elements around the table to control DataTables features, and you can make use of this mechanism as well to insert your own custom
 				elements. In this example a <code class="tag" title="HTML tag">div</code> with a class of '-string toolbar' is created using <a href=

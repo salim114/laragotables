@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Read HTML to data objects</title>
+	<title>DataTables feature - Read HTML to data objects</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -38,7 +38,7 @@
 <body class="dt-example">
 	<div class="container">
 				<section>
-			<h1>DataTables example <span>Read HTML to data objects</span></h1>
+			<h1>DataTables feature <span>Read HTML to data objects</span></h1>
 			<div class="info">
 				<p>When DataTables reads the table content from an HTML table (rather than an Ajax or Javascript data source), by default it will read the information in the table
 				into an array that DataTables stores internally. Each array element represents a column.</p>

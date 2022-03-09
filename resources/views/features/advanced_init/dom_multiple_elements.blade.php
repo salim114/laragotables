@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Multiple table control elements</title>
+	<title>DataTables feature - Multiple table control elements</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -39,7 +39,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Multiple table control elements</span></h1>
+			<h1>DataTables feature <span>Multiple table control elements</span></h1>
 			<div class="info">
 				<p>As is described by the basic DOM positioning example you can use the <a href="//datatables.net/reference/option/dom"><code class="option" title=
 				"DataTables initialisation option">dom</code></a> initialisation parameter to move DataTables features around the table to where you want them.</p>

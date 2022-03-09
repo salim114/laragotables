@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - HighCharts Integration</title>
+	<title>DataTables feature - HighCharts Integration</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/datatables.min.css') }}">
@@ -85,7 +85,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>HighCharts Integration</span></h1>
+			<h1>DataTables feature <span>HighCharts Integration</span></h1>
 			<div class="info">
 				<p>This example shows how to integrate the excellent <a href="https://www.highcharts.com/">HighCharts</a> library into your project along-side DataTables. As you
 				modify the table by filtering it, the chart is updated automatically to reflect the state of the table.</p>

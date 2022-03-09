@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Generated content for a column</title>
+	<title>DataTables feature - Generated content for a column</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -41,7 +41,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Generated content for a column</span></h1>
+			<h1>DataTables feature <span>Generated content for a column</span></h1>
 			<div class="info">
 				<p>In some tables you might wish to have some content generated automatically. This can be done in a number of ways:</p>
 				<ul class="markdown">

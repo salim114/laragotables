@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Ordering plug_ins (with type detection)</title>
+	<title>DataTables feature - Ordering plug_ins (with type detection)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -47,7 +47,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Ordering plug_ins (with type detection)</span></h1>
+			<h1>DataTables feature <span>Ordering plug_ins (with type detection)</span></h1>
 			<div class="info">
 				<p>Although DataTables will automatically order data from a number of different data types using the built in methods, when dealing with more complex formatted
 				data, it can be desirable to define the ordering order yourself. Using plug-in ordering functions, you can have DataTables sort data in any manner you wish.</p>

@@ -18,7 +18,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>features index</span></h1>
+			<h1>DataTables feature <span>features index</span></h1>
 			<div class="info">
 				<p>One of the best ways to learn how to do anything new (including software APIs!) is to get your hands dirty as quickly as possible. These features will show you
 				how to perform tasks ranging from something as simple as applying DataTables to an HTML table, right the way through to doing server-side processing with

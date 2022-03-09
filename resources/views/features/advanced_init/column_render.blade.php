@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Column rendering</title>
+	<title>DataTables feature - Column rendering</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -42,7 +42,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Column rendering</span></h1>
+			<h1>DataTables feature <span>Column rendering</span></h1>
 			<div class="info">
 				<p>Each column has an optional rendering control called <a href="//datatables.net/reference/option/columns.render"><code class="option" title=
 				"DataTables initialisation option">columns.render</code></a> which can be used to process the content of each cell before the data is used. <a href=

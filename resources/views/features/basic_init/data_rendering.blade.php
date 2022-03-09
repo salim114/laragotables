@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Data rendering</title>	
+	<title>DataTables feature - Data rendering</title>	
     <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="https://github.com/downloads/lafeber/world-flags-sprite/flags32.css">
@@ -135,7 +135,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Data rendering</span></h1>
+			<h1>DataTables feature <span>Data rendering</span></h1>
 			<div class="info">
 				<p>Data within DataTables can be easily rendered to add graphics or colour to your tables, as demonstrated in the example on this page. These features make use of
 				<a href="//datatables.net/reference/option/columns.render"><code class="option" title="DataTables initialisation option">columns.render</code></a> to customise the

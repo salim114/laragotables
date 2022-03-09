@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Language file</title>
+	<title>DataTables feature - Language file</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -33,7 +33,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Language file</span></h1>
+			<h1>DataTables feature <span>Language file</span></h1>
 			<div class="info">
 				<p>As well as being able to pass language information to DataTables through the <a href="//datatables.net/reference/option/language"><code class="option" title=
 				"DataTables initialisation option">language</code></a> initialisation option, you can also store the language information in a file, which DataTables can load by

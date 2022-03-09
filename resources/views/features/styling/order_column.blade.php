@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Base style - order-column</title>
+	<title>DataTables feature - Base style - order-column</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -29,7 +29,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Base style - order-column</span></h1>
+			<h1>DataTables feature <span>Base style - order-column</span></h1>
 			<div class="info">
 				<p>This example shows DataTables with just the <code>order_column</code> class specified. Typically you would want to use the <code>stripe</code> feature class in
 				addition to <code>order_column</code> (possibly <code>hover</code> as well), but this example shows just the ordered column highlighting.</p>

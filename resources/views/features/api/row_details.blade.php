@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Child rows (show extra / detailed information)</title>
+	<title>DataTables feature - Child rows (show extra / detailed information)</title>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/demo.css') }}">
@@ -80,7 +80,7 @@ $(document).ready(function() {
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Child rows (show extra / detailed information)</span></h1>
+			<h1>DataTables feature <span>Child rows (show extra / detailed information)</span></h1>
 			<div class="info">
 				<p>The DataTables API has a number of methods for attaching child rows to a <em>parent</em> row in the DataTable. This can be used to show additional information
 				about a row, useful for cases where you wish to convey more information about a row than there is space for in the host table.</p>

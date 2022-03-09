@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Setting defaults</title>
+	<title>DataTables feature - Setting defaults</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -34,7 +34,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Setting defaults</span></h1>
+			<h1>DataTables feature <span>Setting defaults</span></h1>
 			<div class="info">
 				<p>When working with DataTables over multiple pages it is often useful to set the initialisation defaults to common values (for example you might want to set
 				<a href="//datatables.net/reference/option/dom"><code class="option" title="DataTables initialisation option">dom</code></a> to a common value so all tables get

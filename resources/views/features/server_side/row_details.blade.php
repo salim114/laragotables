@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Row details</title>
+	<title>DataTables feature - Row details</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -93,7 +93,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Row details</span></h1>
+			<h1>DataTables feature <span>Row details</span></h1>
 			<div class="info">
 				<p>This example shows the use of DataTables' ability to show and hide child rows which are attached to a parent row in the host table. This is often used to show
 				additional information about a row, particularly when you wish to convey more information about a row than there is space for in the host table.</p>

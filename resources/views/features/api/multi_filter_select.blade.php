@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Individual column searching (select inputs)</title>
+	<title>DataTables feature - Individual column searching (select inputs)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -50,7 +50,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Individual column searching (select inputs)</span></h1>
+			<h1>DataTables feature <span>Individual column searching (select inputs)</span></h1>
 			<div class="info">
 				<p>This example is almost identical to text based individual column example and provides the same functionality, but in this case using <code class="tag" title=
 				"HTML tag">select</code> input controls.</p>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Scrolling and Bootstrap tabs</title>
+	<title>DataTables feature - Scrolling and Bootstrap tabs</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.bootstrap.css') }}">
@@ -44,7 +44,7 @@
 <body class="dt-example dt-example-bootstrap">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Scrolling and Bootstrap tabs</span></h1>
+			<h1>DataTables feature <span>Scrolling and Bootstrap tabs</span></h1>
 			<div class="info">
 				<p>This example shows how DataTables with scrolling can be used together with <a href="http://getbootstrap.com/javascript/#tabs">Bootstrap tabs</a> (or indeed any
 				other method whereby the table is in a hidden, <code>display:none</code>, element when it is initialised).</p>

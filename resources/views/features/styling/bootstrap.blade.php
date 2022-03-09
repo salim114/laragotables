@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Bootstrap 3</title>
+	<title>DataTables feature - Bootstrap 3</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.bootstrap.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example dt-example-bootstrap">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Bootstrap 3</span></h1>
+			<h1>DataTables feature <span>Bootstrap 3</span></h1>
 			<div class="info">
 				<p>DataTables can integrate seamlessly with <a href="http://getbootstrap.com/">Bootstrap 3</a> using Bootstrap's <a href=
 				"http://getbootstrap.com/css/#tables">table styling options</a> to present an interface with a uniform design, based on Bootstrap, for your site / app.</p>

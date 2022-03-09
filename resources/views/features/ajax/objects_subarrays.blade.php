@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Nested object data (arrays)</title>
+	<title>DataTables feature - Nested object data (arrays)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -39,7 +39,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Nested object data (arrays)</span></h1>
+			<h1>DataTables feature <span>Nested object data (arrays)</span></h1>
 			<div class="info">
 				<p>The information read from an Ajax data source can be arbitrarily complex, but still be displayed by DataTables through the <a href=
 				"//datatables.net/reference/option/columns.data"><code class="option" title="DataTables initialisation option">columns.data</code></a> option, which is

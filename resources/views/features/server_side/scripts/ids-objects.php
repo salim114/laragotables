@@ -1,7 +1,7 @@
 <?php
 
 /*
- * DataTables example server-side processing script.
+ * DataTables feature server-side processing script.
  *
  * Please note that this script is intentionally extremely simple to show how
  * server-side processing can be implemented, and probably shouldn't be used as

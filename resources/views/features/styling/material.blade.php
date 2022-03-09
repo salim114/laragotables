@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Material Design (Tech. preview)</title>
+	<title>DataTables feature - Material Design (Tech. preview)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.material.css') }}">
@@ -39,7 +39,7 @@
 <body class="dt-example dt-example-material">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Material Design (Tech. preview)</span></h1>
+			<h1>DataTables feature <span>Material Design (Tech. preview)</span></h1>
 			<div class="info">
 				<p>This example shows DataTables styled for <a href="https://www.google.com/design/spec/material-design/">Google's Material Design</a>. The <a href=
 				"http://getmdl.io/">Material Design Lite</a> libraries are used to provide the styling implementation for Material.</p>

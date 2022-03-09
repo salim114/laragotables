@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Flat array data source</title>
+	<title>DataTables feature - Flat array data source</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -42,7 +42,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Flat array data source</span></h1>
+			<h1>DataTables feature <span>Flat array data source</span></h1>
 			<div class="info">
 				<p>When loading data from an Ajax source, by default, DataTables will look for the data to use in the <code>data</code> parameter of a returned object (e.g.
 				<code>{ "data": [...] }</code>). This can easily be change by using the <code>dataSrc</code> option of the <a href=

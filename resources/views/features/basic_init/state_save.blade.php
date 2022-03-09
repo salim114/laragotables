@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - State saving</title>
+	<title>DataTables feature - State saving</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>State saving</span></h1>
+			<h1>DataTables feature <span>State saving</span></h1>
 			<div class="info">
 				<p>DataTables saves the state of a table (its paging position, ordering state etc). When the <a href="//datatables.net/reference/option/stateSave"><code class=
 				"option" title="DataTables initialisation option">stateSave</code></a> option is enabled, it can be restored when the user reloads a page, or comes back to the

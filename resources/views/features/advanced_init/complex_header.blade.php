@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Complex headers with column visibility</title>
+	<title>DataTables feature - Complex headers with column visibility</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -34,7 +34,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Complex headers with column visibility</span></h1>
+			<h1>DataTables feature <span>Complex headers with column visibility</span></h1>
 			<div class="info">
 				<p>Complex headers (using <code>colspan</code> / <code>rowspan</code>) can be used to group columns of similar information in DataTables, creating a very powerful
 				visual effect.</p>

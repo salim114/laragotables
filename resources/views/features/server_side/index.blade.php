@@ -15,7 +15,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Server-side processing</span></h1>
+			<h1>DataTables feature <span>Server-side processing</span></h1>
 			<div class="info">
 				<p>There are many ways to get your data into DataTables, and if you are working with seriously large databases, you might want to consider using the server-side
 				options that DataTables provides. With server-side processing enabled, all actions that DataTables performs (such as paging, searching and ordering) are handed off

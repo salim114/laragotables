@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Complex headers (rowspan and colspan)</title>
+	<title>DataTables feature - Complex headers (rowspan and colspan)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -29,7 +29,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Complex headers (rowspan and colspan)</span></h1>
+			<h1>DataTables feature <span>Complex headers (rowspan and colspan)</span></h1>
 			<div class="info">
 				<p>When using tables to display data, you will often wish to display column information in groups. DataTables fully supports <code>colspan</code> and
 				<code>rowspan</code> in the table's header, assigning the required order listeners to the TH element suitable for that column.</p>

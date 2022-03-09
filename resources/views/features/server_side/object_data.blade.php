@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Object data source</title>
+	<title>DataTables feature - Object data source</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -47,7 +47,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Object data source</span></h1>
+			<h1>DataTables feature <span>Object data source</span></h1>
 			<div class="info">
 				<p>The default data format that DataTables expects for server-side processing is a 2D array of data (rows by columns). However, this is often not flexible enough
 				for either the server-side environment, or you might want to convey more information in the data source than is necessary to show in the table (row IDs from the

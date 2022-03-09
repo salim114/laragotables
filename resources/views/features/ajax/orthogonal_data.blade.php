@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Orthogonal data</title>
+	<title>DataTables feature - Orthogonal data</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -42,7 +42,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Orthogonal data</span></h1>
+			<h1>DataTables feature <span>Orthogonal data</span></h1>
 			<div class="info">
 				<p>To try and make life easy, by default, DataTables expects arrays to be used as the data source for rows in the table. However, this isn't always useful, and you
 				may wish to have DataTables use objects as the data source for each row (i.e. each row has its data described by an object) as this can make working with the data

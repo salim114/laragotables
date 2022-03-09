@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Live DOM ordering</title>
+	<title>DataTables feature - Live DOM ordering</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -69,7 +69,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Live DOM ordering</span></h1>
+			<h1>DataTables feature <span>Live DOM ordering</span></h1>
 			<div class="info">
 				<p>This example shows how you can use information available in the DOM to order columns. Typically DataTables will read information to be ordered during its
 				initialisation phase, and this will not be updated based on user interaction, so ordering on columns which have, for example, form elements in them, may not

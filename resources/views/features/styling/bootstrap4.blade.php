@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Bootstrap 4</title>
+	<title>DataTables feature - Bootstrap 4</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.bootstrap4.css') }}">
@@ -31,7 +31,7 @@
 <body class="dt-example dt-example-bootstrap4">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Bootstrap 4</span></h1>
+			<h1>DataTables feature <span>Bootstrap 4</span></h1>
 			<div class="info">
 				<p>As with Bootstrap 3, DataTables can also be integrated seamlessly with Bootstrap 4. This integration is done simply by including the DataTables Bootstrap 4
 				files (CSS and JS) which sets the defaults needed for DataTables to be initialised as normal, as shown in this example.</p>

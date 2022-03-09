@@ -22,6 +22,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+//features indexes
+
 Route::get('features', function () {
     return view('features.index');
 });
@@ -54,6 +56,11 @@ Route::get('features/plug_ins', function () {
     return view('features.plug_ins.index');
 });
 
+//extensions indexes
+
+Route::get('extensions', function () {
+    return view('extensions.index');
+});
 
 //Basic initialisation
 Route::group([], function() {

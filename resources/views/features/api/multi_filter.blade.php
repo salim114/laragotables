@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Individual column searching (text inputs)</title>
+	<title>DataTables feature - Individual column searching (text inputs)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -58,7 +58,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Individual column searching (text inputs)</span></h1>
+			<h1>DataTables feature <span>Individual column searching (text inputs)</span></h1>
 			<div class="info">
 				<p>The searching functionality provided by DataTables is useful for quickly search through the information in the table - however the search is global, and you may
 				wish to present controls that search on specific columns.</p>

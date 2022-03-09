@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Row selection</title>
+	<title>DataTables feature - Row selection</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -67,7 +67,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Row selection</span></h1>
+			<h1>DataTables feature <span>Row selection</span></h1>
 			<div class="info">
 				<p>When you want to have user selectable rows in DataTables, it is relatively trivial when using DOM based data - but when using server-side processing, DataTables
 				doesn't retain DOM row elements over pages / filtering etc. As such, you will need to keep a track of which rows a user as selected and mark them as selected on

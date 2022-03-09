@@ -15,7 +15,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Ajax sourced data</span></h1>
+			<h1>DataTables feature <span>Ajax sourced data</span></h1>
 			<div class="info">
 				<p>DataTables can read data from a server via Ajax, while still performing searching, ordering, paging etc on the client-side. This is done through use of the
 				<a href="//datatables.net/reference/option/ajax"><code class="option" title="DataTables initialisation option">ajax</code></a> option, which has a number of

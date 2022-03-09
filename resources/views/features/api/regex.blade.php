@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Search API (regular expressions)</title>
+	<title>DataTables feature - Search API (regular expressions)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -53,7 +53,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Search API (regular expressions)</span></h1>
+			<h1>DataTables feature <span>Search API (regular expressions)</span></h1>
 			<div class="info">
 				<p>Searching a table is one of the most common user interactions with a DataTables table, and DataTables provides a number of methods for you to control this
 				interaction. There are APIs for the global search (<a href="//datatables.net/reference/api/search()"><code class="api" title=

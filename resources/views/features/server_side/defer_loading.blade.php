@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Deferred loading of data</title>
+	<title>DataTables feature - Deferred loading of data</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -48,7 +48,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Deferred loading of data</span></h1>
+			<h1>DataTables feature <span>Deferred loading of data</span></h1>
 			<div class="info">
 				<p>When using DataTables with server-side processing, the default behaviour is to have DataTables automatically make an Ajax call and load the data, removing
 				anything which might have already been in the table. However, this behaviour might not always be desirable when the first page of the table has already been

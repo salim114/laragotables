@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - Flexible table width</title>
+	<title>DataTables feature - Flexible table width</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -33,7 +33,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Flexible table width</span></h1>
+			<h1>DataTables feature <span>Flexible table width</span></h1>
 			<div class="info">
 				<p>Often you may want to have your table resize dynamically with the page. Typically this is done by assigning <code>width:100%</code> in your CSS, but this
 				presents a problem for Javascript since it can be very hard to get that relative size rather than the absolute pixels. As such, if you apply the <code>width</code>

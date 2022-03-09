@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - HTML5 data-* attributes - cell data</title>
+	<title>DataTables feature - HTML5 data-* attributes - cell data</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -29,7 +29,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>HTML5 data-* attributes - cell data</span></h1>
+			<h1>DataTables feature <span>HTML5 data-* attributes - cell data</span></h1>
 			<div class="info">
 				<p>DataTables can use different data for different actions (display, ordering and searching) which can be immensely powerful for transforming data in the display
 				to be intuitive for the end user, while using different, or more complex data, for other actions. For example, if a table contains a formatted telephone number in

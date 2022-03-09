@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<title>DataTables example - JSONP data source for remote domains</title>
+	<title>DataTables feature - JSONP data source for remote domains</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -50,7 +50,7 @@
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>JSONP data source for remote domains</span></h1>
+			<h1>DataTables feature <span>JSONP data source for remote domains</span></h1>
 			<div class="info">
 				<p><a href="https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about">JSONP</a> is one of several methods to allow the use of JSON data from any server
 				(browsers have XSS protection rules which will block standard Ajax requests to remote source for security reasons). Using JSONP allows DataTables to load
