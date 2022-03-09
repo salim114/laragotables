@@ -13,7 +13,7 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <a href="{{ url('https://datatables.net/') }}" target="_blank"><img src="{{ asset('images/dt-lg.png') }}" style="height: 40px;    width: 65px;margin-top: 11px;margin-left: -28px;"></a>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Haleetables') }}
+                        {{ __('LaraGoTables') }}
                     </x-nav-link>
                 </div>
             </div>
