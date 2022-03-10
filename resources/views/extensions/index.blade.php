@@ -480,25 +480,25 @@
 		                        <a href="{{ url('features/non_jquery/ajax') }}">Right-to-left text direction</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 3</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 3</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 4</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 4</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 5</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
+		                    </li>		                    
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Foundation</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">jQuery UI</a>
-		                    </li>
-		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bulma</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI styling</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -1226,86 +1226,329 @@
 		                    <li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Only Custom Panes</a>
 		                    </li>
-		                    //////////////////////////////////////////
+		                    <h3 class="tx">Styling</h3>								                    
+							<li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 3</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 4</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 5</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI styling</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
+		                    </li>
+		                    <h3 class="tx">Performance</h3>								                    
+							<li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">5k Rows</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">50k Rows</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">50k Rows with cascadePanes</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">50k Rows with cascadePanes and viewTotal</a>
+		                    </li>
 		                </ul>
 		     		</div> 
 		        		<div class="toc-group">
-		                <h3><a href="{{ url('features/plug_ins') }}"><i class="fa fa-arrow-circle-right"></i> RowReorder</a></h3>
-		                <ul class="toc">
-							<li>
-		                        <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Ordering plug_ins (with type detection)</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Ordering plug_ins (no type detection)</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Custom filtering - range search</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Live DOM ordering</a>
-		                    </li>
-		                </ul>
-		        	</div> 
-		        		<div class="toc-group">
-		                <h3><a href="{{ url('features/plug_ins') }}"><i class="fa fa-arrow-circle-right"></i> SearchBuilder</a></h3>
-		                <ul class="toc">
-							<li>
-		                        <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Ordering plug_ins (with type detection)</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Ordering plug_ins (no type detection)</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Custom filtering - range search</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Live DOM ordering</a>
-		                    </li>
-		                </ul>
-		        	</div> 
-		        		<div class="toc-group">
 		                <h3><a href="{{ url('features/plug_ins') }}"><i class="fa fa-arrow-circle-right"></i> StateRestore</a></h3>
+		                <h3 class="tx">Initialisation and options</h3>	
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
+		                        <a href="{{ url('features/plug_ins/api') }}">Alternative UI</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Ordering plug_ins (with type detection)</a>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Basic StateRestore Example</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Ordering plug_ins (no type detection)</a>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Basic StateRestore Example - API</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Custom filtering - range search</a>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Custom Split Buttons</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Live DOM ordering</a>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Remove All Button</a>
 		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Ajax Loading and Saving</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Ajax Function</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Predefined States</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Predefined States from Ajax</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Predefined States - No Save, Remove, Rename or Create</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">No state creation</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">No state remove</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">No state renaming</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">No state saving</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">No Buttons</a>
+		                    </li>
+		                    <h3 class="tx">Customisation</h3>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Label to Display Active States</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Creation Modal</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Custom State Data</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Creation Modal with Toggle for Columns</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Creation Modal with Toggle</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">StateRestore Language Options</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Custom Button Text</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save column searches</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Child Rows</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save column visibility</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save ordering</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save paging</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save scroller</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save search</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save SearchBuilder</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save SearchPanes</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Don't save Selections</a>
+		                    </li>	
+		                    <h3 class="tx">Integration with other DataTables extensions</h3>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Predefined SearchPanes State</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Scroller Integration</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">SearchBuilder Integration</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">SearchPanes Integration</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Select Integration</a>
+		                    </li>
+		                    <h3 class="tx">Styling</h3>								                    
+							<li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 3</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 4</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 5</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
+		                    </li>		                    
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI styling</a>
+		                    </li>
+		                </ul>
+		        	</div> 
+		        		<div class="toc-group">
+		                <h3><a href="{{ url('features/plug_ins') }}"><i class="fa fa-arrow-circle-right"></i> Select</a></h3>
+		                <h3 class="tx">Initialisation</h3>	
+		                <ul class="toc">
+							<li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Simple initialisation</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Disable Element Deselection</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Single item selection</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Multi item selection</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Cell selection</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Checkbox selection</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">State Save</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Internationalisation</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Blur selection</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Defer rendering</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Buttons</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Retain selection on reload</a>
+		                    </li>
+		                    <h3 class="tx">Styling</h3>								                    
+							<li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 3</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 4</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 5</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
+		                    </li>		                    
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI styling</a>
+		                    </li>
+		                    <h3 class="tx">API</h3>								                    
+							<li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Get selected items</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Select items</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Events</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Events (cancellable)</a>
+		                    </li>		          
 		                </ul>
 		        	</div> 
 		        		<div class="toc-group">
 		                <h3><a href="{{ url('features/plug_ins') }}"><i class="fa fa-arrow-circle-right"></i> Standalone: DateTime</a></h3>
+		                <h3 class="tx">Initialisation and options</h3>	
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
+		                        <a href="{{ url('features/plug_ins/api') }}">Basic initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Ordering plug_ins (with type detection)</a>
+		                        <a href="{{ url('features/plug_ins/api') }}">jQuery initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Ordering plug_ins (no type detection)</a>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Internationalisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Custom filtering - range search</a>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Hidden input</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Live DOM ordering</a>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Action buttons (today and clear)</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Date and time</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Moment formatting</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Luxon formatting</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">DayJS formatting</a>
+		                    </li>
+		                    <h3 class="tx">Integration</h3>	<li>
+		                    <a href="{{ url('features/plug_ins/range_filtering') }}">Use in a form</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">DataTables date range filter</a>
+		                    </li>
+		                </ul>
+		        	</div> 
+		        		<div class="toc-group">
+		                <h3><a href="{{ url('features/plug_ins') }}"><i class="fa fa-arrow-circle-right"></i> Legacy: ColVis</a></h3>
+		                <ul class="toc">
+							<li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Basic initialisation</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Activate with a mouseover rather than click</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Custom text in the button</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Using with jQuery UI ThemeRoller</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Excluding columns from the show / hide list</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Two tables initialised together - individual controls</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Two tables initialised together - shared control</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Alternative styling and reset to original</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Customisation of the button label with a callback</a>
 		                    </li>
 		                </ul>
 		        	</div>
@@ -1313,19 +1556,49 @@
 		                <h3><a href="{{ url('features/plug_ins') }}"><i class="fa fa-arrow-circle-right"></i> Legacy: TableTools</a></h3>
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
+		                        <a href="{{ url('features/plug_ins/api') }}">Basic initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Ordering plug_ins (with type detection)</a>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Setting the SWF path</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Ordering plug_ins (no type detection)</a>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Custom button arrangement</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Custom filtering - range search</a>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Button text alteration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Live DOM ordering</a>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Using button collections</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">Using jQuery UI themes</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Styling with Twitter Bootstrap</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Multiple TableTools toolbars for a single table</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Multiple DataTables with a single initialisation</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">User selectable rows (multiple rows)</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/plug_ins/api') }}">User selectable rows (single row)</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Alternative initialisation using 'new TableTools()'</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Altering the TableTools defaults</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/range_filtering') }}">TableTools plug-in buttons</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/plug_ins/dom_sort') }}">Customising the PDF output (adding text and orientation)</a>
 		                    </li>
 		                </ul>
 		        	</div> 
