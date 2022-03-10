@@ -62,6 +62,18 @@ Route::get('extensions', function () {
     return view('extensions.index');
 });
 
+Route::get('extensions/autofill', function () {
+    return view('extensions.autofill.index');
+});
+
+Route::get('extensions/buttons', function () {
+    return view('extensions.buttons.index');
+});
+
+Route::get('extensions/colreorder', function () {
+    return view('extensions.colreorder.index');
+});
+
 //Basic initialisation
 Route::group([], function() {
     Route::get('features/basic_init/zero_configuration', 'App\Http\Controllers\DatatableController@zero_configuration');

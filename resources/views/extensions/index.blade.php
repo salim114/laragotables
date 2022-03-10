@@ -271,17 +271,17 @@
 		                    <li>
 		                        <a href="{{ url('features/advanced_init/row_callback') }}">Bootstrap 5</a>
 		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Foundation</a>
+		                    </li>
 							<li>
 		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Bulma</a>
-		                    </li>
+		                    </li>		                    
 		                    <li>
-		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Foundation styling</a>
-		                    </li>
-		                    <li>
-		                        <a href="{{ url('features/advanced_init/row_callback') }}">jQuery UI styling</a>
+		                        <a href="{{ url('features/advanced_init/row_callback') }}">jQuery UI</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Semantic UI styling</a>
+		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Semantic UI</a>
 		                    </li>
 		                    <h3 class="tx">Styling</h3>
 		                    <li>
@@ -294,16 +294,16 @@
 		                        <a href="{{ url('features/advanced_init/row_callback') }}">Bootstrap 5</a>
 		                    </li>							
 		                    <li>
-		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Foundation styling</a>
-		                    </li>
-		                    <li>
-		                        <a href="{{ url('features/advanced_init/row_callback') }}">jQuery UI styling</a>
-		                    </li>
+		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Foundation</a>
+		                    </li>		                    
 							<li>
-		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
 		                        <a href="{{ url('features/advanced_init/row_grouping') }}">Bulma</a>
+		                    </li>		                    
+		                    <li>
+		                        <a href="{{ url('features/advanced_init/row_callback') }}">jQuery UI</a>
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/advanced_init/dom_toolbar') }}">Icons</a>
@@ -365,28 +365,28 @@
 		                    </li>
 		                    <h3 class="tx">Styling</h3>
 							<li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Alternative insert styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Alternative insert</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 4 styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 4</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 5 styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Foundation styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Foundation</a>
+		                    </li>		                    
+		                    <li>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bulma styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Bulma</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Fomantic-UI (formally Semantic-UI) styling</a>
-		                    </li>
-		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">jQuery UI styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		            </div>
