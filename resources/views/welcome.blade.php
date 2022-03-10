@@ -63,7 +63,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    LaraGoTables is a contribution for Laravel community trying to clear the way for the integration of the excellent DataTables JQuery inside projects and to enlarge the use of it, throw its varieties of features features and extensions.
+                                    LaraGoTables is a contribution for Laravel community trying to clear the way for the integration of the excellent DataTables JQuery inside projects and to enlarge the use of it, throw its varieties of features (examples) and extensions.
                                 </div>
                             </div>
                         </div>                        
@@ -78,7 +78,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.
+                                    Laravel is a free, open-source PHP web framework, created by Taylor Otwell. It is a powerful Model-View-Controller (MVC) PHP framework, designed for developers who need a simple and elegant toolkit to create full-featured web applications.
                                 </div>
                             </div>
                         </div>
