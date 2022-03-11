@@ -35,7 +35,7 @@
 				attributes. The attribute names are read by DataTables and used, potentially in combination with, the standard Javascript initialisation options (with the
 				<code>data-*</code> attributes taking priority).</p>
 				<p>Please note that the attribute values must contain valid JSON data or a Javascript primitive, as required by <a href=
-				"http://api.jquery.com/data/#data-html5">jQuery's <code>$().data()</code> method</a>. This means that double quotes should be used inside the attribute if needed
+				"http://Advanced initialisation.jquery.com/data/#data-html5">jQuery's <code>$().data()</code> method</a>. This means that double quotes should be used inside the attribute if needed
 				for a string (see the <code>data-order</code> in this example).</p>
 				<p>Additionally, jQuery will convert a dashed string into the camel-case notation used by DataTables for its options. For example <code>data-page-length</code> is
 				used to represent <a href="//datatables.net/reference/option/pageLength"><code class="option" title="DataTables initialisation option">pageLength</code></a>.</p>
@@ -151,7 +151,7 @@
 						|
 						*/
 						
-						//API (features)
+						//Advanced initialisation (features)
 
 						Route::group([], function() {
 						    
@@ -179,7 +179,7 @@
 						     * &#64;return \Illuminate\Http\Response
 						     */
 
-					    //API (features)
+					    //Advanced initialisation (features)
 
 					    public function html5_data_options()
 					    {

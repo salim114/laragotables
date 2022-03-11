@@ -149,7 +149,7 @@
 						|
 						*/
 						
-						//API (features)
+						//Advanced initialisation (features)
 
 						Route::group([], function() {
 						    
@@ -177,7 +177,7 @@
 						     * &#64;return \Illuminate\Http\Response
 						     */
 
-					    //API (features)
+					    //Advanced initialisation (features)
 
 					    public function enter_search()
 					    {

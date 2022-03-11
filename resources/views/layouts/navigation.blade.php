@@ -1,6 +1,6 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
@@ -10,7 +10,7 @@
                     </a><s+pan style='margin-left: 15px;font-size: 37px;'>+</span>
                 </div>
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex shadow">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <a href="{{ url('https://datatables.net/') }}" target="_blank"><img src="{{ asset('images/dt-lg.png') }}" style="height: 40px;    width: 65px;margin-top: 11px;margin-left: -28px;"></a>
                     <h2 class="font-semibold text-xl text-gray-800 leading-tight" style="padding-top:22px">
                         {{ __('LaraGoTables') }}

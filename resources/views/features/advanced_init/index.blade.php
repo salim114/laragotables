@@ -48,7 +48,7 @@
 							<li>
 		                        <a href="{{ url('features/advanced_init/enter_search') }}">Enter Key to Search</a>
 		                    </li>
-							<li>">
+							<li>
 		                        <a href="{{ url('features/advanced_init/length_menu') }}">Page length options</a>
 		                    </li>
 							<li>
