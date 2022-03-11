@@ -10,11 +10,11 @@
                     </a><s+pan style='margin-left: 15px;font-size: 37px;'>+</span>
                 </div>
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex shadow">
                     <a href="{{ url('https://datatables.net/') }}" target="_blank"><img src="{{ asset('images/dt-lg.png') }}" style="height: 40px;    width: 65px;margin-top: 11px;margin-left: -28px;"></a>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <h2 class="font-semibold text-xl text-gray-800 leading-tight" style="padding-top:22px">
                         {{ __('LaraGoTables') }}
-                    </x-nav-link>
+                    </h2>
                 </div>
             </div>
 

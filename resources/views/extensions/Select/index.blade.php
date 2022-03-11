@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<link rel="icon" href="{{ asset('images/laragotables.png') }}">
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/demo.css') }}">

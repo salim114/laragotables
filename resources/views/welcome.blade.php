@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
-
+        <link rel="icon" href="{{ asset('images/laragotables.png') }}">
         <title>LaraGoTables</title>
 
         <!-- Fonts -->
@@ -19,7 +19,7 @@
                 font-family: 'Nunito', sans-serif;
             }
             img{
-                width: 29%;
+                width: 330px;
                 margin-top: -1.5%;
                 margin-left: 4%;
             }
