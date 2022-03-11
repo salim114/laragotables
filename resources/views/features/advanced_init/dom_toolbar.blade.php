@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<link rel="icon" href="{{ asset('images/laragotables.png') }}">
 	<title>DataTables feature - Custom toolbar elements</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
@@ -143,6 +143,84 @@
 					<p>The script used to perform the server-side processing for this table is shown below. Please note that this is just an example script using PHP. Server-side
 					processing scripts can be written in any language, using <a href="//datatables.net/manual/server-side">the protocol described in the DataTables
 					documentation</a>.</p>
+				</div>
+				<div id="route" class="route">
+					<p>The route shown below may be accessed by entering the defined route's URL in your browser:</p>
+					<code class="multiline language-route">
+						<&#63;php
+
+						use Illuminate\Support\Facades\Route; 
+						use App\Http\Controllers\DatatableController;
+
+						/*
+						|--------------------------------------------------------------------------
+						| Web Routes
+						|--------------------------------------------------------------------------
+						|
+						| Here is where you can register web routes for your application. These
+						| routes are loaded by the RouteServiceProvider within a group which
+						| contains the "web" middleware group. Now create something great!
+						|
+						*/
+						
+						//API (features)
+
+						Route::group([], function() {
+						    
+						    Route::get('features/advanced_init/dom_toolbar', 'App\Http\Controllers\DatatableController&#64;dom_toolbar');
+
+						});</code>
+					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+				</div>
+				<div id="controller" class="ctrl">
+					<p>The controller shown below is used to defining all of your request handling logic you may wish to organize seperetly from your route files:</p>
+					<code class="multiline language-ctrl">
+						<&#63;php
+
+						namespace App\Http\Controllers;
+
+						use Illuminate\Http\Request;
+						Use App\Models\Datatable;
+						use DataTables;
+
+						class DatatableController extends Controller
+						{
+						    /**
+						     * Display a listing of the resource.
+						     *
+						     * &#64;return \Illuminate\Http\Response
+						     */
+
+					    //API (features)
+
+					    public function dom_toolbar()
+					    {
+					        $datatables = Datatable::all();
+					        return view('features.advanced_init.dom_toolbar', compact('datatables'));       
+					    }</code>
+					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+					</div>
+				<div id="model" class="model">
+					<p>Laravel includes Eloquent, an object-relational mapper (ORM) that makes it enjoyable to interact with your database. When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table:</p>
+					<code class="multiline language-model">
+						<&#63;php
+
+						namespace App\Models;
+
+						use Illuminate\Database\Eloquent\Factories\HasFactory;
+						use Illuminate\Database\Eloquent\Model;
+
+						class Datatable extends Model
+						{
+						    use HasFactory;
+
+						    protected $fillable = [
+						        
+						        'id', 'first_name', 'last_name', 'name_abrv', 'position', 'email', 'office', 'start_date_epoch', 
+						        'start_date', 'age', 'salary', 'seq', 'extn'
+						    ];
+						}</code>
+					<p>In addition to the above code, the "Datatable.php" file (Model) will manage ,work and support all common relationships with ease.</p>
 				</div>
 			</div>
 		</section>

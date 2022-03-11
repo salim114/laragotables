@@ -132,7 +132,7 @@ class DatatableController extends Controller
     
     //Advanced initialisation
 
-        public function column_render()
+    public function column_render()
     {
         $datatables = Datatable::all();
         return view('features.advanced_init.column_render', compact('datatables'));       

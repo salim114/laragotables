@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<link rel="icon" href="{{ asset('images/laragotables.png') }}">
 	<title>DataTables feature - Scrolling and Bootstrap tabs</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

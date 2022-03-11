@@ -75,6 +75,7 @@ Route::get('extensions/colreorder', function () {
 });
 
 //Basic initialisation
+
 Route::group([], function() {
     Route::get('features/basic_init/zero_configuration', 'App\Http\Controllers\DatatableController@zero_configuration');
     Route::get('features/basic_init/filter_only', 'App\Http\Controllers\DatatableController@filter_only');
@@ -98,6 +99,7 @@ Route::group([], function() {
 }); 
 
 //Advanced initialisation
+
 Route::group([], function() {
     Route::get('features/advanced_init/column_render', 'App\Http\Controllers\DatatableController@column_render');
     Route::get('features/advanced_init/complex_header', 'App\Http\Controllers\DatatableController@complex_header_ai');
@@ -119,6 +121,7 @@ Route::group([], function() {
 });
 
 //Non-jQuery initialisation
+
 Route::group([], function() {
     Route::get('features/non_jquery/ajax', 'App\Http\Controllers\DatatableController@ajax');
     Route::get('features/non_jquery/dom_events', 'App\Http\Controllers\DatatableController@dom_events');
@@ -128,6 +131,7 @@ Route::group([], function() {
 });
 
 //Styling
+
 Route::group([], function() {
     Route::get('features/styling/bootstrap', 'App\Http\Controllers\DatatableController@bootstrap');
     Route::get('features/styling/bootstrap4', 'App\Http\Controllers\DatatableController@bootstrap4');
@@ -149,6 +153,7 @@ Route::group([], function() {
 });
 
 //Data sources
+
 Route::group([], function() {
     Route::get('features/data_sources/ajax', 'App\Http\Controllers\DatatableController@ajax_ds');
     Route::get('features/data_sources/dom', 'App\Http\Controllers\DatatableController@dom_ds');
@@ -157,6 +162,7 @@ Route::group([], function() {
 });
 
 //API
+
 Route::group([], function() {
     Route::get('features/api/add_row', 'App\Http\Controllers\DatatableController@add_row');
     Route::get('features/api/api_in_init', 'App\Http\Controllers\DatatableController@api_in_init');
@@ -176,6 +182,7 @@ Route::group([], function() {
 });
 
 //Ajax
+
 Route::group([], function() {
     Route::get('features/ajax/custom_data_flat', 'App\Http\Controllers\DatatableController@custom_data_flat');
     Route::get('features/ajax/custom_data_property', 'App\Http\Controllers\DatatableController@custom_data_property');
@@ -189,6 +196,7 @@ Route::group([], function() {
 });
 
 //Server-side
+
 Route::group([], function() {
     Route::get('features/server_side/custom_vars', 'App\Http\Controllers\DatatableController@custom_vars')->name('custom_vars');
     Route::get('features/server_side/defer_loading', 'App\Http\Controllers\DatatableController@defer_loading')->name('defer_loading');
@@ -204,6 +212,7 @@ Route::group([], function() {
 });
 
 //plug_ins
+
 Route::group([], function() {
     Route::get('features/plug_ins/api', 'App\Http\Controllers\DatatableController@api');
     Route::get('features/plug_ins/dom_sort', 'App\Http\Controllers\DatatableController@dom_sort');

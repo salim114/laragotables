@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<link rel="icon" href="{{ asset('images/laragotables.png') }}">
 	<title>DataTables feature - Material Design (Tech. preview)</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css">
