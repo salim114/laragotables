@@ -69,25 +69,25 @@
 		                    </li>
 		                    <h3 class="tx">Styling</h3>
 							<li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap 3 styling</a>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap 3</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_y') }}">Bootstrap 4 styling</a>
+		                        <a href="{{ url('features/basic_init/scroll_y') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_y_dynamic') }}">Bootstrap 5 styling</a>
+		                        <a href="{{ url('features/basic_init/scroll_y_dynamic') }}">Bootstrap 5</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_x') }}">Foundation styling</a>
+		                        <a href="{{ url('features/basic_init/scroll_x') }}">Foundation</a>
+		                    </li>							
+							<li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bulma</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bulma styling</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI styling</a>
+		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -368,7 +368,7 @@
 		                        <a href="{{ url('features/non_jquery/ajax') }}">Alternative insert</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 3</a>
 		                    </li>
 		                    <li>
 		                        <a href="{{ url('features/non_jquery/ajax') }}">Bootstrap 4</a>
@@ -492,7 +492,7 @@
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
 		                    </li>		                    
 		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
@@ -579,13 +579,13 @@
 		                        <a href="{{ url('features/non_jquery/ajax') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Bulma</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Fomantic-UI (formally Semantic-UI) styling</a>
-		                    </li>	                    		                    
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Bulma</a>
+		                    </li>		                                        		                    
 		                    <li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">jQuery UI styling</a>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -619,25 +619,25 @@
 		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Focus cell custom styling</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_y') }}">Bootstrap 4 styling</a>
+		                        <a href="{{ url('features/basic_init/scroll_y') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_y_dynamic') }}">Bootstrap 5 styling</a>
+		                        <a href="{{ url('features/basic_init/scroll_y_dynamic') }}">Bootstrap 5</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_x') }}">Foundation styling</a>
+		                        <a href="{{ url('features/basic_init/scroll_x') }}">Foundation</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bulma styling</a>
+		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bulma</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI styling</a>
-		                    </li>		                    
-							<li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -668,25 +668,25 @@
 		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Modal details display</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/filter_only') }}">Bootstrap modal</a>
+		                        <a href="{{ url('features/basic_init/filter_only') }}">Bootstrap 3</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap 4 modal</a>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap 4</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bootstrap 5 modal</a>
+		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bootstrap 5</a>
+		                    </li>							
+		                    <li>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Foundation</a>
+		                    </li>			                    
+		                    <li>
+		                        <a href="{{ url('features/basic_init/filter_only') }}">Bulma</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/filter_only') }}">Bulma modal</a>
+		                        <a href="{{ url('features/basic_init/filter_only') }}">jQuery UI</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Foundation modal</a>
-		                    </li>	
-		                    <li>
-		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Semantic UI modal</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/basic_init/filter_only') }}">jQuery UI modal</a>
+		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Semantic UI</a>
 		                    </li>
 		                    <h3 class="tx">Column-control</h3>
 							<li>
@@ -728,28 +728,28 @@
 		                    </li>	
 		                    <h3 class="tx">Styling</h3>
 							<li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap styling</a>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap 3</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bootstrap 4 styling</a>
+		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/filter_only') }}">Bootstrap 5 styling</a>
+		                        <a href="{{ url('features/basic_init/filter_only') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Foundation styling</a>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Foundation</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bulma styling</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/basic_init/filter_only') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/filter_only') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">jQuery UI styling</a>
+		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bulma</a>
+		                    </li>							
+		                    <li>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">jQuery UI</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Compact styling</a>
+		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Compact</a>
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/basic_init/filter_only') }}">Vertical scrolling</a>
@@ -806,12 +806,12 @@
 							<li>
 		                        <a href="{{ url('features/basic_init/scroll_x') }}">Foundation</a>
 		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                    </li>
 							<li>
 		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bulma</a>
-		                    </li>
-		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
-		                    </li>
+		                    </li>		                    
 							<li>
 		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI</a>
 		                    </li> 
@@ -853,25 +853,25 @@
 		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Horizontal snap</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap styling</a>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Bootstrap 3</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bootstrap 4 styling</a>
+		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/basic_init/filter_only') }}">Bootstrap 5 styling</a>
-		                    </li>	
+		                        <a href="{{ url('features/basic_init/filter_only') }}">Bootstrap 5</a>
+		                    </li>			                    
 		                    <li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">jQuery UI styling</a>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/filter_only') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/filter_only') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                    </li>		                    	                    	
+		                    <li>
+		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bulma</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/alt_pagination') }}">Foundation styling</a>
-		                    </li>	                    	
-		                    <li>
-		                        <a href="{{ url('features/basic_init/hidden_columns') }}">Bulma styling</a>
+		                        <a href="{{ url('features/basic_init/alt_pagination') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		     		</div> 
@@ -902,23 +902,22 @@
 		                    </li>
 							<h3 class="tx">Styling</h3>									                    
 							<li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bootstrap 3</a>
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/basic_init/scroll_y') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/basic_init/scroll_y_dynamic') }}">Bootstrap 5</a>
-		                    </li>
-
-							<li>
-		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bulma</a>
-		                    </li>
+		                    </li>							
 							<li>
 		                        <a href="{{ url('features/basic_init/scroll_x') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bulma</a>
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI</a>
@@ -1025,20 +1024,20 @@
 		                    </li>		                    
 							<li>
 		                        <a href="{{ url('features/basic_init/scroll_xy') }}">Bootstrap 5</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/basic_init/scroll_x') }}">Bulma</a>
-		                    </li>
+		                    </li>							
 		                    <li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
 		                    </li>
-							<li>
-		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI styling</a>
-		                    </li> 		                    
-							<li>
-		                        <a href="{{ url('features/basic_init/language') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/language') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li> 
-		                    <h3 class="tx">Integration</h3>									                    
+		                    <li>
+		                        <a href="{{ url('features/basic_init/scroll_x') }}">Bulma</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/basic_init/language') }}">jQuery UI</a>
+		                    </li>                   
+							<h3 class="tx">Integration</h3>									                    
 							<li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">StateSave Integration</a>
 		                    </li>
@@ -1240,13 +1239,13 @@
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI styling</a>
-		                    </li>
-		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI</a>
 		                    </li>
 		                    <h3 class="tx">Performance</h3>								                    
 							<li>
@@ -1394,13 +1393,13 @@
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
 		                    </li>		                    
 		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		        	</div> 
@@ -1458,7 +1457,7 @@
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Foundation</a>
 		                    </li>		                    
 		                    <li>
-		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI) styling</a>
+		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Bulma</a>
