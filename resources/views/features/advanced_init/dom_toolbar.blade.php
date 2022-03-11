@@ -124,9 +124,11 @@
 				<div class="css">
 					<div>
 						<p>This example uses a little bit of additional CSS beyond what is loaded from the library files (below), in order to correctly display the table. The
-						additional CSS used is shown below:</p><code class="multiline language-css">.toolbar {
-	float: left;
-}</code>
+						additional CSS used is shown below:</p>
+						<code class="multiline language-css">
+							.toolbar {
+								float: left;
+							}</code>
 					</div>
 					<p>The following CSS library files are loaded for use in this example to provide the styling of the table:</p>
 					<ul>
