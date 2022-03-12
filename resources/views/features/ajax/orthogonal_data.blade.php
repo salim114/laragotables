@@ -31,7 +31,8 @@
 				{ data: {
 					_:    "start_date.display",
 					sort: "start_date.timestamp"
-				} },
+				  } 
+				},
 				{ data: "salary" }
 			]
 		} );
@@ -114,7 +115,8 @@
 									{ data: {
 										_:    &quot;start_date.display&quot;,
 										sort: &quot;start_date.timestamp&quot;
-									} },
+									  } 
+									},
 									{ data: &quot;salary&quot; }
 								]
 							} );

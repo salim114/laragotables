@@ -66,7 +66,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/advanced_init/index') }}">Advanced initialisation</a></h3>
+                <h3><a href="{{ url('features/advanced_init') }}">Advanced initialisation</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'advanced_init/events_live') ? 'active' : '' }}">
                         <a href="{{ url('features/advanced_init/events_live') }}">DOM / jQuery events</a>
@@ -122,7 +122,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/non_jquery/index') }}">Non-jQuery initialisation</a></h3>
+                <h3><a href="{{ url('features/non_jquery') }}">Non-jQuery initialisation</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'non_jquery/init') ? 'active' : '' }}">
                         <a href="{{ url('features/non_jquery/init') }}">Non-jQuery initialisation</a>
@@ -142,7 +142,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/styling/index') }}">Styling</a></h3>
+                <h3><a href="{{ url('features/styling') }}">Styling</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'styling/display') ? 'active' : '' }}">
                         <a href="{{ url('features/styling/display') }}">Base style</a>
@@ -198,7 +198,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/data_sources/index') }}">Data sources</a></h3>
+                <h3><a href="{{ url('features/data_sources') }}">Data sources</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'data_sources/dom') ? 'active' : '' }}">
                         <a href="{{ url('features/data_sources/dom') }}">HTML (DOM) sourced data</a>
@@ -215,7 +215,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/api/index') }}">API</a></h3>
+                <h3><a href="{{ url('features/api') }}">API</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'api/add_row') ? 'active' : '' }}">
                         <a href="{{ url('features/api/add_row') }}">Add rows</a>
@@ -265,7 +265,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/ajax/index') }}">Ajax</a></h3>
+                <h3><a href="{{ url('features/ajax') }}">Ajax</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'ajax/simple') ? 'active' : '' }}">
                         <a href="{{ url('features/ajax/simple') }}">Ajax data source (arrays)</a>
@@ -297,7 +297,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/server_side/index') }}">Server-side</a></h3>
+                <h3><a href="{{ url('features/server_side') }}">Server-side</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'server_side/simple') ? 'active' : '' }}">
                         <a href="{{ url('features/server_side/simple') }}">Server-side processing</a>
@@ -335,7 +335,7 @@
                 </ul>
             </div>
             <div class="toc-group">
-                <h3><a href="{{ url('features/plug_ins/index') }}">plug_ins</a></h3>
+                <h3><a href="{{ url('features/plug_ins') }}">plug_ins</a></h3>
                 <ul class="toc">
                     <li class="{{ Str::endsWith(request()->url(), 'plug_ins/api') ? 'active' : '' }}">
                         <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
