@@ -160,7 +160,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/basic_init/scroll_xy', 'App\Http\Controllers\DatatableController&#64;scroll_xy');
+						    Route::get('features/basic_init/scroll_y', 'App\Http\Controllers\DatatableController&#64;scroll_y');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -186,10 +186,10 @@
 
 					    //Basic initialisation (features)
 
-					    public function scroll_xy()
+					    public function scroll_y()
 					    {
 					        $datatables = Datatable::all();
-					        return view('features.basic_init.scroll_xy', compact('datatables'));       
+					        return view('features.basic_init.scroll_y', compact('datatables'));       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>
