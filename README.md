@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/salim114/laragotables/master/public/images/LaraGoTables.jpg?token=GHSAT0AAAAAABRNW2FIKFCL4AI5C6PUQIRAYRM6B2Q"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/salim114/laragotables/blob/master/public/images/LaraGoTables.jpg?raw=true" with="400"></a></p>
 
 <p align="center">
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
