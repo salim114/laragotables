@@ -18,62 +18,60 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
+	/* Formatting function for row details - modify as you need */
+	function format ( d ) {
+		// `d` is the original data object for the row
+		return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+			'<tr>'+
+				'<td>Full name:</td>'+
+				'<td>'+d.name+'</td>'+
+			'</tr>'+
+			'<tr>'+
+				'<td>Extension number:</td>'+
+				'<td>'+d.extn+'</td>'+
+			'</tr>'+
+			'<tr>'+
+				'<td>Extra info:</td>'+
+				'<td>And any further details here (images etc)...</td>'+
+			'</tr>'+
+		'</table>';
+	}
 
-/* Formatting function for row details - modify as you need */
-function format ( d ) {
-	// `d` is the original data object for the row
-	return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
-		'<tr>'+
-			'<td>Full name:</td>'+
-			'<td>'+d.name+'</td>'+
-		'</tr>'+
-		'<tr>'+
-			'<td>Extension number:</td>'+
-			'<td>'+d.extn+'</td>'+
-		'</tr>'+
-		'<tr>'+
-			'<td>Extra info:</td>'+
-			'<td>And any further details here (images etc)...</td>'+
-		'</tr>'+
-	'</table>';
-}
+	$(document).ready(function() {
+		var table = $('#example').DataTable( {
+			"ajax": "{{ asset('data/objects.txt') }}",
+			"columns": [
+				{
+					"className":      'dt-control',
+					"orderable":      false,
+					"data":           null,
+					"defaultContent": ''
+				},
+				{ "data": "name" },
+				{ "data": "position" },
+				{ "data": "office" },
+				{ "data": "salary" }
+			],
+			"order": [[1, 'asc']]
+		} );
+		
+		// Add event listener for opening and closing details
+		$('#example tbody').on('click', 'td.dt-control', function () {
+			var tr = $(this).closest('tr');
+			var row = table.row( tr );
 
-$(document).ready(function() {
-	var table = $('#example').DataTable( {
-		"ajax": "{{ asset('data/objects.txt') }}",
-		"columns": [
-			{
-				"className":      'dt-control',
-				"orderable":      false,
-				"data":           null,
-				"defaultContent": ''
-			},
-			{ "data": "name" },
-			{ "data": "position" },
-			{ "data": "office" },
-			{ "data": "salary" }
-		],
-		"order": [[1, 'asc']]
+			if ( row.child.isShown() ) {
+				// This row is already open - close it
+				row.child.hide();
+				tr.removeClass('shown');
+			}
+			else {
+				// Open this row
+				row.child( format(row.data()) ).show();
+				tr.addClass('shown');
+			}
+		} );
 	} );
-	
-	// Add event listener for opening and closing details
-	$('#example tbody').on('click', 'td.dt-control', function () {
-		var tr = $(this).closest('tr');
-		var row = table.row( tr );
-
-		if ( row.child.isShown() ) {
-			// This row is already open - close it
-			row.child.hide();
-			tr.removeClass('shown');
-		}
-		else {
-			// Open this row
-			row.child( format(row.data()) ).show();
-			tr.addClass('shown');
-		}
-	} );
-} );
-
 
 	</script>
 </head>
@@ -212,6 +210,84 @@ $(document).ready(function() {
 					<p>The script used to perform the server-side processing for this table is shown below. Please note that this is just an example script using PHP. Server-side
 					processing scripts can be written in any language, using <a href="//datatables.net/manual/server-side">the protocol described in the DataTables
 					documentation</a>.</p>
+				</div>
+				<div id="route" class="route">
+					<p>The route shown below may be accessed by entering the defined route's URL in your browser:</p>
+					<code class="multiline language-route">
+						<&#63;php
+
+						use Illuminate\Support\Facades\Route; 
+						use App\Http\Controllers\DatatableController;
+
+						/*
+						|--------------------------------------------------------------------------
+						| Web Routes
+						|--------------------------------------------------------------------------
+						|
+						| Here is where you can register web routes for your application. These
+						| routes are loaded by the RouteServiceProvider within a group which
+						| contains the "web" middleware group. Now create something great!
+						|
+						*/
+						
+						//API (features)
+
+						Route::group([], function() {
+						    
+						    Route::get('features/api/row_details', 'App\Http\Controllers\DatatableController&#64;row_details');
+
+						});</code>
+					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+				</div>
+				<div id="controller" class="ctrl">
+					<p>The controller shown below is used to defining all of your request handling logic you may wish to organize seperetly from your route files:</p>
+					<code class="multiline language-ctrl">
+						<&#63;php
+
+						namespace App\Http\Controllers;
+
+						use Illuminate\Http\Request;
+						Use App\Models\Datatable;
+						use DataTables;
+
+						class DatatableController extends Controller
+						{
+						    /**
+						     * Display a listing of the resource.
+						     *
+						     * &#64;return \Illuminate\Http\Response
+						     */
+
+					    //API (features)
+
+					    public function row_details()
+					    {
+					        $datatables = Datatable::all();
+					        return view('features.api.row_details', compact('datatables'));       
+					    }</code>
+					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+					</div>
+				<div id="model" class="model">
+					<p>Laravel includes Eloquent, an object-relational mapper (ORM) that makes it enjoyable to interact with your database. When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table:</p>
+					<code class="multiline language-model">
+						<&#63;php
+
+						namespace App\Models;
+
+						use Illuminate\Database\Eloquent\Factories\HasFactory;
+						use Illuminate\Database\Eloquent\Model;
+
+						class Datatable extends Model
+						{
+						    use HasFactory;
+
+						    protected $fillable = [
+						        
+						        'id', 'first_name', 'last_name', 'name_abrv', 'position', 'email', 'office', 'start_date_epoch', 
+						        'start_date', 'age', 'salary', 'seq', 'extn'
+						    ];
+						}</code>
+					<p>In addition to the above code, the "Datatable.php" file (Model) will manage ,work and support all common relationships with ease.</p>
 				</div>
 			</div>
 		</section>

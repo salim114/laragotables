@@ -172,7 +172,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/ajax/simple', 'App\Http\Controllers\DatatableController&#64;simple');
+						    Route::get('features/api/add_row', 'App\Http\Controllers\DatatableController&#64;add_row');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -198,10 +198,10 @@
 
 					    //API (features)
 
-					    public function simple()
+					    public function add_row()
 					    {
 					        $datatables = Datatable::all();
-					        return view('features.ajax.simple', compact('datatables'));       
+					        return view('features.api.add_row', compact('datatables'));       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>
