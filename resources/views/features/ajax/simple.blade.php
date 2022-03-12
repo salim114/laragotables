@@ -150,14 +150,13 @@
 						|
 						*/
 
-						// and all the others group with their routes
 						//Ajax (features)
+
 						Route::group([], function() {
-						    // and all the others routes
+						    
 						    Route::get('features/ajax/simple', 'App\Http\Controllers\DatatableController&#64;simple');
 
-						});
-					    //</code>
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>					
 				</div>
 				<div id="controller" class="ctrl">
@@ -179,14 +178,13 @@
 						     * &#64;return \Illuminate\Http\Response
 						     */
 
-					    //Ajax
+					    //Ajax (features)
 
 					    public function simple()
 					    {
 					        $datatables = Datatable::all();
 					        return view('features.ajax.simple', compact('datatables'));       
-					    }
-						//</code>
+					    }</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
@@ -216,8 +214,7 @@
 						        'id', 'first_name', 'last_name', 'name_abrv', 'position', 'email', 'office', 'start_date_epoch', 
 						        'start_date', 'age', 'salary', 'seq', 'extn'
 						    ];
-						}
-						//</code>
+						}</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

@@ -115,7 +115,7 @@
             <div class="col-md-6 col-md-offset-3" data-aos="fade-up">
                <div class="service-box" id="box1">
                   <i class="fas fa-th"></i>
-                  <h3><a href="{{ url('features') }}">Features</a></h3>
+                  <h3><a href="{{ url('features') }}">Features (examples)</a></h3>
                   <p>One of the best ways to learn how to do anything new (including software APIs!) is to get your hands dirty as quickly as possible. These examples will show you ....</p>
                   <a href="{{ url('features') }}" class="btn btn-dark center-block mt-2 mb-2">Explore »</a>
                </div>

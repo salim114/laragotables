@@ -170,11 +170,11 @@
 						|
 						*/
 						
-						//API (features)
+						//Ajax (features)
 
 						Route::group([], function() {
 						    
-						    Route::get('features/advanced_init/deep', 'App\Http\Controllers\DatatableController&#64;deep');
+						    Route::get('features/ajax/deep', 'App\Http\Controllers\DatatableController&#64;deep');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -198,12 +198,12 @@
 						     * &#64;return \Illuminate\Http\Response
 						     */
 
-					    //API (features)
+					    //Ajax (features)
 
 					    public function deep()
 					    {
 					        $datatables = Datatable::all();
-					        return view('features.advanced_init.deep', compact('datatables'));       
+					        return view('features.ajax.deep', compact('datatables'));       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>
