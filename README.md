@@ -7,17 +7,15 @@
 
 ## About LaraGoTables
 
-LaraGoTables is a contribution for Laravel community trying to clear the way for the integration of the excellent DataTables JQuery inside projects and to enlarge the use of it, throw its varieties of features (examples) and extensions..
+LaraGoTables is a contribution for Laravel community trying to clear the way for the integration of the excellent DataTables JQuery inside projects and to enlarge the use of it, throw its varieties of features (examples) and extensions.
 
-## Laravel Introduction
+## Laravel introduction
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+[Laravel](https://laravel.com/) is a free, open-source PHP web framework, created by Taylor Otwell. It is a powerful Model-View-Controller (MVC) PHP framework, designed for developers who need a simple and elegant toolkit to create full-featured web applications.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Datatables introduction 
 
-## Introduction DataTables
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+[Datatables](https://datatables.net/) is a powerful Javascript library for adding interaction features to HTML tables, and while simplicity is a core design principle for the project as a whole, it can be quite daunting to get started. In this article I'll introduce the basic concepts that you will need to know to get going with DataTables, and you will find that in a very short space of time you'll be able to create advanced table controls, tuned to your specific requirements.
 
 ### Setup:
 
