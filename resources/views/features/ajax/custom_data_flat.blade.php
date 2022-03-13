@@ -199,8 +199,7 @@
 
 					    public function custom_data_flat()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.ajax.custom_data_flat', compact('datatables'));       
+					        return view('features.ajax.custom_data_flat');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

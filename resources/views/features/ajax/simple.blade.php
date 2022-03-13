@@ -182,7 +182,6 @@
 
 					    public function simple()
 					    {
-					        $datatables = Datatable::all();
 					        return view('features.ajax.simple', compact('datatables'));       
 					    }</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>

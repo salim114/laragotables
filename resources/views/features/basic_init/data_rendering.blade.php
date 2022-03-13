@@ -379,8 +379,7 @@
 
 					    public function data_rendering()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.basic_init.data_rendering', compact('datatables'));       
+					        return view('features.basic_init.data_rendering');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

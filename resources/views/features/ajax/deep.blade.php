@@ -202,8 +202,7 @@
 
 					    public function deep()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.ajax.deep', compact('datatables'));       
+					        return view('features.ajax.deep');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

@@ -201,8 +201,7 @@
 
 					    public function null_data_source()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.ajax.null_data_source', compact('datatables'));       
+					        return view('features.ajax.null_data_source');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

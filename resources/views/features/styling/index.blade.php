@@ -90,9 +90,9 @@
 				<div class="epilogue">
 					<p>Please refer to the <a href="http://www.datatables.net">DataTables documentation</a> for full information about its API properties and methods.<br>
 					Additionally, there are a wide range of <a href="http://www.datatables.net/extensions">extensions</a> and <a href=
-					"http://www.datatables.net/plug_ins">plug_ins</a> which extend the capabilities of DataTables.</p>
+					"https://www.datatables.net/plug-ins/index">plug_ins</a> which extend the capabilities of DataTables.</p>
 					<p class="copyright">DataTables designed and created by <a href="http://www.sprymedia.co.uk">SpryMedia Ltd</a> © 2007-2022<br>
-					DataTables is licensed under the <a href="http://www.datatables.net/mit">MIT license</a>.</p>
+					DataTables is licensed under the <a href="https://datatables.net/license/mit">MIT license</a>.</p>
 				</div>
 			</div>
 		</div>

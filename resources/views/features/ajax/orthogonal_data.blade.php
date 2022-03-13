@@ -206,8 +206,7 @@
 
 					    public function orthogonal_data()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.ajax.orthogonal_data', compact('datatables'));       
+					        return view('features.ajax.orthogonal_data');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

@@ -78,8 +78,7 @@ class DatatableController extends Controller
 
     public function data_rendering()
     {
-        $datatables = Datatable::all();
-        return view('features.basic_init.data_rendering', compact('datatables'));       
+        return view('features.basic_init.data_rendering');       
     }
 
     public function alt_pagination()
@@ -374,8 +373,7 @@ class DatatableController extends Controller
 
     public function ajax_ds()
     {
-        $datatables = Datatable::all();
-        return view('features.data_sources.ajax', compact('datatables'));       
+        return view('features.data_sources.ajax');       
     }
 
     public function dom_ds()
@@ -497,32 +495,27 @@ class DatatableController extends Controller
 
     public function custom_data_flat()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.custom_data_flat', compact('datatables'));       
+        return view('features.ajax.custom_data_flat');       
     }
 
     public function custom_data_property()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.custom_data_property', compact('datatables'));       
+        return view('features.ajax.custom_data_property');       
     }
 
     public function deep()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.deep', compact('datatables'));       
+        return view('features.ajax.deep');       
     }
 
     public function defer_render()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.defer_render', compact('datatables'));       
+        return view('features.ajax.defer_render');       
     }
 
     public function null_data_source()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.null_data_source', compact('datatables'));       
+        return view('features.ajax.null_data_source');       
     }
 
     public function objects()
@@ -533,20 +526,17 @@ class DatatableController extends Controller
 
     public function objects_subarrays()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.objects_subarrays', compact('datatables'));       
+        return view('features.ajax.objects_subarrays');       
     }
 
     public function orthogonal_data()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.orthogonal_data', compact('datatables'));       
+        return view('features.ajax.orthogonal_data');       
     }
 
     public function simple()
     {
-        $datatables = Datatable::all();
-        return view('features.ajax.simple', compact('datatables'));       
+        return view('features.ajax.simple');       
     }
 
     //Server-side

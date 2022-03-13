@@ -170,8 +170,7 @@
 
 					    public function ajax()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.data_sources.ajax', compact('datatables'));       
+					        return view('features.data_sources.ajax');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>
