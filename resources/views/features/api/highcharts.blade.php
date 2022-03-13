@@ -8,9 +8,8 @@
 	<title>DataTables feature - HighCharts Integration</title>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/datatables.min.css') }}">
-	{{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/searchPanes.dataTables.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/select.dataTables.css') }}"> --}}
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/searchPanes.dataTables.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/select.dataTables.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/demo.css') }}">
 	<style type="text/css" class="init">
@@ -19,9 +18,8 @@
 	<!-- Scripts -->
 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script type="text/javascript" language="javascript" src="{{ asset('js/jquery.dataTables.js') }}"></script>
-		<script type="text/javascript" language="javascript" src="{{ asset('js/datatables.min.js') }}"></script> 
-	{{-- <script type="text/javascript" language="javascript" src="{{ asset('js/dataTables.searchPanes.js') }}"></script>
-	<script type="text/javascript" language="javascript" src="{{ asset('js/dataTables.select.js') }}"></script> --}}
+	<script type="text/javascript" language="javascript" src="{{ asset('js/dataTables.searchPanes.js') }}"></script>
+	<script type="text/javascript" language="javascript" src="{{ asset('js/dataTables.select.js') }}"></script>
 	<script type="text/javascript" language="javascript" src="//code.highcharts.com/highcharts.js"></script>
 	<script type="text/javascript" language="javascript" src="{{ asset('js/shCore.js') }}"></script>
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
@@ -90,7 +88,7 @@
 				<p>This example shows how to integrate the excellent <a href="https://www.highcharts.com/">HighCharts</a> library into your project along-side DataTables. As you
 				modify the table by filtering it, the chart is updated automatically to reflect the state of the table.</p>
 				<p><a href="/extensions/searchpanes">SearchPanes</a> is also used here to show its integration with DataTables' filtering. For more information take a look at the
-				<a href="/blog/2020-09-01.html">blog post on highcharts</a>.</p>
+				<a href="https://datatables.net/blog/2020-09-01.html">blog post on highcharts</a>.</p>
 			</div>
 			<div class="demo-html">
 				<table id="example" class="display" style="width:100%">
