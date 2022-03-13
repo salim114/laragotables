@@ -223,8 +223,7 @@
 
 					    public function tabs_and_scrolling()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.api.tabs_and_scrolling', compact('datatables'));       
+					        return view('features.api.tabs_and_scrolling');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

@@ -453,13 +453,11 @@ class DatatableController extends Controller
 
     public function row_details()
     {
-        $datatables = Datatable::all();
-        return view('features.api.row_details', compact('datatables'));       
+        return view('features.api.row_details');       
     }
     public function row_details_stateSave()
     {
-        $datatables = Datatable::all();
-        return view('features.api.row_details_stateSave', compact('datatables'));       
+        return view('features.api.row_details_stateSave');       
     }
 
     public function select_row()
@@ -482,8 +480,7 @@ class DatatableController extends Controller
 
     public function tabs_and_scrolling()
     {
-        $datatables = Datatable::all();
-        return view('features.api.tabs_and_scrolling', compact('datatables'));       
+        return view('features.api.tabs_and_scrolling');       
     }
     public function highcharts()
     {

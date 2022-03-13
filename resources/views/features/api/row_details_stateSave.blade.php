@@ -280,8 +280,7 @@
 
 					    public function row_details_stateSave()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.api.row_details_stateSave', compact('datatables'));       
+					        return view('features.api.row_details_stateSave');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>
