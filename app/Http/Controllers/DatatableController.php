@@ -393,8 +393,8 @@ class DatatableController extends Controller
     public function server_side(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -554,8 +554,8 @@ class DatatableController extends Controller
     public function custom_vars(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -565,8 +565,8 @@ class DatatableController extends Controller
     public function defer_loading(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -576,8 +576,8 @@ class DatatableController extends Controller
     public function ids(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -587,8 +587,8 @@ class DatatableController extends Controller
     public function jsonp(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
             ->make(true);
         }
 
@@ -598,8 +598,8 @@ class DatatableController extends Controller
     public function object_data(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -609,8 +609,8 @@ class DatatableController extends Controller
     public function pipeline(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -620,8 +620,8 @@ class DatatableController extends Controller
     public function post(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -631,8 +631,8 @@ class DatatableController extends Controller
     public function return_search(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
@@ -642,8 +642,8 @@ class DatatableController extends Controller
     public function row_details_ss(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
             ->make(true);
         }
 
@@ -653,8 +653,8 @@ class DatatableController extends Controller
     public function select_rows(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
             ->make(true);
         }
 
@@ -664,8 +664,8 @@ class DatatableController extends Controller
     public function simple_ss(Request $request)
     {
          if ($request->ajax()) {
-            $data = Datatable::get();
-            return Datatables::of($data)
+            $datatables = Datatable::all();
+            return Datatables::of($datatables)
                 ->make(true);
         }
 
