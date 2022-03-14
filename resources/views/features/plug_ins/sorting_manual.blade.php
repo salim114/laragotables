@@ -53,7 +53,7 @@
 				<code>$.fn.dataTable.ext.type.order</code> object. For more information about ordering plug_ins, creating them and their requirements, please refer to the plug-in
 				development documentation.</p>
 				<p>This example shows ordering with using an enumerated type.</p>
-				<p>A wide variety of ready made ordering plug_ins can be found on <a href="//datatables.net/plug_ins/sorting">the DataTables plug_ins page</a>.</p>
+				<p>A wide variety of ready made ordering plug_ins can be found on <a href="//datatables.net/plug-ins/sorting">the DataTables plug_ins page</a>.</p>
 			</div>
 			<div class="demo-html">
 				<table id="example" class="display" style="width:100%">
@@ -155,6 +155,84 @@
 					<p>The script used to perform the server-side processing for this table is shown below. Please note that this is just an example script using PHP. Server-side
 					processing scripts can be written in any language, using <a href="//datatables.net/manual/server-side">the protocol described in the DataTables
 					documentation</a>.</p>
+				</div>
+				<div id="route" class="route">
+					<p>The route shown below may be accessed by entering the defined route's URL in your browser:</p>
+					<code class="multiline language-route">
+						<&#63;php
+
+						use Illuminate\Support\Facades\Route; 
+						use App\Http\Controllers\DatatableController;
+
+						/*
+						|--------------------------------------------------------------------------
+						| Web Routes
+						|--------------------------------------------------------------------------
+						|
+						| Here is where you can register web routes for your application. These
+						| routes are loaded by the RouteServiceProvider within a group which
+						| contains the "web" middleware group. Now create something great!
+						|
+						*/
+						
+						//plug_ins (features)
+
+						Route::group([], function() {
+						    
+						    Route::get('features/plug_ins/sorting_manual', 'App\Http\Controllers\DatatableController&#64;sorting_manual');
+
+						});</code>
+					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+				</div>
+				<div id="controller" class="ctrl">
+					<p>The controller shown below is used to defining all of your request handling logic you may wish to organize seperetly from your route files:</p>
+					<code class="multiline language-ctrl">
+						<&#63;php
+
+						namespace App\Http\Controllers;
+
+						use Illuminate\Http\Request;
+						Use App\Models\Datatable;
+						use DataTables;
+
+						class DatatableController extends Controller
+						{
+						    /**
+						     * Display a listing of the resource.
+						     *
+						     * &#64;return \Illuminate\Http\Response
+						     */
+
+					    //plug_ins (features)
+
+					    public function sorting_manual()
+					    {
+					        $datatables = Datatable::all();
+					        return view('features.plug_ins.sorting_manual', compact('datatables'));       
+					    }</code>
+					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+					</div>
+				<div id="model" class="model">
+					<p>Laravel includes Eloquent, an object-relational mapper (ORM) that makes it enjoyable to interact with your database. When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table:</p>
+					<code class="multiline language-model">
+						<&#63;php
+
+						namespace App\Models;
+
+						use Illuminate\Database\Eloquent\Factories\HasFactory;
+						use Illuminate\Database\Eloquent\Model;
+
+						class Datatable extends Model
+						{
+						    use HasFactory;
+
+						    protected $fillable = [
+						        
+						        'id', 'first_name', 'last_name', 'name_abrv', 'position', 'email', 'office', 'start_date_epoch', 
+						        'start_date', 'age', 'salary', 'seq', 'extn'
+						    ];
+						}</code>
+					<p>In addition to the above code, the "Datatable.php" file (Model) will manage ,work and support all common relationships with ease.</p>
 				</div>
 			</div>
 		</section>
