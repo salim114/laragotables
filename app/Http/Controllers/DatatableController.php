@@ -237,8 +237,7 @@ class DatatableController extends Controller
 
         public function ajax()
     {
-        $datatables = Datatable::all();
-        return view('features.non_jquery.ajax', compact('datatables'));       
+        return view('features.non_jquery.ajax');       
     }
 
     public function dom_events()
