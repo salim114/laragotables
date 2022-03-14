@@ -152,6 +152,89 @@
 					processing scripts can be written in any language, using <a href="//datatables.net/manual/server-side">the protocol described in the DataTables
 					documentation</a>.</p>
 				</div>
+				<div id="route" class="route">
+					<p>The route shown below may be accessed by entering the defined route's URL in your browser:</p>
+					<code class="multiline language-route">
+						<&#63;php
+
+						use Illuminate\Support\Facades\Route; 
+						use App\Http\Controllers\DatatableController;
+
+						/*
+						|--------------------------------------------------------------------------
+						| Web Routes
+						|--------------------------------------------------------------------------
+						|
+						| Here is where you can register web routes for your application. These
+						| routes are loaded by the RouteServiceProvider within a group which
+						| contains the "web" middleware group. Now create something great!
+						|
+						*/
+						
+						//Server-side (features)
+
+						Route::group([], function() {
+						    
+						    Route::get('features/server_side/simple', 'App\Http\Controllers\DatatableController&#64;simple_ss')->name('simple_ss');
+
+						});</code>
+					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+				</div>
+				<div id="controller" class="ctrl">
+					<p>The controller shown below is used to defining all of your request handling logic you may wish to organize seperetly from your route files:</p>
+					<code class="multiline language-ctrl">
+						<&#63;php
+
+						namespace App\Http\Controllers;
+
+						use Illuminate\Http\Request;
+						Use App\Models\Datatable;
+						use DataTables;
+
+						class DatatableController extends Controller
+						{
+						    /**
+						     * Display a listing of the resource.
+						     *
+						     * &#64;return \Illuminate\Http\Response
+						     */
+
+					    //Server-side (features)
+
+					    public function simple_ss(Request $request)
+					    {
+					         if ($request->ajax()) {
+					            $datatables = Datatable::all();
+					            return Datatables::of($datatables)
+					                ->make(true);
+					        }
+
+					        return view('features.server_side.simple');
+					    }  </code>
+					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
+					</div>
+				<div id="model" class="model">
+					<p>Laravel includes Eloquent, an object-relational mapper (ORM) that makes it enjoyable to interact with your database. When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table:</p>
+					<code class="multiline language-model">
+						<&#63;php
+
+						namespace App\Models;
+
+						use Illuminate\Database\Eloquent\Factories\HasFactory;
+						use Illuminate\Database\Eloquent\Model;
+
+						class Datatable extends Model
+						{
+						    use HasFactory;
+
+						    protected $fillable = [
+						        
+						        'id', 'first_name', 'last_name', 'name_abrv', 'position', 'email', 'office', 'start_date_epoch', 
+						        'start_date', 'age', 'salary', 'seq', 'extn'
+						    ];
+						}</code>
+					<p>In addition to the above code, the "Datatable.php" file (Model) will manage ,work and support all common relationships with ease.</p>
+				</div>
 			</div>
 		</section>
 	</div>

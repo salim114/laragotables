@@ -535,7 +535,7 @@ class DatatableController extends Controller
         return view('features.ajax.simple');       
     }
 
-    //Server-side
+    //Server_side
 
     public function custom_vars(Request $request)
     {
