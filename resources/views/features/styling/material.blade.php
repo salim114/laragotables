@@ -46,7 +46,7 @@
 				<p>This is a technical preview example and the Material Design integration for DataTables is not yet complete. This tech preview is provided to gauge the interest
 				in a Material integration for DataTables and also to estimate the work that would be involved in fully supporting the styling library. As such, the Material design
 				implementation for DataTables can currently only be installed from source and is not available in package managers or the DataTables downloader.</p>
-				<p>If you would like to see continued development of the MDL integration for DataTables, please <a href="/forums">get in touch</a> so we can know what integrations
+				<p>If you would like to see continued development of the MDL integration for DataTables, please <a href="https://datatables.net/forums/">get in touch</a> so we can know what integrations
 				are popular.</p>
 			</div>
 			<div class="demo-html">

@@ -36,7 +36,7 @@
 				<p>This example shows DataTables integrated with <a href="http://getuikit.com/">UIKit 3</a>.</p>
 				<p>The DataTables integration with UIKit is still in development and not all elements might work correctly yet. Only once all of DataTables extensions fully
 				support UIKit will the integration be complete and available via the DataTables download builder.</p>
-				<p>If you would like to see continued development of the UIKit integration for DataTables, please <a href="/forums">get in touch</a> so we can know what
+				<p>If you would like to see continued development of the UIKit integration for DataTables, please <a href="https://datatables.net/forums/">get in touch</a> so we can know what
 				integrations are popular.</p>
 			</div>
 			<div class="demo-html">
