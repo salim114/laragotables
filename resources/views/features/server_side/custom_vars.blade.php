@@ -24,28 +24,31 @@
 	
 	$(document).ready(function() {
 		$('#example').DataTable( {
-			"processing": true,
-			"serverSide": true,
-			"ajax": {
-				"url": "{{ route('simple_ss') }}",
-				"data": function ( d ) {
+			processing: true,
+			serverSide: true,
+			ajax: {
+				url: '{{ route('simple_ss') }}',
+				data: function ( d ) {
 					d.myKey = "myValue";
 					// d.custom = $('#myInput').val();
 					// etc
 				}
 			},
+			//In the offical documentation the columns data option does not existe in this example,
+			//although for the need of server side rendring data under Laravel it is a must.
 			columns: [
-	            {data: 'first_name', name: 'first_name'},
-	            {data: 'last_name', name: 'last_name'},
-	            {data: 'position', name: 'email'},
-	            {data: 'office', name: 'office'},
-	            {data: 'start_date',  
+	            { data: 'first_name' },
+	            { data: 'last_name' },
+	            { data: 'position' },
+	            { data: 'office' },
+	            { data: 'start_date',  
 	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 	            },  
-	            {data: 'salary', 
+	            { data: 'salary', 
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	},
 	        ] 
+	        //end comment section
 		} );
 	} );
 
@@ -107,16 +110,31 @@
 					<code class="multiline language-js">
 						$(document).ready(function() {
 							$('#example').DataTable( {
-								&quot;processing&quot;: true,
-								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: {
-									&quot;url&quot;: &quot;&#123;&#123; route('simple_ss') &#125;&#125;&quot;,
-									&quot;data&quot;: function ( d ) {
+								processing: true,
+								serverSide: true,
+								ajax: {
+									url: '&#123;&#123; route('simple_ss') &#125;&#125;',
+									data: function ( d ) {
 										d.myKey = &quot;myValue&quot;;
 										// d.custom = $('#myInput').val();
 										// etc
 									}
-								}
+								},
+								//In the offical documentation the columns data option does not existe in this example,
+								//although for the need of server side rendring data under Laravel it is a must.
+								columns: [
+						            { data: 'first_name' },
+						            { data: 'last_name' },
+						            { data: 'position' },
+						            { data: 'office' },
+						            { data: 'start_date',  
+						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
+						            },  
+						            { data: 'salary', 
+						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
+						        	},
+						        ] 
+						        //end comment section
 							} );
 						} );</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
@@ -176,7 +194,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/server_side/simple', 'App\Http\Controllers\DatatableController&#64;simple_ss')->name('simple_ss');
+						    Route::get('features/server_side/custom_vars', 'App\Http\Controllers\DatatableController&#64;custom_vars')->name('custom_vars');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -202,7 +220,7 @@
 
 					    //Server-side (features)
 
-					    public function simple_ss(Request $request)
+					    public function custom_vars(Request $request)
 					    {
 					         if ($request->ajax()) {
 					            $datatables = Datatable::all();
@@ -210,7 +228,7 @@
 					                ->make(true);
 					        }
 
-					        return view('features.server_side.simple');
+					        return view('features.server_side.custom_vars');
 					    }  </code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

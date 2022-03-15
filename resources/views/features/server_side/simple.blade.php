@@ -24,20 +24,20 @@
 	
 	$(document).ready(function() {
 		$('#example').DataTable( {
-			"processing": true,
-			"serverSide": true,
-			ajax: "{{ route('simple_ss') }}",
+			processing: true,
+			serverSide: true,
+			ajax: '{{ route('simple_ss') }}',
 			//In the offical documentation the columns data option does not existe in this example,
         	//for the need of server side rendring data under Laravel it is a must
 	        columns: [
-	            {data: 'first_name', name: 'first_name'},
-	            {data: 'last_name', name: 'last_name'},
-	            {data: 'position', name: 'email'},
-	            {data: 'office', name: 'office'},
-	            {data: 'start_date',  
+	            { data: 'first_name' },
+	            { data: 'last_name' },
+	            { data: 'position' },
+	            { data: 'office' },
+	            { data: 'start_date',  
 	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 	            },  
-	            {data: 'salary', 
+	            { data: 'salary', 
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	}
 			]
@@ -101,22 +101,22 @@
 					<code class="multiline language-js">
 						$(document).ready(function() {
 							$('#example').DataTable( {
-								&quot;processing&quot;: true,
-								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: &quot;&#123;&#123; route('simple_ss') &#125;&#125;&quot;
+								processing: true,
+								serverSide: true,
+								ajax: '&#123;&#123; route('simple_ss') &#125;&#125;'
 								//In the offical documentation the columns data option does not existe in this example,
 								//Although, for the need of server side rendring data under Laravel it is a must.
 								columns: [
-					            {data: 'first_name', name: 'first_name'},
-					            {data: 'last_name', name: 'last_name'},
-					            {data: 'position', name: 'email'},
-					            {data: 'office', name: 'office'},
-					            {data: 'start_date',  
-					            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
-					            },  
-					            {data: 'salary', 
-					            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
-					        	}
+						            { data: 'first_name' },
+						            { data: 'last_name' },
+						            { data: 'position' },
+						            { data: 'office' },
+						            { data: 'start_date',  
+						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
+						            },  
+						            { data: 'salary', 
+						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
+						        	}
 								]
 								//end comment section 
 							} );

@@ -8,7 +8,7 @@ if ( isset( $_POST['src'] ) && (
 }
 
 else {
-	echo '';
+	echo 'no data';
 }
 
 

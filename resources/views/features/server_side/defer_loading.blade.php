@@ -24,22 +24,25 @@
 	
 	$(document).ready(function() {
 		$('#example').DataTable( {
-			"processing": true,
-			"serverSide": true,			
-			ajax: "{{ route('defer_loading') }}",
+			processing: true,
+			serverSide: true,	
+			ajax: '{{ route('defer_loading') }}',
+			//In the offical documentation the columns data option does not existe in this example,
+			//although for the need of server side rendring data under Laravel it is a must.
 	        columns: [
-	            {data: 'first_name', name: 'first_name'},
-	            {data: 'last_name', name: 'last_name'},
-	            {data: 'position', name: 'email'},
-	            {data: 'office', name: 'office'},
-	            {data: 'start_date',  
+	            { data: 'first_name' },
+	            { data: 'last_name' },
+	            { data: 'position' },
+	            { data: 'office' },
+	            { data: 'start_date',  
 	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 	            },  
-	            {data: 'salary', 
+	            { data: 'salary', 
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	}
-			] 		
-			//"deferLoading": 57,	
+			]	
+			//end comment section
+			//deferLoading: 57,	
 		} );
 	} );
 
@@ -101,11 +104,11 @@
 					<code class="multiline language-js">
 						$(document).ready(function() {
 							$('#example').DataTable( {
-								&quot;processing&quot;: true,
-								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: &quot;&#123;&#123; route('defer_loading') &#125;&#125;&quot;,
+								processing: true,
+								serverSide: true,
+								ajax: '&#123;&#123; route('defer_loading') &#125;&#125;',
 								//In the offical documentation the columns data option does not existe in this example,
-								//although for the need of server side rendring data under Laravel it is a must
+								//although for the need of server side rendring data under Laravel it is a must.
 								columns: [
 						            {data: 'first_name', name: 'first_name'},
 						            {data: 'last_name', name: 'last_name'},
@@ -119,7 +122,7 @@
 						        	}
 								] 	
 								//end comment section
-								//&quot;deferLoading&quot;: 57
+								//deferLoading: 57,
 							} );
 						} );</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
