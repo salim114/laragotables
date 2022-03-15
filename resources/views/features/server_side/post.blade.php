@@ -31,14 +31,14 @@
 				//"type": "POST"
 			},
 			columns: [
-	            {data: 'first_name'},
-	            {data: 'last_name'},
-	            {data: 'position'},
-	            {data: 'office'},
-	            {data: 'start_date',  
+	            { data: 'first_name' },
+	            { data: 'last_name' },
+	            { data: 'position' },
+	            { data: 'office' },
+	            { data: 'start_date',  
 	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 	            },  
-	            {data: 'salary', 
+	            { data: 'salary', 
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	}
 	        ] 
@@ -105,15 +105,15 @@
 								processing: true,
 								serverSide: true,
 								ajax: {
-									url: &quot;&#123;&#123; route('post') &#125;&#125;&quot;,
-									//&quot;type&quot;: &quot;POST&quot;
+									url: '&#123;&#123; route('post') &#125;&#125;',
+									//type: 'POST'
 								},
 								columns: [
 									{ data: 'first_name' },
-									{ data: 'last_name' },
-									{ data: 'position' },
-									{ data: 'office' },
-									{ data: 'start_date',  
+						            { data: 'last_name' },
+						            { data: 'position' },
+						            { data: 'office' },
+						            { data: 'start_date',  
 						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 						            },  
 						            { data: 'salary', 

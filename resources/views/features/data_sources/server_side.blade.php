@@ -41,7 +41,7 @@
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	},
 	        ]   
-	        //end comment section     
+	        //end comment section.     
 		} );
 	} );
 
@@ -119,7 +119,7 @@
 						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 						        	}
 								]	
-								//end comment section
+								//end comment section.
 							} );
 						} );</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>

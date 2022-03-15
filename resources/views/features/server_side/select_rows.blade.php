@@ -26,21 +26,24 @@
 		var selected = [];
 
 		$("#example").DataTable({
-			"processing": true,
-			"serverSide": true,
-			ajax: "{{ route('select_rows') }}",
+			processing: true,
+			serverSide: true,
+			ajax: '{{ route('select_rows') }}',
+			//In the offical documentation the columns data option does not existe in this example,
+			//although for the need of server side rendring data under Laravel it is a must.
 	        columns: [
-	            {data: 'first_name', name: 'first_name'},
-	            {data: 'last_name', name: 'last_name'},
-	            {data: 'position', name: 'email'},
-	            {data: 'office', name: 'office'},
-	            {data: 'start_date',  
+	            { data: 'first_name' },
+	            { data: 'last_name' },
+	            { data: 'position' },
+	            { data: 'office' },
+	            { data: 'start_date',  
 	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 	            },  
-	            {data: 'salary', 
+	            { data: 'salary', 
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	}
 			],
+			//end comment section.
 			"rowCallback": function( row, data ) {
 				if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
 					$(row).addClass('selected');
@@ -119,23 +122,24 @@
 							var selected = [];
 
 							$(&quot;#example&quot;).DataTable({
-								&quot;processing&quot;: true,
-								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: &quot;&#123;&#123; route('select_rows') &#125;&#125;&quot;
-								//this section does not existe in the offical documentation
-								&quot;columns&quot;: [
-						            {data: 'first_name', name: 'first_name'},
-						            {data: 'last_name', name: 'last_name'},
-						            {data: 'position', name: 'email'},
-						            {data: 'office', name: 'office'},
-						            {data: 'start_date',  
+								processing: true,
+								serverSide: true,
+								ajax: '&#123;&#123; route('select_rows') &#125;&#125;'
+								//In the offical documentation the columns data option does not existe in this example,
+								//although for the need of server side rendring data under Laravel it is a must.
+								columns: [
+						            { data: 'first_name' },
+						            { data: 'last_name' },
+						            { data: 'position' },
+						            { data: 'office' },
+						            { data: 'start_date',  
 						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 						            },  
-						            {data: 'salary', 
+						            { data: 'salary', 
 						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 						        	}
 								],
-								//end comment section
+								//end comment section.
 								&quot;rowCallback&quot;: function( row, data ) {
 									if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
 										$(row).addClass('selected');

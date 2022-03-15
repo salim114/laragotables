@@ -36,22 +36,22 @@
 
 	$(document).ready(function() {
 		var dt = $('#example').DataTable( {
-			"processing": true,
-			"serverSide": true,
-			ajax: "{{ route('row_details_ss') }}",
-			"columns": [ 
+			processing: true,
+			serverSide: true,
+			ajax: '{{ route('row_details_ss') }}',
+			columns: [ 
 				{
-					"class":          "details-control",
-					"orderable":      false,
-					"data":           null,
-					"defaultContent": ""
+					class:          'details-control',
+					orderable:      false,
+					data:           null,
+					defaultContent: ''
 				},
-				{ "data": "first_name" },
-				{ "data": "last_name" },
-				{ "data": "position" },
-				{ "data": "office" }
+				{ data: 'first_name' },
+				{ data: 'last_name' },
+				{ data: 'position' },
+				{ data: 'office' }
 			],
-			"order": [[1, 'asc']]
+			order: [[1, 'asc']]
 		} );
 
 		// Array to track the ids of the details displayed rows
@@ -155,22 +155,22 @@
 
 						$(document).ready(function() {
 							var dt = $('#example').DataTable( {
-								&quot;processing&quot;: true,
-								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: &quot;&#123;&#123; route('row_details_ss') &#125;&#125;&quot;
-								&quot;columns&quot;: [ 
+								processing: true,
+								serverSide: true,
+								ajax: '&#123;&#123; route('row_details_ss') &#125;&#125;'
+								columns: [ 
 									{
-										&quot;class&quot;:          &quot;details-control&quot;,
-										&quot;orderable&quot;:      false,
-										&quot;data&quot;:           null,
-										&quot;defaultContent&quot;: &quot;&quot;
+										class:          'details-control',
+										orderable:      false,
+										data:           null,
+										defaultContent: ''
 									},
-									{ &quot;data&quot;: &quot;first_name&quot; },
-									{ &quot;data&quot;: &quot;last_name&quot; },
-									{ &quot;data&quot;: &quot;position&quot; },
-									{ &quot;data&quot;: &quot;office&quot; }
+									{ data: 'first_name' },
+									{ data: 'last_name' },
+									{ data: 'position' },
+									{ data: 'office' }
 								],
-								&quot;order&quot;: [[1, 'asc']]
+								order: [[1, 'asc']]
 							} );
 
 							// Array to track the ids of the details displayed rows

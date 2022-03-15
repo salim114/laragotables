@@ -171,7 +171,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/server_side/simple', 'App\Http\Controllers\DatatableController&#64;simple_ss')->name('simple_ss');
+						    Route::get('features/server_side/ids', 'App\Http\Controllers\DatatableController&#64;ids')->name('ids');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -197,7 +197,7 @@
 
 					    //Server-side (features)
 
-					    public function simple_ss(Request $request)
+					    public function ids(Request $request)
 					    {
 					         if ($request->ajax()) {
 					            $datatables = Datatable::all();
@@ -205,7 +205,7 @@
 					                ->make(true);
 					        }
 
-					        return view('features.server_side.simple');
+					        return view('features.server_side.ids');
 					    }  </code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

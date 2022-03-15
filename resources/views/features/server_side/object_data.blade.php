@@ -24,18 +24,18 @@
 	
 	$(document).ready(function() {
 		$('#example').DataTable( {
-			"processing": true,
-			"serverSide": true,
-			ajax: "{{ route('object_data') }}",
+			processing: true,
+			serverSide: true,
+			ajax: '{{ route('object_data') }}',
 	        columns: [
-	            {data: 'first_name', name: 'first_name'},
-	            {data: 'last_name', name: 'last_name'},
-	            {data: 'position', name: 'email'},
-	            {data: 'office', name: 'office'},
-	            {data: 'start_date',  
+	            { data: 'first_name' },
+	            { data: 'last_name' },
+	            { data: 'position' },
+	            { data: 'office' },
+	            { data: 'start_date',  
 	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 	            },  
-	            {data: 'salary', 
+	            { data: 'salary', 
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	}
 			]
@@ -96,16 +96,20 @@
 					<code class="multiline language-js">
 						$(document).ready(function() {
 							$('#example').DataTable( {
-								&quot;processing&quot;: true,
-								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: &quot;&#123;&#123; route('object_data') &#125;&#125;&quot;,
-								&quot;columns&quot;: [
-									{ &quot;data&quot;: &quot;first_name&quot; },
-									{ &quot;data&quot;: &quot;last_name&quot; },
-									{ &quot;data&quot;: &quot;position&quot; },
-									{ &quot;data&quot;: &quot;office&quot; },
-									{ &quot;data&quot;: &quot;start_date&quot; },
-									{ &quot;data&quot;: &quot;salary&quot; }
+								processing: true,
+								serverSide: true,
+								ajax: '&#123;&#123; route('object_data') &#125;&#125;',
+								columns: [
+									{ data: 'first_name' },
+						            { data: 'last_name' },
+						            { data: 'position' },
+						            { data: 'office' },
+						            { data: 'start_date',  
+						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
+						            },  
+						            { data: 'salary', 
+						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
+						        	}
 								]
 							} );
 						} );</code>
