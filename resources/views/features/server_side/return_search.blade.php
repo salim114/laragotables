@@ -98,7 +98,8 @@
 						$(document).ready(function() {
 							$('#example').DataTable( {
 								ajax: &quot;&#123;&#123; route('return_search') &#125;&#125;&quot;
-								//this section does not existe in the offical documentation
+								//In the offical documentation the columns data option does not existe in this example,
+								//although for the need of server side rendring data under Laravel it is a must
 								columns: [
 						            {data: 'first_name', name: 'first_name'},
 						            {data: 'last_name', name: 'last_name'},
@@ -110,7 +111,7 @@
 						            {data: 'salary', 
 						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 						        	}
-								],
+								],	
 								//end comment section
 								processing: true,
 								search: {

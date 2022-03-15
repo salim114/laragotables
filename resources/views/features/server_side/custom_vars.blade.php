@@ -110,7 +110,7 @@
 								&quot;processing&quot;: true,
 								&quot;serverSide&quot;: true,
 								&quot;ajax&quot;: {
-									&quot;url&quot;: &quot;scripts/server_processing.php&quot;,
+									&quot;url&quot;: &quot;&#123;&#123; route('simple_ss') &#125;&#125;&quot;,
 									&quot;data&quot;: function ( d ) {
 										d.myKey = &quot;myValue&quot;;
 										// d.custom = $('#myInput').val();

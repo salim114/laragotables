@@ -103,8 +103,23 @@
 							$('#example').DataTable( {
 								&quot;processing&quot;: true,
 								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: &quot;scripts/server_processing.php&quot;,
-								&quot;deferLoading&quot;: 57
+								&quot;ajax&quot;: &quot;&#123;&#123; route('defer_loading') &#125;&#125;&quot;,
+								//In the offical documentation the columns data option does not existe in this example,
+								//although for the need of server side rendring data under Laravel it is a must
+								columns: [
+						            {data: 'first_name', name: 'first_name'},
+						            {data: 'last_name', name: 'last_name'},
+						            {data: 'position', name: 'email'},
+						            {data: 'office', name: 'office'},
+						            {data: 'start_date',  
+						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
+						            },  
+						            {data: 'salary', 
+						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
+						        	}
+								] 	
+								//end comment section
+								//&quot;deferLoading&quot;: 57
 							} );
 						} );</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>

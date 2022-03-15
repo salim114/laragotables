@@ -344,9 +344,24 @@
 								&quot;processing&quot;: true,
 								&quot;serverSide&quot;: true,
 								&quot;ajax&quot;: $.fn.dataTable.pipeline( {
-									url: 'scripts/server_processing.php',
+									url: &quot;&#123;&#123; route('pipeline') &#125;&#125;&quot;,
 									pages: 5 // number of pages to cache
-								} )
+								} ),
+								//In the offical documentation the columns data option does not existe in this example,
+								//although for the need of server side rendring data under Laravel it is a must
+								columns: [
+						            {data: 'first_name', name: 'first_name'},
+						            {data: 'last_name', name: 'last_name'},
+						            {data: 'position', name: 'email'},
+						            {data: 'office', name: 'office'},
+						            {data: 'start_date',  
+						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
+						            },  
+						            {data: 'salary', 
+						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
+						        	}
+								] 
+								//end comment section
 							} );
 						} );</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>

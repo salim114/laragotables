@@ -27,6 +27,8 @@
 			"processing": true,
 			"serverSide": true,
 			ajax: "{{ route('simple_ss') }}",
+			//In the offical documentation the columns data option does not existe in this example,
+        	//for the need of server side rendring data under Laravel it is a must
 	        columns: [
 	            {data: 'first_name', name: 'first_name'},
 	            {data: 'last_name', name: 'last_name'},
@@ -39,6 +41,7 @@
 	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
 	        	}
 			]
+			//end comment section 
 		} );
 	} );
 
@@ -102,7 +105,7 @@
 								&quot;serverSide&quot;: true,
 								&quot;ajax&quot;: &quot;&#123;&#123; route('simple_ss') &#125;&#125;&quot;
 								//In the offical documentation the columns data option does not existe in this example,
-								//for the need of rendring data under Laravel it is a must 
+								//Although, for the need of server side rendring data under Laravel it is a must.
 								columns: [
 					            {data: 'first_name', name: 'first_name'},
 					            {data: 'last_name', name: 'last_name'},

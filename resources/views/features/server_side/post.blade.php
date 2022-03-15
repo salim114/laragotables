@@ -24,17 +24,17 @@
 
 	$(document).ready(function() {
 		$('#example').DataTable( {
-			"processing": true,
-			"serverSide": true,
-			"ajax": {
-				"url": "{{ route('post') }}",
+			processing: true,
+			serverSide: true,
+			ajax: {
+				url: "{{ route('post') }}",
 				//"type": "POST"
 			},
 			columns: [
-	            {data: 'first_name', name: 'first_name'},
-	            {data: 'last_name', name: 'last_name'},
-	            {data: 'position', name: 'email'},
-	            {data: 'office', name: 'office'},
+	            {data: 'first_name'},
+	            {data: 'last_name'},
+	            {data: 'position'},
+	            {data: 'office'},
 	            {data: 'start_date',  
 	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
 	            },  
@@ -102,19 +102,23 @@
 					<code class="multiline language-js">
 						$(document).ready(function() {
 							$('#example').DataTable( {
-								&quot;processing&quot;: true,
-								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: {
-									&quot;url&quot;: &quot;scripts/post.php&quot;,
-									&quot;type&quot;: &quot;POST&quot;
+								processing: true,
+								serverSide: true,
+								ajax: {
+									url: &quot;&#123;&#123; route('post') &#125;&#125;&quot;,
+									//&quot;type&quot;: &quot;POST&quot;
 								},
-								&quot;columns&quot;: [
-									{ &quot;data&quot;: &quot;first_name&quot; },
-									{ &quot;data&quot;: &quot;last_name&quot; },
-									{ &quot;data&quot;: &quot;position&quot; },
-									{ &quot;data&quot;: &quot;office&quot; },
-									{ &quot;data&quot;: &quot;start_date&quot; },
-									{ &quot;data&quot;: &quot;salary&quot; }
+								columns: [
+									{ data: 'first_name' },
+									{ data: 'last_name' },
+									{ data: 'position' },
+									{ data: 'office' },
+									{ data: 'start_date',  
+						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
+						            },  
+						            { data: 'salary', 
+						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
+						        	}
 								]
 							} );
 						} );</code>

@@ -99,7 +99,7 @@
 							$('#example').DataTable( {
 								&quot;processing&quot;: true,
 								&quot;serverSide&quot;: true,
-								&quot;ajax&quot;: &quot;scripts/ids-objects.php&quot;,
+								&quot;ajax&quot;: &quot;&#123;&#123; route('ids') &#125;&#125;&quot;,
 								&quot;columns&quot;: [
 									{ &quot;data&quot;: &quot;first_name&quot; },
 									{ &quot;data&quot;: &quot;last_name&quot; },
