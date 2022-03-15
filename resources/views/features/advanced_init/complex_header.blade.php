@@ -166,7 +166,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/advanced_init/complex_header', 'App\Http\Controllers\DatatableController&#64;complex_header');
+						    Route::get('features/advanced_init/complex_header', 'App\Http\Controllers\DatatableController&#64;complex_header_ai');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -192,7 +192,7 @@
 
 					    //Advanced initialisation (features)
 
-					    public function complex_header()
+					    public function complex_header_ai()
 					    {
 					        $datatables = Datatable::all();
 					        return view('features.advanced_init.complex_header', compact('datatables'));       

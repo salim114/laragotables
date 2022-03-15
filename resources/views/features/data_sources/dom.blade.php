@@ -146,7 +146,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/data_sources/dom', 'App\Http\Controllers\DatatableController&#64;dom');
+						    Route::get('features/data_sources/dom', 'App\Http\Controllers\DatatableController&#64;dom_ds');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -172,7 +172,7 @@
 
 					    //Data sources (features)
 
-					    public function dom()
+					    public function dom_ds()
 					    {
 					        $datatables = Datatable::all();
 					        return view('features.data_sources.dom', compact('datatables'));       

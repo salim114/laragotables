@@ -74,29 +74,6 @@ Route::get('extensions/colreorder', function () {
     return view('extensions.colreorder.index');
 });
 
-//Basic initialisation
-
-Route::group([], function() {
-    Route::get('features/basic_init/zero_configuration', 'App\Http\Controllers\DatatableController@zero_configuration');
-    Route::get('features/basic_init/filter_only', 'App\Http\Controllers\DatatableController@filter_only');
-    Route::get('features/basic_init/table_sorting', 'App\Http\Controllers\DatatableController@table_sorting');
-    Route::get('features/basic_init/multi_col_sort', 'App\Http\Controllers\DatatableController@multi_col_sort');
-    Route::get('features/basic_init/multiple_tables', 'App\Http\Controllers\DatatableController@multiple_tables');
-    Route::get('features/basic_init/hidden_columns', 'App\Http\Controllers\DatatableController@hidden_columns');
-    Route::get('features/basic_init/complex_header', 'App\Http\Controllers\DatatableController@complex_header');
-    Route::get('features/basic_init/dom', 'App\Http\Controllers\DatatableController@dom');
-    Route::get('features/basic_init/flexible_width', 'App\Http\Controllers\DatatableController@flexible_width');
-    Route::get('features/basic_init/state_save', 'App\Http\Controllers\DatatableController@state_save');
-    Route::get('features/basic_init/data_rendering', 'App\Http\Controllers\DatatableController@data_rendering');
-    Route::get('features/basic_init/alt_pagination', 'App\Http\Controllers\DatatableController@alt_pagination');
-    Route::get('features/basic_init/scroll_y', 'App\Http\Controllers\DatatableController@scroll_y');
-    Route::get('features/basic_init/scroll_y_dynamic', 'App\Http\Controllers\DatatableController@scroll_y_dynamic');
-    Route::get('features/basic_init/scroll_x', 'App\Http\Controllers\DatatableController@scroll_x');
-    Route::get('features/basic_init/scroll_xy', 'App\Http\Controllers\DatatableController@scroll_xy');
-    Route::get('features/basic_init/comma_decimal', 'App\Http\Controllers\DatatableController@comma_decimal');
-    Route::get('features/basic_init/language', 'App\Http\Controllers\DatatableController@language');
-    Route::get('features/basic_init/stocks', 'App\Http\Controllers\DatatableController@stocks');
-}); 
 
 //Advanced initialisation
 
@@ -120,45 +97,18 @@ Route::group([], function() {
     Route::get('features/advanced_init/sort_direction_control', 'App\Http\Controllers\DatatableController@sort_direction_control');
 });
 
-//Non-jQuery initialisation
+//Ajax
 
 Route::group([], function() {
-    Route::get('features/non_jquery/ajax', 'App\Http\Controllers\DatatableController@ajax');
-    Route::get('features/non_jquery/dom_events', 'App\Http\Controllers\DatatableController@dom_events');
-    Route::get('features/non_jquery/dt_events', 'App\Http\Controllers\DatatableController@dt_events_nj');
-    Route::get('features/non_jquery/init', 'App\Http\Controllers\DatatableController@init');
-    Route::get('features/non_jquery/options', 'App\Http\Controllers\DatatableController@options');
-});
-
-//Styling
-
-Route::group([], function() {
-    Route::get('features/styling/bootstrap', 'App\Http\Controllers\DatatableController@bootstrap');
-    Route::get('features/styling/bootstrap4', 'App\Http\Controllers\DatatableController@bootstrap4');
-    Route::get('features/styling/bootstrap5', 'App\Http\Controllers\DatatableController@bootstrap5');
-    Route::get('features/styling/bulma', 'App\Http\Controllers\DatatableController@bulma');
-    Route::get('features/styling/cell_border', 'App\Http\Controllers\DatatableController@cell_border');
-    Route::get('features/styling/compact', 'App\Http\Controllers\DatatableController@compact');
-    Route::get('features/styling/display', 'App\Http\Controllers\DatatableController@display');
-    Route::get('features/styling/foundation', 'App\Http\Controllers\DatatableController@foundation');
-    Route::get('features/styling/hover', 'App\Http\Controllers\DatatableController@hover');
-    Route::get('features/styling/jqueryUI', 'App\Http\Controllers\DatatableController@jqueryUI');
-    Route::get('features/styling/material', 'App\Http\Controllers\DatatableController@material');
-    Route::get('features/styling/no_classes', 'App\Http\Controllers\DatatableController@no_classes');
-    Route::get('features/styling/order_column', 'App\Http\Controllers\DatatableController@order_column');
-    Route::get('features/styling/row_border', 'App\Http\Controllers\DatatableController@row_border');
-    Route::get('features/styling/semanticui', 'App\Http\Controllers\DatatableController@semanticui');
-    Route::get('features/styling/stripe', 'App\Http\Controllers\DatatableController@stripe');
-    Route::get('features/styling/uikit', 'App\Http\Controllers\DatatableController@uikit');
-});
-
-//Data sources
-
-Route::group([], function() {
-    Route::get('features/data_sources/ajax', 'App\Http\Controllers\DatatableController@ajax_ds');
-    Route::get('features/data_sources/dom', 'App\Http\Controllers\DatatableController@dom_ds');
-    Route::get('features/data_sources/js_array', 'App\Http\Controllers\DatatableController@js_array');
-    Route::get('features/data_sources/server_side', 'App\Http\Controllers\DatatableController@server_side')->name('server_side');
+    Route::get('features/ajax/custom_data_flat', 'App\Http\Controllers\DatatableController@custom_data_flat');
+    Route::get('features/ajax/custom_data_property', 'App\Http\Controllers\DatatableController@custom_data_property');
+    Route::get('features/ajax/deep', 'App\Http\Controllers\DatatableController@deep');
+    Route::get('features/ajax/defer_render', 'App\Http\Controllers\DatatableController@defer_render');
+    Route::get('features/ajax/null_data_source', 'App\Http\Controllers\DatatableController@null_data_source');
+    Route::get('features/ajax/objects', 'App\Http\Controllers\DatatableController@objects');
+    Route::get('features/ajax/objects_subarrays', 'App\Http\Controllers\DatatableController@objects_subarrays');
+    Route::get('features/ajax/orthogonal_data', 'App\Http\Controllers\DatatableController@orthogonal_data');
+    Route::get('features/ajax/simple', 'App\Http\Controllers\DatatableController@simple');
 });
 
 //API
@@ -181,18 +131,57 @@ Route::group([], function() {
     Route::get('features/api/highcharts', 'App\Http\Controllers\DatatableController@highcharts');
 });
 
-//Ajax
+//Basic initialisation
 
 Route::group([], function() {
-    Route::get('features/ajax/custom_data_flat', 'App\Http\Controllers\DatatableController@custom_data_flat');
-    Route::get('features/ajax/custom_data_property', 'App\Http\Controllers\DatatableController@custom_data_property');
-    Route::get('features/ajax/deep', 'App\Http\Controllers\DatatableController@deep');
-    Route::get('features/ajax/defer_render', 'App\Http\Controllers\DatatableController@defer_render');
-    Route::get('features/ajax/null_data_source', 'App\Http\Controllers\DatatableController@null_data_source');
-    Route::get('features/ajax/objects', 'App\Http\Controllers\DatatableController@objects');
-    Route::get('features/ajax/objects_subarrays', 'App\Http\Controllers\DatatableController@objects_subarrays');
-    Route::get('features/ajax/orthogonal_data', 'App\Http\Controllers\DatatableController@orthogonal_data');
-    Route::get('features/ajax/simple', 'App\Http\Controllers\DatatableController@simple');
+    Route::get('features/basic_init/zero_configuration', 'App\Http\Controllers\DatatableController@zero_configuration');
+    Route::get('features/basic_init/filter_only', 'App\Http\Controllers\DatatableController@filter_only');
+    Route::get('features/basic_init/table_sorting', 'App\Http\Controllers\DatatableController@table_sorting');
+    Route::get('features/basic_init/multi_col_sort', 'App\Http\Controllers\DatatableController@multi_col_sort');
+    Route::get('features/basic_init/multiple_tables', 'App\Http\Controllers\DatatableController@multiple_tables');
+    Route::get('features/basic_init/hidden_columns', 'App\Http\Controllers\DatatableController@hidden_columns');
+    Route::get('features/basic_init/complex_header', 'App\Http\Controllers\DatatableController@complex_header');
+    Route::get('features/basic_init/dom', 'App\Http\Controllers\DatatableController@dom');
+    Route::get('features/basic_init/flexible_width', 'App\Http\Controllers\DatatableController@flexible_width');
+    Route::get('features/basic_init/state_save', 'App\Http\Controllers\DatatableController@state_save');
+    Route::get('features/basic_init/data_rendering', 'App\Http\Controllers\DatatableController@data_rendering');
+    Route::get('features/basic_init/alt_pagination', 'App\Http\Controllers\DatatableController@alt_pagination');
+    Route::get('features/basic_init/scroll_y', 'App\Http\Controllers\DatatableController@scroll_y');
+    Route::get('features/basic_init/scroll_y_dynamic', 'App\Http\Controllers\DatatableController@scroll_y_dynamic');
+    Route::get('features/basic_init/scroll_x', 'App\Http\Controllers\DatatableController@scroll_x');
+    Route::get('features/basic_init/scroll_xy', 'App\Http\Controllers\DatatableController@scroll_xy');
+    Route::get('features/basic_init/comma_decimal', 'App\Http\Controllers\DatatableController@comma_decimal');
+    Route::get('features/basic_init/language', 'App\Http\Controllers\DatatableController@language');
+    Route::get('features/basic_init/stocks', 'App\Http\Controllers\DatatableController@stocks');
+});
+
+//Data sources
+
+Route::group([], function() {
+    Route::get('features/data_sources/ajax', 'App\Http\Controllers\DatatableController@ajax_ds');
+    Route::get('features/data_sources/dom', 'App\Http\Controllers\DatatableController@dom_ds');
+    Route::get('features/data_sources/js_array', 'App\Http\Controllers\DatatableController@js_array');
+    Route::get('features/data_sources/server_side', 'App\Http\Controllers\DatatableController@server_side')->name('server_side');
+});
+
+//Non-jQuery initialisation
+
+Route::group([], function() {
+    Route::get('features/non_jquery/ajax', 'App\Http\Controllers\DatatableController@ajax');
+    Route::get('features/non_jquery/dom_events', 'App\Http\Controllers\DatatableController@dom_events');
+    Route::get('features/non_jquery/dt_events', 'App\Http\Controllers\DatatableController@dt_events_nj');
+    Route::get('features/non_jquery/init', 'App\Http\Controllers\DatatableController@init');
+    Route::get('features/non_jquery/options', 'App\Http\Controllers\DatatableController@options');
+});
+
+//plug_ins
+
+Route::group([], function() {
+    Route::get('features/plug_ins/api', 'App\Http\Controllers\DatatableController@api');
+    Route::get('features/plug_ins/dom_sort', 'App\Http\Controllers\DatatableController@dom_sort');
+    Route::get('features/plug_ins/range_filtering', 'App\Http\Controllers\DatatableController@range_filtering');
+    Route::get('features/plug_ins/sorting_auto', 'App\Http\Controllers\DatatableController@sorting_auto');
+    Route::get('features/plug_ins/sorting_manual', 'App\Http\Controllers\DatatableController@sorting_manual');
 });
 
 //Server-side
@@ -211,14 +200,26 @@ Route::group([], function() {
     Route::get('features/server_side/simple', 'App\Http\Controllers\DatatableController@simple_ss')->name('simple_ss');
 });
 
-//plug_ins
+//Styling
 
 Route::group([], function() {
-    Route::get('features/plug_ins/api', 'App\Http\Controllers\DatatableController@api');
-    Route::get('features/plug_ins/dom_sort', 'App\Http\Controllers\DatatableController@dom_sort');
-    Route::get('features/plug_ins/range_filtering', 'App\Http\Controllers\DatatableController@range_filtering');
-    Route::get('features/plug_ins/sorting_auto', 'App\Http\Controllers\DatatableController@sorting_auto');
-    Route::get('features/plug_ins/sorting_manual', 'App\Http\Controllers\DatatableController@sorting_manual');
+    Route::get('features/styling/bootstrap', 'App\Http\Controllers\DatatableController@bootstrap');
+    Route::get('features/styling/bootstrap4', 'App\Http\Controllers\DatatableController@bootstrap4');
+    Route::get('features/styling/bootstrap5', 'App\Http\Controllers\DatatableController@bootstrap5');
+    Route::get('features/styling/bulma', 'App\Http\Controllers\DatatableController@bulma');
+    Route::get('features/styling/cell_border', 'App\Http\Controllers\DatatableController@cell_border');
+    Route::get('features/styling/compact', 'App\Http\Controllers\DatatableController@compact');
+    Route::get('features/styling/display', 'App\Http\Controllers\DatatableController@display');
+    Route::get('features/styling/foundation', 'App\Http\Controllers\DatatableController@foundation');
+    Route::get('features/styling/hover', 'App\Http\Controllers\DatatableController@hover');
+    Route::get('features/styling/jqueryUI', 'App\Http\Controllers\DatatableController@jqueryUI');
+    Route::get('features/styling/material', 'App\Http\Controllers\DatatableController@material');
+    Route::get('features/styling/no_classes', 'App\Http\Controllers\DatatableController@no_classes');
+    Route::get('features/styling/order_column', 'App\Http\Controllers\DatatableController@order_column');
+    Route::get('features/styling/row_border', 'App\Http\Controllers\DatatableController@row_border');
+    Route::get('features/styling/semanticui', 'App\Http\Controllers\DatatableController@semanticui');
+    Route::get('features/styling/stripe', 'App\Http\Controllers\DatatableController@stripe');
+    Route::get('features/styling/uikit', 'App\Http\Controllers\DatatableController@uikit');
 });
 
 require __DIR__.'/auth.php';

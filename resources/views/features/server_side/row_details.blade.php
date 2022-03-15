@@ -225,11 +225,11 @@
 						additional CSS used is shown below:</p>
 						<code class="multiline language-css">
 							td.details-control {
-								background: url('../resources/details_open.png') no-repeat center center;
+								background: url('&#123;&#123; asset('images/details_open.png') &#125;&#125;') no-repeat center center;
 								cursor: pointer;
 							}
 							tr.details td.details-control {
-								background: url('../resources/details_close.png') no-repeat center center;
+								background: url('&#123;&#123; asset('images/details_close.png') &#125;&#125;') no-repeat center center;
 							}</code>
 					</div>
 					<p>The following CSS library files are loaded for use in this example to provide the styling of the table:</p>
@@ -297,7 +297,7 @@
 
 					    //Server-side (features)
 
-					    public function row_details(Request $request)
+					    public function row_details_ss(Request $request)
 					    {
 					         if ($request->ajax()) {
 					            $datatables = Datatable::all();

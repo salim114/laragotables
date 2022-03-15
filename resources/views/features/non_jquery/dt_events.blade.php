@@ -186,7 +186,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/non_jquery/dt_events', 'App\Http\Controllers\DatatableController&#64;dt_events');
+						    Route::get('features/non_jquery/dt_events', 'App\Http\Controllers\DatatableController&#64;dt_events_nj');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -212,7 +212,7 @@
 
 					    //Non-jQuery initialisation (features)
 
-					    public function dt_events()
+					    public function dt_events_nj()
 					    {
 					        $datatables = Datatable::all();
 					        return view('features.non_jquery.dt_events', compact('datatables'));       

@@ -142,7 +142,7 @@
 
 						Route::group([], function() {
 						    
-						    Route::get('features/data_sources/ajax', 'App\Http\Controllers\DatatableController&#64;ajax');
+						    Route::get('features/data_sources/ajax', 'App\Http\Controllers\DatatableController&#64;ajax_ds');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -168,7 +168,7 @@
 
 					    //Data sources (features)
 
-					    public function ajax()
+					    public function ajax_ds()
 					    {
 					        return view('features.data_sources.ajax');       
 					    }</code>
