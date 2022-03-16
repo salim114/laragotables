@@ -30,104 +30,103 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 		
-	$(document).ready(function() {
-		$('#example').DataTable({
-			ajax: '{{ asset('data/objects_salary.txt') }}',
-			columns: [
-				{
-					data: 'name'
-				},
-				{
-					data: 'position',
-					render: function(data, type) {
-						if (type === 'display') {
-							let link = "http://datatables.net";
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    ajax: "{{ asset('data/objects_salary.txt') }}",
+	    columns: [
+	      {
+	        data: "name",
+	      },
+	      {
+	        data: "position",
+	        render: function (data, type) {
+	          if (type === "display") {
+	            let link = "http://datatables.net";
 
-							if (data[0] < 'H') {
-								link = "http://cloudtables.com";
-							}
-							else if (data[0] < 'S') {
-								link = "http://editor.datatables.net";
-							}
+	            if (data[0] < "H") {
+	              link = "http://cloudtables.com";
+	            } else if (data[0] < "S") {
+	              link = "http://editor.datatables.net";
+	            }
 
-							return '<a href="' + link + '">' + data + '</a>';
-						}
-						
-						return data;
-					}
-				},
-				{
-					className: 'f32', // used by world-flags-sprite library
-					data: 'office',
-					render: function(data, type) {
-						if (type === 'display') {
-							let country = '';
+	            return '<a href="' + link + '">' + data + "</a>";
+	          }
 
-							switch (data) {
-								case 'Argentina':
-									country = 'ar';
-									break;
-								case 'Edinburgh':
-									country = '_Scotland';
-									break;
-								case 'London':
-									country = '_England';
-									break;
-								case 'New York':
-								case 'San Francisco':
-									country = 'us';
-									break;
-								case 'Sydney':
-									country = 'au';
-									break;
-								case 'Tokyo':
-									country = 'jp';
-									break;
-								case 'Algiers':
-									country = 'dz';
-									break;
-							}
+	          return data;
+	        },
+	      },
+	      {
+	        className: "f32", // used by world-flags-sprite library
+	        data: "office",
+	        render: function (data, type) {
+	          if (type === "display") {
+	            let country = "";
 
-							return '<span class="flag ' + country + '"></span> ' + data;
-						}
+	            switch (data) {
+	              case "Argentina":
+	                country = "ar";
+	                break;
+	              case "Edinburgh":
+	                country = "_Scotland";
+	                break;
+	              case "London":
+	                country = "_England";
+	                break;
+	              case "New York":
+	              case "San Francisco":
+	                country = "us";
+	                break;
+	              case "Sydney":
+	                country = "au";
+	                break;
+	              case "Tokyo":
+	                country = "jp";
+	                break;
+	              case "Algiers":
+	                country = "dz";
+	                break;
+	            }
 
-						return data;
-					}
-				},
-				{
-					data: 'extn',
-					render: function(data, type, row, meta) {
-						return type === 'display' ?
-							'<progress value="' + data + '" max="9999"></progress>' :
-							data;
-					}
-				},
-				{
-					data: "start_date"
-				},
-				{
-					data: "salary",
-					render: function(data, type) {
-						var number = $.fn.dataTable.render.number( ',', '.', 2, '$'). display(data);
+	            return '<span class="flag ' + country + '"></span> ' + data;
+	          }
 
-						if (type === 'display') {
-							let color = 'green';
-							if (data < 250000) {
-								color = 'red';
-							}
-							else if (data < 500000) {
-								color = 'orange';
-							}
+	          return data;
+	        },
+	      },
+	      {
+	        data: "extn",
+	        render: function (data, type, row, meta) {
+	          return type === "display"
+	            ? '<progress value="' + data + '" max="9999"></progress>'
+	            : data;
+	        },
+	      },
+	      {
+	        data: "start_date",
+	      },
+	      {
+	        data: "salary",
+	        render: function (data, type) {
+	          var number = $.fn.dataTable.render
+	            .number(",", ".", 2, "$")
+	            .display(data);
 
-							return '<span style="color:' + color + '">' + number + '</span>';
-						}
-						
-						return number;
+	          if (type === "display") {
+	            let color = "green";
+	            if (data < 250000) {
+	              color = "red";
+	            } else if (data < 500000) {
+	              color = "orange";
+	            }
 
-					}
-				}
-			]
-		});
+	            return '<span style="color:' + color + '">' + number + "</span>";
+	          }
+
+	          return number;
+	        },
+	      },
+	    ],
+	  });
 	});
 
 	</script>
@@ -186,102 +185,104 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable({
-								ajax: &quot;&#123;&#123; asset('data/objects_salary.txt') &#125;&#125;&quot;,
-								columns: [
-									{
-										data: 'name'
-									},
-									{
-										data: 'position',
-										render: function(data, type) {
-											if (type === 'display') {
-												let link = &quot;http://datatables.net&quot;;
+						$(document).ready(function () {
+						  $("#example").DataTable({
+							ajax: &quot;&#123;&#123; asset('data/objects_salary.txt') &#125;&#125;&quot;,
+							columns: [
+						      {
+						        data: "name",
+						      },
+						      {
+						        data: "position",
+						        render: function (data, type) {
+						          if (type === "display") {
+						            let link = "http://datatables.net";
 
-												if (data[0] &lt; 'H') {
-													link = &quot;http://cloudtables.com&quot;;
-												}
-												else if (data[0] &lt; 'S') {
-													link = &quot;http://editor.datatables.net&quot;;
-												}
+						            if (data[0] < "H") {
+						              link = "http://cloudtables.com";
+						            } else if (data[0] < "S") {
+						              link = "http://editor.datatables.net";
+						            }
 
-												return '&lt;a href=&quot;' + link + '&quot;&gt;' + data + '&lt;/a&gt;';
-											}
-											
-											return data;
-										}
-									},
-									{
-										className: 'f32', // used by world-flags-sprite library
-										data: 'office',
-										render: function(data, type) {
-											if (type === 'display') {
-												let country = '';
+						            return '&lt;a href="' + link + '"&gt;' + data + "&lt;/a&gt;";
+						          }
 
-												switch (data) {
-													case 'Argentina':
-														country = 'ar';
-														break;
-													case 'Edinburgh':
-														country = '_Scotland';
-														break;
-													case 'London':
-														country = '_England';
-														break;
-													case 'New York':
-													case 'San Francisco':
-														country = 'us';
-														break;
-													case 'Sydney':
-														country = 'au';
-														break;
-													case 'Tokyo':
-														country = 'jp';
-														break;
-												}
+						          return data;
+						        },
+						      },
+						      {
+						        className: "f32", // used by world-flags-sprite library
+						        data: "office",
+						        render: function (data, type) {
+						          if (type === "display") {
+						            let country = "";
 
-												return '&lt;span class=&quot;flag ' + country + '&quot;&gt;&lt;/span&gt; ' + data;
-											}
+						            switch (data) {
+						              case "Argentina":
+						                country = "ar";
+						                break;
+						              case "Edinburgh":
+						                country = "_Scotland";
+						                break;
+						              case "London":
+						                country = "_England";
+						                break;
+						              case "New York":
+						              case "San Francisco":
+						                country = "us";
+						                break;
+						              case "Sydney":
+						                country = "au";
+						                break;
+						              case "Tokyo":
+						                country = "jp";
+						                break;
+						              case "Algiers":
+						                country = "dz";
+						                break;
+						            }
 
-											return data;
-										}
-									},
-									{
-										data: 'extn',
-										render: function(data, type, row, meta) {
-											return type === 'display' ?
-												'&lt;progress value=&quot;' + data + '&quot; max=&quot;9999&quot;&gt;&lt;/progress&gt;' :
-												data;
-										}
-									},
-									{
-										data: &quot;start_date&quot;
-									},
-									{
-										data: &quot;salary&quot;,
-										render: function(data, type) {
-											var number = $.fn.dataTable.render.number( ',', '.', 2, '$'). display(data);
+						            return '&lt;span class="flag ' + country + '"&gt;&lt;/span&gt; ' + data;
+						          }
 
-											if (type === 'display') {
-												let color = 'green';
-												if (data &lt; 250000) {
-													color = 'red';
-												}
-												else if (data &lt; 500000) {
-													color = 'orange';
-												}
+						          return data;
+						        },
+						      },
+						      {
+						        data: "extn",
+						        render: function (data, type, row, meta) {
+						          return type === "display"
+						            ? '&lt;progress value="' + data + '" max="9999"&gt;&lt;/progress&gt;'
+						            : data;
+						        },
+						      },
+						      {
+						        data: "start_date",
+						      },
+						      {
+						        data: "salary",
+						        render: function (data, type) {
+						          var number = $.fn.dataTable.render
+						            .number(",", ".", 2, "$")
+						            .display(data);
 
-												return '&lt;span style=&quot;color:' + color + '&quot;&gt;' + number + '&lt;/span&gt;';
-											}
-											
-											return number;
+						          if (type === "display") {
+						            let color = "green";
+						            if (data < 250000) {
+						              color = "red";
+						            } else if (data < 500000) {
+						              color = "orange";
+						            }
 
-										}
-									}
-								]
-							});
-						});</code>
+						            return '&lt;span style="color:' + color + '"&gt;' + number + "&lt;/span&gt;";
+						          }
+
+						          return number;
+						        },
+						      },
+						    ],
+						  });
+						});</code>&lt;
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
