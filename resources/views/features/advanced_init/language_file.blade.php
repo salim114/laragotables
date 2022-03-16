@@ -20,13 +20,13 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">	
 
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"language": {
-				"url": "//cdn.datatables.net/plug_ins/9dcbecd42ad/i18n/German.json"
-			}
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    language: {
+	      url: "//cdn.datatables.net/plug_ins/9dcbecd42ad/i18n/German.json",
+	    },
+	  });
+	});
 
 	</script>
 </head>
@@ -91,13 +91,13 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;language&quot;: {
-									&quot;url&quot;: &quot;//cdn.datatables.net/plug_ins/9dcbecd42ad/i18n/German.json&quot;
-								}
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    language: {
+						      url: "//cdn.datatables.net/plug_ins/9dcbecd42ad/i18n/German.json",
+						    },
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

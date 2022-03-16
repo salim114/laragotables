@@ -20,19 +20,26 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">	
 
-	$(document).ready(function() {
-		var eventFired = function ( type ) {
-			var n = $('#demo_info')[0];
-			n.innerHTML += '<div>'+type+' event - '+new Date().getTime()+'</div>';
-			n.scrollTop = n.scrollHeight;		
-		}
+	$(document).ready(function () {
+	  var eventFired = function (type) {
+	    var n = $("#demo_info")[0];
+	    n.innerHTML +=
+	      "<div>" + type + " event - " + new Date().getTime() + "</div>";
+	    n.scrollTop = n.scrollHeight;
+	  };
 
-		$('#example')
-			.on( 'order.dt',  function () { eventFired( 'Order' ); } )
-			.on( 'search.dt', function () { eventFired( 'Search' ); } )
-			.on( 'page.dt',   function () { eventFired( 'Page' ); } )
-			.DataTable();
-	} );
+	  $("#example")
+	    .on("order.dt", function () {
+	      eventFired("Order");
+	    })
+	    .on("search.dt", function () {
+	      eventFired("Search");
+	    })
+	    .on("page.dt", function () {
+	      eventFired("Page");
+	    })
+	    .DataTable();
+	});
 
 	</script>
 </head>
@@ -102,19 +109,26 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var eventFired = function ( type ) {
-								var n = $('#demo_info')[0];
-								n.innerHTML += '&lt;div&gt;'+type+' event - '+new Date().getTime()+'&lt;/div&gt;';
-								n.scrollTop = n.scrollHeight;		
-							}
+						$(document).ready(function () {
+						  var eventFired = function (type) {
+						    var n = $("#demo_info")[0];
+						    n.innerHTML +=
+						      "<div>" + type + " event - " + new Date().getTime() + "</div>";
+						    n.scrollTop = n.scrollHeight;
+						  };
 
-							$('#example')
-								.on( 'order.dt',  function () { eventFired( 'Order' ); } )
-								.on( 'search.dt', function () { eventFired( 'Search' ); } )
-								.on( 'page.dt',   function () { eventFired( 'Page' ); } )
-								.DataTable();
-						} );</code>
+						  $("#example")
+						    .on("order.dt", function () {
+						      eventFired("Order");
+						    })
+						    .on("search.dt", function () {
+						      eventFired("Search");
+						    })
+						    .on("page.dt", function () {
+						      eventFired("Page");
+						    })
+						    .DataTable();
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

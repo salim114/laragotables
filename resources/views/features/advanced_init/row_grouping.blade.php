@@ -25,42 +25,44 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		var groupColumn = 2;
-		var table = $('#example').DataTable({
-			"columnDefs": [
-				{ "visible": false, "targets": groupColumn }
-			],
-			"order": [[ groupColumn, 'asc' ]],
-			"displayLength": 25,
-			"drawCallback": function ( settings ) {
-				var api = this.api();
-				var rows = api.rows( {page:'current'} ).nodes();
-				var last=null;
+	$(document).ready(function () {
+	  var groupColumn = 2;
+	  var table = $("#example").DataTable({
+	    columnDefs: [{ visible: false, targets: groupColumn }],
+	    order: [[groupColumn, "asc"]],
+	    displayLength: 25,
+	    drawCallback: function (settings) {
+	      var api = this.api();
+	      var rows = api.rows({ page: "current" }).nodes();
+	      var last = null;
 
-				api.column(groupColumn, {page:'current'} ).data().each( function ( group, i ) {
-					if ( last !== group ) {
-						$(rows).eq( i ).before(
-							'<tr class="group"><td colspan="5">'+group+'</td></tr>'
-						);
+	      api
+	        .column(groupColumn, { page: "current" })
+	        .data()
+	        .each(function (group, i) {
+	          if (last !== group) {
+	            $(rows)
+	              .eq(i)
+	              .before(
+	                '<tr class="group"><td colspan="5">' + group + "</td></tr>"
+	              );
 
-						last = group;
-					}
-				} );
-			}
-		} );
+	            last = group;
+	          }
+	        });
+	    },
+	  });
 
-		// Order by the grouping
-		$('#example tbody').on( 'click', 'tr.group', function () {
-			var currentOrder = table.order()[0];
-			if ( currentOrder[0] === groupColumn && currentOrder[1] === 'asc' ) {
-				table.order( [ groupColumn, 'desc' ] ).draw();
-			}
-			else {
-				table.order( [ groupColumn, 'asc' ] ).draw();
-			}
-		} );
-	} );
+	  // Order by the grouping
+	  $("#example tbody").on("click", "tr.group", function () {
+	    var currentOrder = table.order()[0];
+	    if (currentOrder[0] === groupColumn && currentOrder[1] === "asc") {
+	      table.order([groupColumn, "desc"]).draw();
+	    } else {
+	      table.order([groupColumn, "asc"]).draw();
+	    }
+	  });
+	});
 
 	</script>
 </head>
@@ -129,43 +131,46 @@
 			</ul>
 			<div class="tabs">
 				<div class="js">
-					<p>The Javascript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">
-						$(document).ready(function() {
-							var groupColumn = 2;
-							var table = $('#example').DataTable({
-								&quot;columnDefs&quot;: [
-									{ &quot;visible&quot;: false, &quot;targets&quot;: groupColumn }
-								],
-								&quot;order&quot;: [[ groupColumn, 'asc' ]],
-								&quot;displayLength&quot;: 25,
-								&quot;drawCallback&quot;: function ( settings ) {
-									var api = this.api();
-									var rows = api.rows( {page:'current'} ).nodes();
-									var last=null;
+					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
+					<code class="multiline language-js">
+						$(document).ready(function () {
+						  var groupColumn = 2;
+						  var table = $("#example").DataTable({
+						    columnDefs: [{ visible: false, targets: groupColumn }],
+						    order: [[groupColumn, "asc"]],
+						    displayLength: 25,
+						    drawCallback: function (settings) {
+						      var api = this.api();
+						      var rows = api.rows({ page: "current" }).nodes();
+						      var last = null;
 
-									api.column(groupColumn, {page:'current'} ).data().each( function ( group, i ) {
-										if ( last !== group ) {
-											$(rows).eq( i ).before(
-												'&lt;tr class=&quot;group&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;'+group+'&lt;/td&gt;&lt;/tr&gt;'
-											);
+						      api
+						        .column(groupColumn, { page: "current" })
+						        .data()
+						        .each(function (group, i) {
+						          if (last !== group) {
+						            $(rows)
+						              .eq(i)
+						              .before(
+						                 '&lt;tr class=&quot;group&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;'+group+'&lt;/td&gt;&lt;/tr&gt;'
+						              );
 
-											last = group;
-										}
-									} );
-								}
-							} );
+						            last = group;
+						          }
+						        });
+						    },
+						  });
 
-							// Order by the grouping
-							$('#example tbody').on( 'click', 'tr.group', function () {
-								var currentOrder = table.order()[0];
-								if ( currentOrder[0] === groupColumn &amp;&amp; currentOrder[1] === 'asc' ) {
-									table.order( [ groupColumn, 'desc' ] ).draw();
-								}
-								else {
-									table.order( [ groupColumn, 'asc' ] ).draw();
-								}
-							} );
-						} );</code>
+						  // Order by the grouping
+						  $("#example tbody").on("click", "tr.group", function () {
+						    var currentOrder = table.order()[0];
+						    if (currentOrder[0] === groupColumn && currentOrder[1] === "asc") {
+						      table.order([groupColumn, "desc"]).draw();
+						    } else {
+						      table.order([groupColumn, "asc"]).draw();
+						    }
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

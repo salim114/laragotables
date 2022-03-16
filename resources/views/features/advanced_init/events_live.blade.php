@@ -20,14 +20,14 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 
-	$(document).ready(function() {
-		var table = $('#example').DataTable();
-		
-		$('#example tbody').on('click', 'tr', function () {
-			var data = table.row( this ).data();
-			alert( 'You clicked on '+data[0]+'\'s row' );
-		} );
-	} );
+	$(document).ready(function () {
+	  var table = $("#example").DataTable();
+
+	  $("#example tbody").on("click", "tr", function () {
+	    var data = table.row(this).data();
+	    alert("You clicked on " + data[0] + "'s row");
+	  });
+	});
 
 	</script>
 </head>
@@ -93,14 +93,14 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var table = $('#example').DataTable();
-							
-							$('#example tbody').on('click', 'tr', function () {
-								var data = table.row( this ).data();
-								alert( 'You clicked on '+data[0]+'\'s row' );
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  var table = $("#example").DataTable();
+
+						  $("#example tbody").on("click", "tr", function () {
+						    var data = table.row(this).data();
+						    alert("You clicked on " + data[0] + "'s row");
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

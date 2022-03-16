@@ -92,14 +92,14 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$.extend( true, $.fn.dataTable.defaults, {
-							&quot;searching&quot;: false,
-							&quot;ordering&quot;: false
-						} );
+						$.extend(true, $.fn.dataTable.defaults, {
+						  searching: false,
+						  ordering: false,
+						});
 
-						$(document).ready(function() {
-							$('#example').DataTable();
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable();
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

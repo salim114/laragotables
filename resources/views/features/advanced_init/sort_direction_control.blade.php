@@ -20,18 +20,18 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"aoColumns": [
-				null,
-				null,
-				{ "orderSequence": [ 'asc' ] },
-				{ "orderSequence": [ 'desc', 'asc', 'asc' ] },
-				{ "orderSequence": [ 'desc' ] },
-				null
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    aoColumns: [
+	      null,
+	      null,
+	      { orderSequence: ["asc"] },
+	      { orderSequence: ["desc", "asc", "asc"] },
+	      { orderSequence: ["desc"] },
+	      null,
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -105,18 +105,18 @@
 			<div class="tabs">
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;aoColumns&quot;: [
-									null,
-									null,
-									{ &quot;orderSequence&quot;: [ 'asc' ] },
-									{ &quot;orderSequence&quot;: [ 'desc', 'asc', 'asc' ] },
-									{ &quot;orderSequence&quot;: [ 'desc' ] },
-									null
-								]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    aoColumns: [
+						      null,
+						      null,
+						      { orderSequence: ["asc"] },
+						      { orderSequence: ["desc", "asc", "asc"] },
+						      { orderSequence: ["desc"] },
+						      null,
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

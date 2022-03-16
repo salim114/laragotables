@@ -20,11 +20,14 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    lengthMenu: [
+	      [10, 25, 50, -1],
+	      [10, 25, 50, "All"],
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -93,11 +96,14 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;lengthMenu&quot;: [[10, 25, 50, -1], [10, 25, 50, &quot;All&quot;]]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    lengthMenu: [
+						      [10, 25, 50, -1],
+						      [10, 25, 50, "All"],
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

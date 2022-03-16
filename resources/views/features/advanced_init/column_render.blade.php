@@ -20,22 +20,22 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"columnDefs": [ 
-				{
-					// The `data` parameter refers to the data for the cell (defined by the
-					// `data` option, which defaults to the column being worked with, in
-					// this case `data: 0`.
-					"render": function ( data, type, row ) {
-						return data +' ('+ row[3]+')';
-					},
-					"targets": 0
-				},
-				{ "visible": false,  "targets": [ 3 ] }
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    columnDefs: [
+	      {
+	        // The `data` parameter refers to the data for the cell (defined by the
+	        // `data` option, which defaults to the column being worked with, in
+	        // this case `data: 0`.
+	        render: function (data, type, row) {
+	          return data + " (" + row[3] + ")";
+	        },
+	        targets: 0,
+	      },
+	      { visible: false, targets: [3] },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -102,22 +102,22 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;columnDefs&quot;: [ 
-									{
-										// The `data` parameter refers to the data for the cell (defined by the
-										// `data` option, which defaults to the column being worked with, in
-										// this case `data: 0`.
-										&quot;render&quot;: function ( data, type, row ) {
-											return data +' ('+ row[3]+')';
-										},
-										&quot;targets&quot;: 0
-									},
-									{ &quot;visible&quot;: false,  &quot;targets&quot;: [ 3 ] }
-								]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    columnDefs: [
+						      {
+						        // The `data` parameter refers to the data for the cell (defined by the
+						        // `data` option, which defaults to the column being worked with, in
+						        // this case `data: 0`.
+						        render: function (data, type, row) {
+						          return data + " (" + row[3] + ")";
+						        },
+						        targets: 0,
+						      },
+						      { visible: false, targets: [3] },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

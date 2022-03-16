@@ -24,13 +24,13 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"dom": '<"toolbar">frtip'
-		} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    dom: '<"toolbar">frtip',
+	  });
 
-		$("div.toolbar").html('<b>Custom tool bar! Text/images etc.</b>');
-	} );
+	  $("div.toolbar").html("<b>Custom tool bar! Text/images etc.</b>");
+	});
 
 	</script>
 </head>
@@ -101,13 +101,13 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;dom&quot;: '&lt;&quot;toolbar&quot;&gt;frtip'
-							} );
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    dom: '<"toolbar">frtip',
+						  });
 
-							$(&quot;div.toolbar&quot;).html('&lt;b&gt;Custom tool bar! Text/images etc.&lt;/b&gt;');
-						} );</code>
+						  $("div.toolbar").html("<b>Custom tool bar! Text/images etc.</b>");
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
