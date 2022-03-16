@@ -25,9 +25,9 @@
 			"aoColumns": [
 				null,
 				null,
-				{ "orderSequence": [ "asc" ] },
-				{ "orderSequence": [ "desc", "asc", "asc" ] },
-				{ "orderSequence": [ "desc" ] },
+				{ "orderSequence": [ 'asc' ] },
+				{ "orderSequence": [ 'desc', 'asc', 'asc' ] },
+				{ "orderSequence": [ 'desc' ] },
 				null
 			]
 		} );
@@ -110,9 +110,9 @@
 								&quot;aoColumns&quot;: [
 									null,
 									null,
-									{ &quot;orderSequence&quot;: [ &quot;asc&quot; ] },
-									{ &quot;orderSequence&quot;: [ &quot;desc&quot;, &quot;asc&quot;, &quot;asc&quot; ] },
-									{ &quot;orderSequence&quot;: [ &quot;desc&quot; ] },
+									{ &quot;orderSequence&quot;: [ 'asc' ] },
+									{ &quot;orderSequence&quot;: [ 'desc', 'asc', 'asc' ] },
+									{ &quot;orderSequence&quot;: [ 'desc' ] },
 									null
 								]
 							} );
