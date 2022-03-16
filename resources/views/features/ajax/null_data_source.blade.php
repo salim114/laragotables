@@ -20,21 +20,23 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		var table = $('#example').DataTable( {
-			"ajax": "{{ asset('data/arrays.txt') }}",
-			"columnDefs": [ {
-				"targets": -1,
-				"data": null,
-				"defaultContent": "<button>Click!</button>"
-			} ]
-		} );
+	$(document).ready(function () {
+	  var table = $("#example").DataTable({
+	    ajax: "{{ asset('data/arrays.txt') }}",
+	    columnDefs: [
+	      {
+	        targets: -1,
+	        data: null,
+	        defaultContent: "<button>Click!</button>",
+	      },
+	    ],
+	  });
 
-		$('#example tbody').on( 'click', 'button', function () {
-			var data = table.row( $(this).parents('tr') ).data();
-			alert( data[0] +"'s salary is: "+ data[ 5 ] );
-		} );
-	} );
+	  $("#example tbody").on("click", "button", function () {
+	    var data = table.row($(this).parents("tr")).data();
+	    alert(data[0] + "'s salary is: " + data[5]);
+	  });
+	});
 
 	</script>
 </head>
@@ -101,21 +103,23 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var table = $('#example').DataTable( {
-								&quot;ajax&quot;: &quot;&#123;&#123; asset('data/arrays.txt') &#125;&#125;&quot;,
-								&quot;columnDefs&quot;: [ {
-									&quot;targets&quot;: -1,
-									&quot;data&quot;: null,
-									&quot;defaultContent&quot;: &quot;&lt;button&gt;Click!&lt;/button&gt;&quot;
-								} ]
-							} );
+						$(document).ready(function () {
+						  var table = $("#example").DataTable({
+						    ajax: "&#123;&#123; asset('data/arrays.txt') &#125;&#125;",
+						    columnDefs: [
+						      {
+						        targets: -1,
+						        data: null,
+						        defaultContent: "&lt;button&gt;Click!&lt;/button&gt;",
+						      },
+						    ],
+						  });
 
-							$('#example tbody').on( 'click', 'button', function () {
-								var data = table.row( $(this).parents('tr') ).data();
-								alert( data[0] +&quot;'s salary is: &quot;+ data[ 5 ] );
-							} );
-						} );</code>
+						  $("#example tbody").on("click", "button", function () {
+						    var data = table.row($(this).parents("tr")).data();
+						    alert(data[0] + "'s salary is: " + data[5]);
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

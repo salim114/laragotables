@@ -20,22 +20,22 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"ajax": {
-				"url": "{{ asset('data/objects_root_array.txt') }}",
-				"dataSrc": ""
-			},
-			"columns": [
-				{ "data": "name" },
-				{ "data": "position" },
-				{ "data": "office" },
-				{ "data": "extn" },
-				{ "data": "start_date" },
-				{ "data": "salary" }
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    ajax: {
+	      url: "{{ asset('data/objects_root_array.txt') }}",
+	      dataSrc: "",
+	    },
+	    columns: [
+	      { data: "name" },
+	      { data: "position" },
+	      { data: "office" },
+	      { data: "extn" },
+	      { data: "start_date" },
+	      { data: "salary" },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -98,22 +98,22 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;ajax&quot;: {
-									&quot;url&quot;: &quot;&#123;&#123; asset('data/objects_root_array.txt') &#125;&#125;&quot;,
-									&quot;dataSrc&quot;: &quot;&quot;
-								},
-								&quot;columns&quot;: [
-									{ &quot;data&quot;: &quot;name&quot; },
-									{ &quot;data&quot;: &quot;position&quot; },
-									{ &quot;data&quot;: &quot;office&quot; },
-									{ &quot;data&quot;: &quot;extn&quot; },
-									{ &quot;data&quot;: &quot;start_date&quot; },
-									{ &quot;data&quot;: &quot;salary&quot; }
-								]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    ajax: {
+						      url: "&#123;&#123; asset('data/objects_root_array.txt') &#125;&#125;",
+						      dataSrc: "",
+						    },
+						    columns: [
+						      { data: "name" },
+						      { data: "position" },
+						      { data: "office" },
+						      { data: "extn" },
+						      { data: "start_date" },
+						      { data: "salary" },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

@@ -20,20 +20,20 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"processing": true,
-			"ajax": "{{ asset('data/objects_deep.txt') }}",
-			"columns": [
-				{ "data": "name" },
-				{ "data": "hr.position" },
-				{ "data": "contact.0" },
-				{ "data": "contact.1" },
-				{ "data": "hr.start_date" },
-				{ "data": "hr.salary" }
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    processing: true,
+	    ajax: "{{ asset('data/objects_deep.txt') }}",
+	    columns: [
+	      { data: "name" },
+	      { data: "hr.position" },
+	      { data: "contact.0" },
+	      { data: "contact.1" },
+	      { data: "hr.start_date" },
+	      { data: "hr.salary" },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -103,20 +103,20 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;processing&quot;: true,
-								&quot;ajax&quot;: &quot;&#123;&#123; asset('data/objects_deep.txt') &#125;&#125;&quot;,
-								&quot;columns&quot;: [
-									{ &quot;data&quot;: &quot;name&quot; },
-									{ &quot;data&quot;: &quot;hr.position&quot; },
-									{ &quot;data&quot;: &quot;contact.0&quot; },
-									{ &quot;data&quot;: &quot;contact.1&quot; },
-									{ &quot;data&quot;: &quot;hr.start_date&quot; },
-									{ &quot;data&quot;: &quot;hr.salary&quot; }
-								]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    processing: true,
+						    ajax: "&#123;&#123; asset('data/objects_deep.txt') &#125;&#125;",
+						    columns: [
+						      { data: "name" },
+						      { data: "hr.position" },
+						      { data: "contact.0" },
+						      { data: "contact.1" },
+						      { data: "hr.start_date" },
+						      { data: "hr.salary" },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

@@ -20,19 +20,19 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"ajax": "{{ asset('data/objects_subarrays.txt') }}",
-			"columns": [
-				{ "data": "name[, ]" },
-				{ "data": "hr.0" },
-				{ "data": "office" },
-				{ "data": "extn" },
-				{ "data": "hr.2" },
-				{ "data": "hr.1" }
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    ajax: "{{ asset('data/objects_subarrays.txt') }}",
+	    columns: [
+	      { data: "name[, ]" },
+	      { data: "hr.0" },
+	      { data: "office" },
+	      { data: "extn" },
+	      { data: "hr.2" },
+	      { data: "hr.1" },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -113,18 +113,18 @@
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
 						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;ajax&quot;: &quot;&#123;&#123; asset('data/objects_subarrays.txt') &#125;&#125;&quot;,
-								&quot;columns&quot;: [
-									{ &quot;data&quot;: &quot;name[, ]&quot; },
-									{ &quot;data&quot;: &quot;hr.0&quot; },
-									{ &quot;data&quot;: &quot;office&quot; },
-									{ &quot;data&quot;: &quot;extn&quot; },
-									{ &quot;data&quot;: &quot;hr.2&quot; },
-									{ &quot;data&quot;: &quot;hr.1&quot; }
-								]
-							} );
-						} );</code>
+						  $('#example').DataTable( {
+							ajax: "&#123;&#123; asset('data/objects_subarrays.txt') &#125;&#125;",
+							columns: [
+						      { data: "name[, ]" },
+						      { data: "hr.0" },
+						      { data: "office" },
+						      { data: "extn" },
+						      { data: "hr.2" },
+						      { data: "hr.1" },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

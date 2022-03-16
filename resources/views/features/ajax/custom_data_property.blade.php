@@ -20,14 +20,14 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"ajax": {
-				"url": "{{ asset('data/arrays_custom_prop.txt') }}",
-				"dataSrc": "demo"
-			}
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    ajax: {
+	      url: "{{ asset('data/arrays_custom_prop.txt') }}",
+	      dataSrc: "demo",
+	    },
+	  });
+	});
 
 	</script>
 </head>
@@ -90,14 +90,14 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;ajax&quot;: {
-									&quot;url&quot;: &quot;&#123;&#123; asset('data/arrays_custom_prop.txt') &#125;&#125;&quot;,
-									&quot;dataSrc&quot;: &quot;demo&quot;
-								}
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    ajax: {
+						      url: "&#123;&#123; asset('data/arrays_custom_prop.txt') &#125;&#125;",
+						      dataSrc: "demo",
+						    },
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

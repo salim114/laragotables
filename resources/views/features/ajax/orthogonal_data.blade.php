@@ -20,23 +20,24 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			ajax: "{{ asset('data/orthogonal.txt') }}",
-			columns: [
-				{ data: "name" },
-				{ data: "position" },
-				{ data: "office" },
-				{ data: "extn" },
-				{ data: {
-					_:    "start_date.display",
-					sort: "start_date.timestamp"
-				  } 
-				},
-				{ data: "salary" }
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    ajax: "{{ asset('data/orthogonal.txt') }}",
+	    columns: [
+	      { data: "name" },
+	      { data: "position" },
+	      { data: "office" },
+	      { data: "extn" },
+	      {
+	        data: {
+	          _: "start_date.display",
+	          sort: "start_date.timestamp",
+	        },
+	      },
+	      { data: "salary" },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -106,21 +107,22 @@
 					<code class="multiline language-js">
 						$(document).ready(function() {
 							$('#example').DataTable( {
-								ajax: &quot;&#123;&#123; asset('data/orthogonal.txt') &#125;&#125;&quot;,
+								ajax: "&#123;&#123; asset('data/orthogonal.txt') &#125;&#125;",
 								columns: [
-									{ data: &quot;name&quot; },
-									{ data: &quot;position&quot; },
-									{ data: &quot;office&quot; },
-									{ data: &quot;extn&quot; },
-									{ data: {
-										_:    &quot;start_date.display&quot;,
-										sort: &quot;start_date.timestamp&quot;
-									  } 
-									},
-									{ data: &quot;salary&quot; }
-								]
-							} );
-						} );</code>
+							      { data: "name" },
+							      { data: "position" },
+							      { data: "office" },
+							      { data: "extn" },
+							      {
+							        data: {
+							          _: "start_date.display",
+							          sort: "start_date.timestamp",
+							        },
+							      },
+							      { data: "salary" },
+							    ],
+							  });
+							});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
