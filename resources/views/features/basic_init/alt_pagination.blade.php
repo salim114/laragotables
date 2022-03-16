@@ -20,11 +20,11 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init"> 
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"pagingType": "full_numbers"
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    pagingType: "full_numbers",
+	  });
+	});
 
 	</script>
 </head>
@@ -103,11 +103,11 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;pagingType&quot;: &quot;full_numbers&quot;
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    pagingType: "full_numbers",
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

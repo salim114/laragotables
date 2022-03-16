@@ -25,12 +25,12 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"scrollY": 200,
-			"scrollX": true
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    scrollY: 200,
+	    scrollX: true,
+	  });
+	});
 
 	</script>
 </head>
@@ -88,12 +88,12 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;scrollY&quot;: 200,
-								&quot;scrollX&quot;: true
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    scrollY: 200,
+						    scrollX: true,
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

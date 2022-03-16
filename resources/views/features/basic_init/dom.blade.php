@@ -20,11 +20,11 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"dom": '<"top"i>rt<"bottom"flp><"clear">'
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    dom: '<"top"i>rt<"bottom"flp><"clear">',
+	  });
+	});
 
 	</script>
 </head>
@@ -136,11 +136,11 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;dom&quot;: '&lt;&quot;top&quot;i&gt;rt&lt;&quot;bottom&quot;flp&gt;&lt;&quot;clear&quot;&gt;'
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    dom: '<"top"i>rt<"bottom"flp><"clear">',
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
