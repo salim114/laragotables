@@ -21,22 +21,22 @@
 	<script type="text/javascript" language="javascript" class="init">
 	
 	// For the example - show interactions with the table
-	var eventFired = function ( type ) {
-		var n = document.querySelector('#demo_info');
-		n.innerHTML += '<div>'+type+' event - '+new Date().getTime()+'</div>';
-		n.scrollTop = n.scrollHeight;      
-	}
+	var eventFired = function (type) {
+	  var n = document.querySelector("#demo_info");
+	  n.innerHTML += "<div>" + type + " event - " + new Date().getTime() + "</div>";
+	  n.scrollTop = n.scrollHeight;
+	};
 
-	document.addEventListener('DOMContentLoaded', function () {
-		let table = new DataTable('#example');
+	document.addEventListener("DOMContentLoaded", function () {
+	  let table = new DataTable("#example");
 
-		document
-			.querySelector('#example tbody')
-			.addEventListener('click', function (e) {
-				var data = table.row( e.target ).data();
-				
-				eventFired( 'You clicked on '+data[0]+'\'s row' );
-			});
+	  document
+	    .querySelector("#example tbody")
+	    .addEventListener("click", function (e) {
+	      var data = table.row(e.target).data();
+
+	      eventFired("You clicked on " + data[0] + "'s row");
+	    });
 	});
 
 	</script>
@@ -106,22 +106,22 @@
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
 						// For the example - show interactions with the table
-						var eventFired = function ( type ) {
-							var n = document.querySelector('#demo_info');
-							n.innerHTML += '&lt;div&gt;'+type+' event - '+new Date().getTime()+'&lt;/div&gt;';
-							n.scrollTop = n.scrollHeight;      
-						}
+						var eventFired = function (type) {
+						  var n = document.querySelector("#demo_info");
+						  n.innerHTML += "&lt;div&gt;" + type + " event - " + new Date().getTime() + "&lt;/div&gt;";
+						  n.scrollTop = n.scrollHeight;
+						};
 
-						document.addEventListener('DOMContentLoaded', function () {
-							let table = new DataTable('#example');
+						document.addEventListener("DOMContentLoaded", function () {
+						  let table = new DataTable("#example");
 
-							document
-								.querySelector('#example tbody')
-								.addEventListener('click', function (e) {
-									var data = table.row( e.target ).data();
-									
-									eventFired( 'You clicked on '+data[0]+'\'s row' );
-								});
+						  document
+						    .querySelector("#example tbody")
+						    .addEventListener("click", function (e) {
+						      var data = table.row(e.target).data();
+
+						      eventFired("You clicked on " + data[0] + "'s row");
+						    });
 						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>

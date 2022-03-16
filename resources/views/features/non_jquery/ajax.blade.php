@@ -20,23 +20,23 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	document.addEventListener('DOMContentLoaded', function () {
-		let table = new DataTable('#example', {
-			ajax: function (d, cb) {
-				fetch('{{ asset('data/objects.txt') }}')
-					.then(response => response.json())
-					.then(data => cb(data));
-			},
-			columns: [
-				{ data: 'name' },
-				{ data: 'position' },
-				{ data: 'office' },
-				{ data: 'extn' },
-				{ data: 'start_date' },
-				{ data: 'salary' }
-			]
-		} );
-	} );
+	document.addEventListener("DOMContentLoaded", function () {
+	  let table = new DataTable("#example", {
+	    ajax: function (d, cb) {
+	      fetch("{{ asset('data/objects.txt') }}")
+	        .then((response) => response.json())
+	        .then((data) => cb(data));
+	    },
+	    columns: [
+	      { data: "name" },
+	      { data: "position" },
+	      { data: "office" },
+	      { data: "extn" },
+	      { data: "start_date" },
+	      { data: "salary" },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -89,23 +89,23 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						document.addEventListener('DOMContentLoaded', function () {
-							let table = new DataTable('#example', {
-								ajax: function (d, cb) {
-									fetch(&quot;&#123;&#123; asset('data/objects.txt') &#125;&#125;&quot;
-										.then(response =&gt; response.json())
-										.then(data =&gt; cb(data));
-								},
-								columns: [
-									{ data: 'name' },
-									{ data: 'position' },
-									{ data: 'office' },
-									{ data: 'extn' },
-									{ data: 'start_date' },
-									{ data: 'salary' }
-								]
-							} );
-						} );</code>
+						document.addEventListener("DOMContentLoaded", function () {
+						  let table = new DataTable("#example", {
+						    ajax: function (d, cb) {
+						      fetch("&#123;&#123; asset('data/objects.txt') &#125;&#125;")
+						        .then((response) => response.json())
+						        .then((data) => cb(data));
+						    },
+						    columns: [
+						      { data: "name" },
+						      { data: "position" },
+						      { data: "office" },
+						      { data: "extn" },
+						      { data: "start_date" },
+						      { data: "salary" },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

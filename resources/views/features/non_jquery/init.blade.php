@@ -20,8 +20,8 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	document.addEventListener('DOMContentLoaded', function () {
-		let table = new DataTable('#example');
+	document.addEventListener("DOMContentLoaded", function () {
+	  let table = new DataTable("#example");
 	});
 
 	</script>
@@ -91,8 +91,8 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						document.addEventListener('DOMContentLoaded', function () {
-							let table = new DataTable('#example');
+						document.addEventListener("DOMContentLoaded", function () {
+						  let table = new DataTable("#example");
 						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
