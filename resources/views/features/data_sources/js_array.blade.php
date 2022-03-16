@@ -60,19 +60,19 @@
 	    [ "Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675" ]
 	];
 
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			data: dataSet,
-			columns: [
-				{ title: "Name" },
-				{ title: "Position" },
-				{ title: "Office" },
-				{ title: "Extn." },
-				{ title: "Start date" },
-				{ title: "Salary" }
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    data: dataSet,
+	    columns: [
+	      { title: "Name" },
+	      { title: "Position" },
+	      { title: "Office" },
+	      { title: "Extn." },
+	      { title: "Start date" },
+	      { title: "Salary" },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -145,19 +145,19 @@
 					    [ &quot;Unity Butler&quot;, &quot;Marketing Designer&quot;, &quot;San Francisco&quot;, &quot;5384&quot;, &quot;2009/12/09&quot;, &quot;$85,675&quot; ]
 					];
 
-					$(document).ready(function() {
-						$('#example').DataTable( {
-							data: dataSet,
-							columns: [
-								{ title: &quot;Name&quot; },
-								{ title: &quot;Position&quot; },
-								{ title: &quot;Office&quot; },
-								{ title: &quot;Extn.&quot; },
-								{ title: &quot;Start date&quot; },
-								{ title: &quot;Salary&quot; }
-							]
-						} );
-					} );</code>
+					$(document).ready(function () {
+					  $("#example").DataTable({
+					    data: dataSet,
+					    columns: [
+					      { title: "Name" },
+					      { title: "Position" },
+					      { title: "Office" },
+					      { title: "Extn." },
+					      { title: "Start date" },
+					      { title: "Salary" },
+					    ],
+					  });
+					});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
