@@ -26,32 +26,31 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		// Setup - add a text input to each footer cell
-		$('#example tfoot th').each( function () {
-			var title = $(this).text();
-			$(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-		} );
+	$(document).ready(function () {
+	  // Setup - add a text input to each footer cell
+	  $("#example tfoot th").each(function () {
+	    var title = $(this).text();
+	    $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+	  });
 
-		// DataTable
-		var table = $('#example').DataTable({
-			initComplete: function () {
-				// Apply the search
-				this.api().columns().every( function () {
-					var that = this;
+	  // DataTable
+	  var table = $("#example").DataTable({
+	    initComplete: function () {
+	      // Apply the search
+	      this.api()
+	        .columns()
+	        .every(function () {
+	          var that = this;
 
-					$( 'input', this.footer() ).on( 'keyup change clear', function () {
-						if ( that.search() !== this.value ) {
-							that
-								.search( this.value )
-								.draw();
-						}
-					} );
-				} );
-			}
-		});
-
-	} );
+	          $("input", this.footer()).on("keyup change clear", function () {
+	            if (that.search() !== this.value) {
+	              that.search(this.value).draw();
+	            }
+	          });
+	        });
+	    },
+	  });
+	});
 
 	</script>
 </head>
@@ -124,32 +123,31 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							// Setup - add a text input to each footer cell
-							$('#example tfoot th').each( function () {
-								var title = $(this).text();
-								$(this).html( '&lt;input type=&quot;text&quot; placeholder=&quot;Search '+title+'&quot; /&gt;' );
-							} );
-
-							// DataTable
-							var table = $('#example').DataTable({
-								initComplete: function () {
-									// Apply the search
-									this.api().columns().every( function () {
-										var that = this;
-
-										$( 'input', this.footer() ).on( 'keyup change clear', function () {
-											if ( that.search() !== this.value ) {
-												that
-													.search( this.value )
-													.draw();
-											}
-										} );
-									} );
-								}
+						$(document).ready(function () {
+						  // Setup - add a text input to each footer cell
+						  $("#example tfoot th").each(function () {
+						    var title = $(this).text();
+							$(this).html( '&lt;input type=&quot;text&quot; placeholder=&quot;Search '+title+'&quot; /&gt;' );
 							});
 
-						} );</code>
+						  // DataTable
+						  var table = $("#example").DataTable({
+						    initComplete: function () {
+						      // Apply the search
+						      this.api()
+						        .columns()
+						        .every(function () {
+						          var that = this;
+
+						          $("input", this.footer()).on("keyup change clear", function () {
+						            if (that.search() !== this.value) {
+						              that.search(this.value).draw();
+						            }
+						          });
+						        });
+						    },
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

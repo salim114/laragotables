@@ -20,33 +20,40 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	function filterGlobal () {
-		$('#example').DataTable().search( 
-			$('#global_filter').val(),
-			$('#global_regex').prop('checked'), 
-			$('#global_smart').prop('checked')
-		).draw();
+	function filterGlobal() {
+	  $("#example")
+	    .DataTable()
+	    .search(
+	      $("#global_filter").val(),
+	      $("#global_regex").prop("checked"),
+	      $("#global_smart").prop("checked")
+	    )
+	    .draw();
 	}
 
-	function filterColumn ( i ) {
-		$('#example').DataTable().column( i ).search( 
-			$('#col'+i+'_filter').val(),
-			$('#col'+i+'_regex').prop('checked'), 
-			$('#col'+i+'_smart').prop('checked')
-		).draw();
+	function filterColumn(i) {
+	  $("#example")
+	    .DataTable()
+	    .column(i)
+	    .search(
+	      $("#col" + i + "_filter").val(),
+	      $("#col" + i + "_regex").prop("checked"),
+	      $("#col" + i + "_smart").prop("checked")
+	    )
+	    .draw();
 	}
 
-	$(document).ready(function() {
-		$('#example').DataTable();
+	$(document).ready(function () {
+	  $("#example").DataTable();
 
-		$('input.global_filter').on( 'keyup click', function () {
-			filterGlobal();
-		} );
+	  $("input.global_filter").on("keyup click", function () {
+	    filterGlobal();
+	  });
 
-		$('input.column_filter').on( 'keyup click', function () {
-			filterColumn( $(this).parents('tr').attr('data-column') );
-		} );
-	} );
+	  $("input.column_filter").on("keyup click", function () {
+	    filterColumn($(this).parents("tr").attr("data-column"));
+	  });
+	});
 
 	</script>
 </head>
@@ -170,33 +177,40 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						function filterGlobal () {
-							$('#example').DataTable().search( 
-								$('#global_filter').val(),
-								$('#global_regex').prop('checked'), 
-								$('#global_smart').prop('checked')
-							).draw();
+						function filterGlobal() {
+						  $("#example")
+						    .DataTable()
+						    .search(
+						      $("#global_filter").val(),
+						      $("#global_regex").prop("checked"),
+						      $("#global_smart").prop("checked")
+						    )
+						    .draw();
 						}
 
-						function filterColumn ( i ) {
-							$('#example').DataTable().column( i ).search( 
-								$('#col'+i+'_filter').val(),
-								$('#col'+i+'_regex').prop('checked'), 
-								$('#col'+i+'_smart').prop('checked')
-							).draw();
+						function filterColumn(i) {
+						  $("#example")
+						    .DataTable()
+						    .column(i)
+						    .search(
+						      $("#col" + i + "_filter").val(),
+						      $("#col" + i + "_regex").prop("checked"),
+						      $("#col" + i + "_smart").prop("checked")
+						    )
+						    .draw();
 						}
 
-						$(document).ready(function() {
-							$('#example').DataTable();
+						$(document).ready(function () {
+						  $("#example").DataTable();
 
-							$('input.global_filter').on( 'keyup click', function () {
-								filterGlobal();
-							} );
+						  $("input.global_filter").on("keyup click", function () {
+						    filterGlobal();
+						  });
 
-							$('input.column_filter').on( 'keyup click', function () {
-								filterColumn( $(this).parents('tr').attr('data-column') );
-							} );
-						} );</code>
+						  $("input.column_filter").on("keyup click", function () {
+						    filterColumn($(this).parents("tr").attr("data-column"));
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

@@ -20,23 +20,27 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		var t = $('#example').DataTable( {
-			"columnDefs": [ {
-				"searchable": false,
-				"orderable": false,
-				"width": '1%', 
-				"targets": 0
-			} ],
-			"order": [[ 1, 'asc' ]]
-		} );
+	$(document).ready(function () {
+	  var t = $("#example").DataTable({
+	    columnDefs: [
+	      {
+	        searchable: false,
+	        orderable: false,
+	        width: "1%",
+	        targets: 0,
+	      },
+	    ],
+	    order: [[1, "asc"]],
+	  });
 
-		t.on( 'order.dt search.dt', function () {
-			t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-				cell.innerHTML = i+1;
-			} );
-		} ).draw();
-	} );
+	  t.on("order.dt search.dt", function () {
+	    t.column(0, { search: "applied", order: "applied" })
+	      .nodes()
+	      .each(function (cell, i) {
+	        cell.innerHTML = i + 1;
+	      });
+	  }).draw();
+	});
 
 	</script>
 </head>
@@ -105,22 +109,27 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var t = $('#example').DataTable( {
-								&quot;columnDefs&quot;: [ {
-									&quot;searchable&quot;: false,
-									&quot;orderable&quot;: false,
-									&quot;targets&quot;: 0
-								} ],
-								&quot;order&quot;: [[ 1, 'asc' ]]
-							} );
+						$(document).ready(function () {
+						  var t = $("#example").DataTable({
+						    columnDefs: [
+						      {
+						        searchable: false,
+						        orderable: false,
+						        width: "1%",
+						        targets: 0,
+						      },
+						    ],
+						    order: [[1, "asc"]],
+						  });
 
-							t.on( 'order.dt search.dt', function () {
-								t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-									cell.innerHTML = i+1;
-								} );
-							} ).draw();
-						} );</code>
+						  t.on("order.dt search.dt", function () {
+						    t.column(0, { search: "applied", order: "applied" })
+						      .nodes()
+						      .each(function (cell, i) {
+						        cell.innerHTML = i + 1;
+						      });
+						  }).draw();
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

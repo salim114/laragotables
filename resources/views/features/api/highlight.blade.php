@@ -24,17 +24,16 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		var table = $('#example').DataTable();
-		
-		$('#example tbody')
-			.on( 'mouseenter', 'td', function () {
-				var colIdx = table.cell(this).index().column;
+	$(document).ready(function () {
+	  var table = $("#example").DataTable();
 
-				$( table.cells().nodes() ).removeClass( 'highlight' );
-				$( table.column( colIdx ).nodes() ).addClass( 'highlight' );
-			} );
-	} );
+	  $("#example tbody").on("mouseenter", "td", function () {
+	    var colIdx = table.cell(this).index().column;
+
+	    $(table.cells().nodes()).removeClass("highlight");
+	    $(table.column(colIdx).nodes()).addClass("highlight");
+	  });
+	});
 
 	</script>
 </head>
@@ -101,17 +100,16 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var table = $('#example').DataTable();
-							
-							$('#example tbody')
-								.on( 'mouseenter', 'td', function () {
-									var colIdx = table.cell(this).index().column;
+						$(document).ready(function () {
+						  var table = $("#example").DataTable();
 
-									$( table.cells().nodes() ).removeClass( 'highlight' );
-									$( table.column( colIdx ).nodes() ).addClass( 'highlight' );
-								} );
-						} );</code>
+						  $("#example tbody").on("mouseenter", "td", function () {
+						    var colIdx = table.cell(this).index().column;
+
+						    $(table.cells().nodes()).removeClass("highlight");
+						    $(table.column(colIdx).nodes()).addClass("highlight");
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

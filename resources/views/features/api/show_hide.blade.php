@@ -20,22 +20,22 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 
-	$(document).ready(function() {
-		var table = $('#example').DataTable( {
-			"scrollY": "200px",
-			"paging": false
-		} );
+	$(document).ready(function () {
+	  var table = $("#example").DataTable({
+	    scrollY: "200px",
+	    paging: false,
+	  });
 
-		$('a.toggle-vis').on( 'click', function (e) {
-			e.preventDefault();
+	  $("a.toggle-vis").on("click", function (e) {
+	    e.preventDefault();
 
-			// Get the column API object
-			var column = table.column( $(this).attr('data-column') );
+	    // Get the column API object
+	    var column = table.column($(this).attr("data-column"));
 
-			// Toggle the visibility
-			column.visible( ! column.visible() );
-		} );
-	} );
+	    // Toggle the visibility
+	    column.visible(!column.visible());
+	  });
+	});
 
 	</script>
 </head>
@@ -108,22 +108,22 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var table = $('#example').DataTable( {
-								&quot;scrollY&quot;: &quot;200px&quot;,
-								&quot;paging&quot;: false
-							} );
+						$(document).ready(function () {
+						  var table = $("#example").DataTable({
+						    scrollY: "200px",
+						    paging: false,
+						  });
 
-							$('a.toggle-vis').on( 'click', function (e) {
-								e.preventDefault();
+						  $("a.toggle-vis").on("click", function (e) {
+						    e.preventDefault();
 
-								// Get the column API object
-								var column = table.column( $(this).attr('data-column') );
+						    // Get the column API object
+						    var column = table.column($(this).attr("data-column"));
 
-								// Toggle the visibility
-								column.visible( ! column.visible() );
-							} );
-						} );</code>
+						    // Toggle the visibility
+						    column.visible(!column.visible());
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

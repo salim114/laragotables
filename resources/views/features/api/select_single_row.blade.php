@@ -20,23 +20,22 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		var table = $('#example').DataTable();
+	$(document).ready(function () {
+	  var table = $("#example").DataTable();
 
-		$('#example tbody').on( 'click', 'tr', function () {
-			if ( $(this).hasClass('selected') ) {
-				$(this).removeClass('selected');
-			}
-			else {
-				table.$('tr.selected').removeClass('selected');
-				$(this).addClass('selected');
-			}
-		} );
+	  $("#example tbody").on("click", "tr", function () {
+	    if ($(this).hasClass("selected")) {
+	      $(this).removeClass("selected");
+	    } else {
+	      table.$("tr.selected").removeClass("selected");
+	      $(this).addClass("selected");
+	    }
+	  });
 
-		$('#button').click( function () {
-			table.row('.selected').remove().draw( false );
-		} );
-	} );
+	  $("#button").click(function () {
+	    table.row(".selected").remove().draw(false);
+	  });
+	});
 
 	</script>
 </head>
@@ -105,23 +104,22 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var table = $('#example').DataTable();
+						$(document).ready(function () {
+						  var table = $("#example").DataTable();
 
-							$('#example tbody').on( 'click', 'tr', function () {
-								if ( $(this).hasClass('selected') ) {
-									$(this).removeClass('selected');
-								}
-								else {
-									table.$('tr.selected').removeClass('selected');
-									$(this).addClass('selected');
-								}
-							} );
+						  $("#example tbody").on("click", "tr", function () {
+						    if ($(this).hasClass("selected")) {
+						      $(this).removeClass("selected");
+						    } else {
+						      table.$("tr.selected").removeClass("selected");
+						      $(this).addClass("selected");
+						    }
+						  });
 
-							$('#button').click( function () {
-								table.row('.selected').remove().draw( false );
-							} );
-						} );</code>
+						  $("#button").click(function () {
+						    table.row(".selected").remove().draw(false);
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

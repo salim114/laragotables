@@ -20,23 +20,26 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		var table = $('#example').DataTable({
-			columnDefs: [{
-				orderable: false,
-				targets: [1,2,3]
-			}]
-		});
+	$(document).ready(function () {
+	  var table = $("#example").DataTable({
+	    columnDefs: [
+	      {
+	        orderable: false,
+	        targets: [1, 2, 3],
+	      },
+	    ],
+	  });
 
-		$('button').click( function() {
-			var data = table.$('input, select').serialize();
-			alert(
-				"The following data would have been submitted to the server: \n\n"+
-				data.substr( 0, 120 )+'...'
-			);
-			return false;
-		} );
-	} );
+	  $("button").click(function () {
+	    var data = table.$("input, select").serialize();
+	    alert(
+	      "The following data would have been submitted to the server: \n\n" +
+	        data.substr(0, 120) +
+	        "..."
+	    );
+	    return false;
+	  });
+	});
 
 	</script>
 </head>
@@ -1346,23 +1349,26 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var table = $('#example').DataTable({
-								columnDefs: [{
-									orderable: false,
-									targets: [1,2,3]
-								}]
-							});
+						$(document).ready(function () {
+						  var table = $("#example").DataTable({
+						    columnDefs: [
+						      {
+						        orderable: false,
+						        targets: [1, 2, 3],
+						      },
+						    ],
+						  });
 
-							$('button').click( function() {
-								var data = table.$('input, select').serialize();
-								alert(
-									&quot;The following data would have been submitted to the server: \n\n&quot;+
-									data.substr( 0, 120 )+'...'
-								);
-								return false;
-							} );
-						} );</code>
+						  $("button").click(function () {
+						    var data = table.$("input, select").serialize();
+						    alert(
+						      "The following data would have been submitted to the server: \n\n" +
+						        data.substr(0, 120) +
+						        "..."
+						    );
+						    return false;
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

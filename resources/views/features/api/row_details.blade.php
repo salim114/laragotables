@@ -20,58 +20,57 @@
 	
 	/* Formatting function for row details - modify as you need */
 	function format ( d ) {
-		// `d` is the original data object for the row
-		return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
-			'<tr>'+
-				'<td>Full name:</td>'+
-				'<td>'+d.name+'</td>'+
-			'</tr>'+
-			'<tr>'+
-				'<td>Extension number:</td>'+
-				'<td>'+d.extn+'</td>'+
-			'</tr>'+
-			'<tr>'+
-				'<td>Extra info:</td>'+
-				'<td>And any further details here (images etc)...</td>'+
-			'</tr>'+
-		'</table>';
+	  // `d` is the original data object for the row
+	  return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+	    '<tr>'+
+	      '<td>Full name:</td>'+
+	      '<td>'+d.name+'</td>'+
+	    '</tr>'+
+	    '<tr>'+
+	      '<td>Extension number:</td>'+
+	      '<td>'+d.extn+'</td>'+
+	    '</tr>'+
+	    '<tr>'+
+	      '<td>Extra info:</td>'+
+	      '<td>And any further details here (images etc)...</td>'+
+	    '</tr>'+
+	  '</table>';
 	}
 
-	$(document).ready(function() {
-		var table = $('#example').DataTable( {
-			"ajax": "{{ asset('data/objects.txt') }}",
-			"columns": [
-				{
-					"className":      'dt-control',
-					"orderable":      false,
-					"data":           null,
-					"defaultContent": ''
-				},
-				{ "data": "name" },
-				{ "data": "position" },
-				{ "data": "office" },
-				{ "data": "salary" }
-			],
-			"order": [[1, 'asc']]
-		} );
-		
-		// Add event listener for opening and closing details
-		$('#example tbody').on('click', 'td.dt-control', function () {
-			var tr = $(this).closest('tr');
-			var row = table.row( tr );
+	$(document).ready(function () {
+	  var table = $("#example").DataTable({
+	    ajax: "{{ asset('data/objects.txt') }}",
+	    columns: [
+	      {
+	        className: "dt-control",
+	        orderable: false,
+	        data: null,
+	        defaultContent: "",
+	      },
+	      { data: "name" },
+	      { data: "position" },
+	      { data: "office" },
+	      { data: "salary" },
+	    ],
+	    order: [[1, "asc"]],
+	  });
 
-			if ( row.child.isShown() ) {
-				// This row is already open - close it
-				row.child.hide();
-				tr.removeClass('shown');
-			}
-			else {
-				// Open this row
-				row.child( format(row.data()) ).show();
-				tr.addClass('shown');
-			}
-		} );
-	} );
+	  // Add event listener for opening and closing details
+	  $("#example tbody").on("click", "td.dt-control", function () {
+	    var tr = $(this).closest("tr");
+	    var row = table.row(tr);
+
+	    if (row.child.isShown()) {
+	      // This row is already open - close it
+	      row.child.hide();
+	      tr.removeClass("shown");
+	    } else {
+	      // Open this row
+	      row.child(format(row.data())).show();
+	      tr.addClass("shown");
+	    }
+	  });
+	});
 
 	</script>
 </head>
@@ -123,60 +122,61 @@
 			</ul>
 			<div class="tabs">
 				<div class="js">
-					<p>The Javascript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">/* Formatting function for row details - modify as you need */
-function format ( d ) {
-	// `d` is the original data object for the row
-	return '&lt;table cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;padding-left:50px;&quot;&gt;'+
-		'&lt;tr&gt;'+
-			'&lt;td&gt;Full name:&lt;/td&gt;'+
-			'&lt;td&gt;'+d.name+'&lt;/td&gt;'+
-		'&lt;/tr&gt;'+
-		'&lt;tr&gt;'+
-			'&lt;td&gt;Extension number:&lt;/td&gt;'+
-			'&lt;td&gt;'+d.extn+'&lt;/td&gt;'+
-		'&lt;/tr&gt;'+
-		'&lt;tr&gt;'+
-			'&lt;td&gt;Extra info:&lt;/td&gt;'+
-			'&lt;td&gt;And any further details here (images etc)...&lt;/td&gt;'+
-		'&lt;/tr&gt;'+
-	'&lt;/table&gt;';
-}
+					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
+					<code class="multiline language-js">
+						/* Formatting function for row details - modify as you need */
+						function format ( d ) {
+						  // `d` is the original data object for the row
+						  return '&lt;table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;"&gt;'+
+						    '&lt;tr&gt;'+
+						      '&lt;td&gt;Full name:&lt;/td&gt;'+
+						      '&lt;td&gt;'+d.name+'&lt;/td&gt;'+
+						    '&lt;/tr&gt;'+
+						    '&lt;tr&gt;'+
+						      '&lt;td&gt;Extension number:&lt;/td&gt;'+
+						      '&lt;td&gt;'+d.extn+'&lt;/td&gt;'+
+						    '&lt;/tr&gt;'+
+						    '&lt;tr&gt;'+
+						      '&lt;td&gt;Extra info:&lt;/td&gt;'+
+						      '&lt;td&gt;And any further details here (images etc)...&lt;/td&gt;'+
+						    '&lt;/tr&gt;'+
+						  '&lt;/table&gt;';
+						}
 
-$(document).ready(function() {
-	var table = $('#example').DataTable( {
-		&quot;ajax&quot;: &quot;&#123;&#123; asset('data/objects.txt') &#125;&#125;&quot;,
-		&quot;columns&quot;: [
-			{
-				&quot;className&quot;:      'dt-control',
-				&quot;orderable&quot;:      false,
-				&quot;data&quot;:           null,
-				&quot;defaultContent&quot;: ''
-			},
-			{ &quot;data&quot;: &quot;name&quot; },
-			{ &quot;data&quot;: &quot;position&quot; },
-			{ &quot;data&quot;: &quot;office&quot; },
-			{ &quot;data&quot;: &quot;salary&quot; }
-		],
-		&quot;order&quot;: [[1, 'asc']]
-	} );
-	
-	// Add event listener for opening and closing details
-	$('#example tbody').on('click', 'td.dt-control', function () {
-		var tr = $(this).closest('tr');
-		var row = table.row( tr );
+						$(document).ready(function () {
+						  var table = $("#example").DataTable({
+							ajax: "&#123;&#123; asset('data/objects.txt') &#125;&#125;"
+						    columns: [
+						      {
+						        className: "dt-control",
+						        orderable: false,
+						        data: null,
+						        defaultContent: "",
+						      },
+						      { data: "name" },
+						      { data: "position" },
+						      { data: "office" },
+						      { data: "salary" },
+						    ],
+						    order: [[1, "asc"]],
+						  });
 
-		if ( row.child.isShown() ) {
-			// This row is already open - close it
-			row.child.hide();
-			tr.removeClass('shown');
-		}
-		else {
-			// Open this row
-			row.child( format(row.data()) ).show();
-			tr.addClass('shown');
-		}
-	} );
-} );</code>
+						  // Add event listener for opening and closing details
+						  $("#example tbody").on("click", "td.dt-control", function () {
+						    var tr = $(this).closest("tr");
+						    var row = table.row(tr);
+
+						    if (row.child.isShown()) {
+						      // This row is already open - close it
+						      row.child.hide();
+						      tr.removeClass("shown");
+						    } else {
+						      // Open this row
+						      row.child(format(row.data())).show();
+						      tr.addClass("shown");
+						    }
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

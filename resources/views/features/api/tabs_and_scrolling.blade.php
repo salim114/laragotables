@@ -23,21 +23,21 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 
-	$(document).ready(function() {
-		$('a[data-toggle="tab"]').on( 'shown.bs.tab', function (e) {
-			$.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
-		} );
-		
-		$('table.table').DataTable( {
-			ajax:           '{{ asset('data/arrays.txt') }}',
-			scrollY:        200,
-			scrollCollapse: true,
-			paging:         false
-		} );
+	$(document).ready(function () {
+	  $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+	    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+	  });
 
-		// Apply a search to the second table for the demo
-		$('#myTable2').DataTable().search( 'New York' ).draw();
-	} );
+	  $("table.table").DataTable({
+	    ajax: "{{ asset('data/arrays.txt') }}",
+	    scrollY: 200,
+	    scrollCollapse: true,
+	    paging: false,
+	  });
+
+	  // Apply a search to the second table for the demo
+	  $("#myTable2").DataTable().search("New York").draw();
+	});
 
 	</script>
 </head>
@@ -113,21 +113,21 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('a[data-toggle=&quot;tab&quot;]').on( 'shown.bs.tab', function (e) {
-								$.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
-							} );
-							
-							$('table.table').DataTable( {
-								ajax:           &quot;&#123;&#123; asset('data/arrays.txt') &#125;&#125;&quot;
-								scrollY:        200,
-								scrollCollapse: true,
-								paging:         false
-							} );
+						$(document).ready(function () {
+						  $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+						    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+						  });
 
-							// Apply a search to the second table for the demo
-							$('#myTable2').DataTable().search( 'New York' ).draw();
-						} );</code>
+						  $("table.table").DataTable({
+						    ajax: "&#123;&#123; asset('data/arrays.txt') &#125;&#125;",
+						    scrollY: 200,
+						    scrollCollapse: true,
+						    paging: false,
+						  });
+
+						  // Apply a search to the second table for the demo
+						  $("#myTable2").DataTable().search("New York").draw();
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

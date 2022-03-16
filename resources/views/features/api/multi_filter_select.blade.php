@@ -20,30 +20,32 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			initComplete: function () {
-				this.api().columns().every( function () {
-					var column = this;
-					var select = $('<select><option value=""></option></select>')
-						.appendTo( $(column.footer()).empty() )
-						.on( 'change', function () {
-							var val = $.fn.dataTable.util.escapeRegex(
-								$(this).val()
-							);
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    initComplete: function () {
+	      this.api()
+	        .columns()
+	        .every(function () {
+	          var column = this;
+	          var select = $('<select><option value=""></option></select>')
+	            .appendTo($(column.footer()).empty())
+	            .on("change", function () {
+	              var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
-							column
-								.search( val ? '^'+val+'$' : '', true, false )
-								.draw();
-						} );
+	              column.search(val ? "^" + val + "$" : "", true, false).draw();
+	            });
 
-					column.data().unique().sort().each( function ( d, j ) {
-						select.append( '<option value="'+d+'">'+d+'</option>' )
-					} );
-				} );
-			}
-		} );
-	} );
+	          column
+	            .data()
+	            .unique()
+	            .sort()
+	            .each(function (d, j) {
+	              select.append('<option value="' + d + '">' + d + "</option>");
+	            });
+	        });
+	    },
+	  });
+	});
 
 	</script>
 </head>
@@ -126,30 +128,32 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								initComplete: function () {
-									this.api().columns().every( function () {
-										var column = this;
-										var select = $('&lt;select&gt;&lt;option value=&quot;&quot;&gt;&lt;/option&gt;&lt;/select&gt;')
-											.appendTo( $(column.footer()).empty() )
-											.on( 'change', function () {
-												var val = $.fn.dataTable.util.escapeRegex(
-													$(this).val()
-												);
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    initComplete: function () {
+						      this.api()
+						        .columns()
+						        .every(function () {
+						          var column = this;
+						          var select = $('&lt;select&gt;&lt;option value=&quot;&quot;&gt;&lt;/option&gt;&lt;/select&gt;')
+						            .appendTo($(column.footer()).empty())
+						            .on("change", function () {
+						              var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
-												column
-													.search( val ? '^'+val+'$' : '', true, false )
-													.draw();
-											} );
+						              column.search(val ? "^" + val + "$" : "", true, false).draw();
+						            });
 
-										column.data().unique().sort().each( function ( d, j ) {
-											select.append( '&lt;option value=&quot;'+d+'&quot;&gt;'+d+'&lt;/option&gt;' )
-										} );
-									} );
-								}
-							} );
-						} );</code>
+						          column
+						            .data()
+						            .unique()
+						            .sort()
+						            .each(function (d, j) {
+						              select.append( '&lt;option value=&quot;'+d+'&quot;&gt;'+d+'&lt;/option&gt;' );
+						            });
+						        });
+						    },
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
