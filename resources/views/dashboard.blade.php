@@ -28,13 +28,14 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    background: linear-gradient(to right, #60bbd9, #afdfef);
 }
 .service-box::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #f1f1f1;
+    background: linear-gradient(to bottom, #afdfef, #60bbd9);
     left: 0px;
     top: -500px;
     z-index: -1;
@@ -76,7 +77,8 @@
 }
 .service-box p {
     line-height: 24px;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .service-box h3 a:hover {
     color: #343a40;
@@ -94,6 +96,13 @@
   color: #343a40 !important; 
   font-weight: 600 !important; 
 }
+.btn-dark{
+  background-color: #264a6c !important; 
+  color: #fff !important; 
+  font-weight: 600 !important; 
+}
+
+
 </style> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -106,7 +115,7 @@
         </h2>
     </x-slot>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <div class="py-12">
+    <div class="py-12" style="background: linear-gradient(to right, #3a7fd5, #6ebce2);">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg shadow">
                 <div class="p-6 bg-white border-b border-gray-200">
@@ -134,5 +143,3 @@
     </div>
     </div>
 </x-app-layout>
- margin: 0 auto;
-    width: 80%;

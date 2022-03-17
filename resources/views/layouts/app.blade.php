@@ -18,7 +18,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-100" style="background: linear-gradient(to right, #3a7fd5, #6ebce2);">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
