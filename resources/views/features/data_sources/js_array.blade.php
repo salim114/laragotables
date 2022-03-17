@@ -245,8 +245,7 @@
 
 					    public function js_array()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.data_sources.js_array', compact('datatables'));       
+					        return view('features.data_sources.js_array');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>

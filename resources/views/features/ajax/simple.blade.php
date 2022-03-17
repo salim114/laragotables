@@ -182,7 +182,7 @@
 
 					    public function simple()
 					    {
-					        return view('features.ajax.simple', compact('datatables'));       
+					        return view('features.ajax.simple');       
 					    }</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>

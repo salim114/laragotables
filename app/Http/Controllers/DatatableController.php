@@ -382,8 +382,7 @@ class DatatableController extends Controller
 
     public function js_array()
     {
-        $datatables = Datatable::all();
-        return view('features.data_sources.js_array', compact('datatables'));       
+        return view('features.data_sources.js_array');       
     }
 
     public function server_side(Request $request)
@@ -515,8 +514,7 @@ class DatatableController extends Controller
 
     public function objects()
     {
-       $datatables = Datatable::all();
-        return view('features.ajax.objects', compact('datatables'));               
+        return view('features.ajax.objects');               
     }
 
     public function objects_subarrays()
