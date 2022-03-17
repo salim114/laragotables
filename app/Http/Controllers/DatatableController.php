@@ -125,8 +125,7 @@ class DatatableController extends Controller
 
     public function stocks()
     {
-        $datatables = Datatable::all();
-        return view('features.basic_init.stocks', compact('datatables'));       
+        return view('features.basic_init.stocks');       
     }
     
     //Advanced initialisation

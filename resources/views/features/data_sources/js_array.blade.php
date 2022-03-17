@@ -105,59 +105,61 @@
 			</ul>
 			<div class="tabs">
 				<div class="js">
-					<p>The Javascript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">var dataSet = [
-						[ &quot;Abdelhalim Saidi&quot;, &quot;Head of Service ADM&quot;, &quot;Algiers&quot;, &quot;1616&quot;, &quot;2006/07/01&quot;, &quot;$120,000&quot; ],
-					    [ &quot;Tiger Nixon&quot;, &quot;System Architect&quot;, &quot;Edinburgh&quot;, &quot;5421&quot;, &quot;2011/04/25&quot;, &quot;$320,800&quot; ],
-					    [ &quot;Garrett Winters&quot;, &quot;Accountant&quot;, &quot;Tokyo&quot;, &quot;8422&quot;, &quot;2011/07/25&quot;, &quot;$170,750&quot; ],
-					    [ &quot;Ashton Cox&quot;, &quot;Junior Technical Author&quot;, &quot;San Francisco&quot;, &quot;1562&quot;, &quot;2009/01/12&quot;, &quot;$86,000&quot; ],
-					    [ &quot;Cedric Kelly&quot;, &quot;Senior Javascript Developer&quot;, &quot;Edinburgh&quot;, &quot;6224&quot;, &quot;2012/03/29&quot;, &quot;$433,060&quot; ],
-					    [ &quot;Airi Satou&quot;, &quot;Accountant&quot;, &quot;Tokyo&quot;, &quot;5407&quot;, &quot;2008/11/28&quot;, &quot;$162,700&quot; ],
-					    [ &quot;Brielle Williamson&quot;, &quot;Integration Specialist&quot;, &quot;New York&quot;, &quot;4804&quot;, &quot;2012/12/02&quot;, &quot;$372,000&quot; ],
-					    [ &quot;Herrod Chandler&quot;, &quot;Sales Assistant&quot;, &quot;San Francisco&quot;, &quot;9608&quot;, &quot;2012/08/06&quot;, &quot;$137,500&quot; ],
-					    [ &quot;Rhona Davidson&quot;, &quot;Integration Specialist&quot;, &quot;Tokyo&quot;, &quot;6200&quot;, &quot;2010/10/14&quot;, &quot;$327,900&quot; ],
-					    [ &quot;Colleen Hurst&quot;, &quot;Javascript Developer&quot;, &quot;San Francisco&quot;, &quot;2360&quot;, &quot;2009/09/15&quot;, &quot;$205,500&quot; ],
-					    [ &quot;Sonya Frost&quot;, &quot;Software Engineer&quot;, &quot;Edinburgh&quot;, &quot;1667&quot;, &quot;2008/12/13&quot;, &quot;$103,600&quot; ],
-					    [ &quot;Jena Gaines&quot;, &quot;Office Manager&quot;, &quot;London&quot;, &quot;3814&quot;, &quot;2008/12/19&quot;, &quot;$90,560&quot; ],
-					    [ &quot;Quinn Flynn&quot;, &quot;Support Lead&quot;, &quot;Edinburgh&quot;, &quot;9497&quot;, &quot;2013/03/03&quot;, &quot;$342,000&quot; ],
-					    [ &quot;Charde Marshall&quot;, &quot;Regional Director&quot;, &quot;San Francisco&quot;, &quot;6741&quot;, &quot;2008/10/16&quot;, &quot;$470,600&quot; ],
-					    [ &quot;Haley Kennedy&quot;, &quot;Senior Marketing Designer&quot;, &quot;London&quot;, &quot;3597&quot;, &quot;2012/12/18&quot;, &quot;$313,500&quot; ],
-					    [ &quot;Tatyana Fitzpatrick&quot;, &quot;Regional Director&quot;, &quot;London&quot;, &quot;1965&quot;, &quot;2010/03/17&quot;, &quot;$385,750&quot; ],
-					    [ &quot;Michael Silva&quot;, &quot;Marketing Designer&quot;, &quot;London&quot;, &quot;1581&quot;, &quot;2012/11/27&quot;, &quot;$198,500&quot; ],
-					    [ &quot;Paul Byrd&quot;, &quot;Chief Financial Officer (CFO)&quot;, &quot;New York&quot;, &quot;3059&quot;, &quot;2010/06/09&quot;, &quot;$725,000&quot; ],
-					    [ &quot;Gloria Little&quot;, &quot;Systems Administrator&quot;, &quot;New York&quot;, &quot;1721&quot;, &quot;2009/04/10&quot;, &quot;$237,500&quot; ],
-					    [ &quot;Bradley Greer&quot;, &quot;Software Engineer&quot;, &quot;London&quot;, &quot;2558&quot;, &quot;2012/10/13&quot;, &quot;$132,000&quot; ],
-					    [ &quot;Dai Rios&quot;, &quot;Personnel Lead&quot;, &quot;Edinburgh&quot;, &quot;2290&quot;, &quot;2012/09/26&quot;, &quot;$217,500&quot; ],
-					    [ &quot;Jenette Caldwell&quot;, &quot;Development Lead&quot;, &quot;New York&quot;, &quot;1937&quot;, &quot;2011/09/03&quot;, &quot;$345,000&quot; ],
-					    [ &quot;Yuri Berry&quot;, &quot;Chief Marketing Officer (CMO)&quot;, &quot;New York&quot;, &quot;6154&quot;, &quot;2009/06/25&quot;, &quot;$675,000&quot; ],
-					    [ &quot;Caesar Vance&quot;, &quot;Pre-Sales Support&quot;, &quot;New York&quot;, &quot;8330&quot;, &quot;2011/12/12&quot;, &quot;$106,450&quot; ],
-					    [ &quot;Doris Wilder&quot;, &quot;Sales Assistant&quot;, &quot;Sydney&quot;, &quot;3023&quot;, &quot;2010/09/20&quot;, &quot;$85,600&quot; ],
-					    [ &quot;Angelica Ramos&quot;, &quot;Chief Executive Officer (CEO)&quot;, &quot;London&quot;, &quot;5797&quot;, &quot;2009/10/09&quot;, &quot;$1,200,000&quot; ],
-					    [ &quot;Gavin Joyce&quot;, &quot;Developer&quot;, &quot;Edinburgh&quot;, &quot;8822&quot;, &quot;2010/12/22&quot;, &quot;$92,575&quot; ],
-					    [ &quot;Jennifer Chang&quot;, &quot;Regional Director&quot;, &quot;Singapore&quot;, &quot;9239&quot;, &quot;2010/11/14&quot;, &quot;$357,650&quot; ],
-					    [ &quot;Brenden Wagner&quot;, &quot;Software Engineer&quot;, &quot;San Francisco&quot;, &quot;1314&quot;, &quot;2011/06/07&quot;, &quot;$206,850&quot; ],
-					    [ &quot;Fiona Green&quot;, &quot;Chief Operating Officer (COO)&quot;, &quot;San Francisco&quot;, &quot;2947&quot;, &quot;2010/03/11&quot;, &quot;$850,000&quot; ],
-					    [ &quot;Shou Itou&quot;, &quot;Regional Marketing&quot;, &quot;Tokyo&quot;, &quot;8899&quot;, &quot;2011/08/14&quot;, &quot;$163,000&quot; ],
-					    [ &quot;Michelle House&quot;, &quot;Integration Specialist&quot;, &quot;Sydney&quot;, &quot;2769&quot;, &quot;2011/06/02&quot;, &quot;$95,400&quot; ],
-					    [ &quot;Suki Burks&quot;, &quot;Developer&quot;, &quot;London&quot;, &quot;6832&quot;, &quot;2009/10/22&quot;, &quot;$114,500&quot; ],
-					    [ &quot;Prescott Bartlett&quot;, &quot;Technical Author&quot;, &quot;London&quot;, &quot;3606&quot;, &quot;2011/05/07&quot;, &quot;$145,000&quot; ],
-					    [ &quot;Gavin Cortez&quot;, &quot;Team Leader&quot;, &quot;San Francisco&quot;, &quot;2860&quot;, &quot;2008/10/26&quot;, &quot;$235,500&quot; ],
-					    [ &quot;Martena Mccray&quot;, &quot;Post-Sales support&quot;, &quot;Edinburgh&quot;, &quot;8240&quot;, &quot;2011/03/09&quot;, &quot;$324,050&quot; ],
-					    [ &quot;Unity Butler&quot;, &quot;Marketing Designer&quot;, &quot;San Francisco&quot;, &quot;5384&quot;, &quot;2009/12/09&quot;, &quot;$85,675&quot; ]
-					];
+					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
+					<code class="multiline language-js">
+						var dataSet = [
+							[ &quot;Abdelhalim Saidi&quot;, &quot;Head of Service ADM&quot;, &quot;Algiers&quot;, &quot;1616&quot;, &quot;2006/07/01&quot;, &quot;$120,000&quot; ],
+						    [ &quot;Tiger Nixon&quot;, &quot;System Architect&quot;, &quot;Edinburgh&quot;, &quot;5421&quot;, &quot;2011/04/25&quot;, &quot;$320,800&quot; ],
+						    [ &quot;Garrett Winters&quot;, &quot;Accountant&quot;, &quot;Tokyo&quot;, &quot;8422&quot;, &quot;2011/07/25&quot;, &quot;$170,750&quot; ],
+						    [ &quot;Ashton Cox&quot;, &quot;Junior Technical Author&quot;, &quot;San Francisco&quot;, &quot;1562&quot;, &quot;2009/01/12&quot;, &quot;$86,000&quot; ],
+						    [ &quot;Cedric Kelly&quot;, &quot;Senior Javascript Developer&quot;, &quot;Edinburgh&quot;, &quot;6224&quot;, &quot;2012/03/29&quot;, &quot;$433,060&quot; ],
+						    [ &quot;Airi Satou&quot;, &quot;Accountant&quot;, &quot;Tokyo&quot;, &quot;5407&quot;, &quot;2008/11/28&quot;, &quot;$162,700&quot; ],
+						    [ &quot;Brielle Williamson&quot;, &quot;Integration Specialist&quot;, &quot;New York&quot;, &quot;4804&quot;, &quot;2012/12/02&quot;, &quot;$372,000&quot; ],
+						    [ &quot;Herrod Chandler&quot;, &quot;Sales Assistant&quot;, &quot;San Francisco&quot;, &quot;9608&quot;, &quot;2012/08/06&quot;, &quot;$137,500&quot; ],
+						    [ &quot;Rhona Davidson&quot;, &quot;Integration Specialist&quot;, &quot;Tokyo&quot;, &quot;6200&quot;, &quot;2010/10/14&quot;, &quot;$327,900&quot; ],
+						    [ &quot;Colleen Hurst&quot;, &quot;Javascript Developer&quot;, &quot;San Francisco&quot;, &quot;2360&quot;, &quot;2009/09/15&quot;, &quot;$205,500&quot; ],
+						    [ &quot;Sonya Frost&quot;, &quot;Software Engineer&quot;, &quot;Edinburgh&quot;, &quot;1667&quot;, &quot;2008/12/13&quot;, &quot;$103,600&quot; ],
+						    [ &quot;Jena Gaines&quot;, &quot;Office Manager&quot;, &quot;London&quot;, &quot;3814&quot;, &quot;2008/12/19&quot;, &quot;$90,560&quot; ],
+						    [ &quot;Quinn Flynn&quot;, &quot;Support Lead&quot;, &quot;Edinburgh&quot;, &quot;9497&quot;, &quot;2013/03/03&quot;, &quot;$342,000&quot; ],
+						    [ &quot;Charde Marshall&quot;, &quot;Regional Director&quot;, &quot;San Francisco&quot;, &quot;6741&quot;, &quot;2008/10/16&quot;, &quot;$470,600&quot; ],
+						    [ &quot;Haley Kennedy&quot;, &quot;Senior Marketing Designer&quot;, &quot;London&quot;, &quot;3597&quot;, &quot;2012/12/18&quot;, &quot;$313,500&quot; ],
+						    [ &quot;Tatyana Fitzpatrick&quot;, &quot;Regional Director&quot;, &quot;London&quot;, &quot;1965&quot;, &quot;2010/03/17&quot;, &quot;$385,750&quot; ],
+						    [ &quot;Michael Silva&quot;, &quot;Marketing Designer&quot;, &quot;London&quot;, &quot;1581&quot;, &quot;2012/11/27&quot;, &quot;$198,500&quot; ],
+						    [ &quot;Paul Byrd&quot;, &quot;Chief Financial Officer (CFO)&quot;, &quot;New York&quot;, &quot;3059&quot;, &quot;2010/06/09&quot;, &quot;$725,000&quot; ],
+						    [ &quot;Gloria Little&quot;, &quot;Systems Administrator&quot;, &quot;New York&quot;, &quot;1721&quot;, &quot;2009/04/10&quot;, &quot;$237,500&quot; ],
+						    [ &quot;Bradley Greer&quot;, &quot;Software Engineer&quot;, &quot;London&quot;, &quot;2558&quot;, &quot;2012/10/13&quot;, &quot;$132,000&quot; ],
+						    [ &quot;Dai Rios&quot;, &quot;Personnel Lead&quot;, &quot;Edinburgh&quot;, &quot;2290&quot;, &quot;2012/09/26&quot;, &quot;$217,500&quot; ],
+						    [ &quot;Jenette Caldwell&quot;, &quot;Development Lead&quot;, &quot;New York&quot;, &quot;1937&quot;, &quot;2011/09/03&quot;, &quot;$345,000&quot; ],
+						    [ &quot;Yuri Berry&quot;, &quot;Chief Marketing Officer (CMO)&quot;, &quot;New York&quot;, &quot;6154&quot;, &quot;2009/06/25&quot;, &quot;$675,000&quot; ],
+						    [ &quot;Caesar Vance&quot;, &quot;Pre-Sales Support&quot;, &quot;New York&quot;, &quot;8330&quot;, &quot;2011/12/12&quot;, &quot;$106,450&quot; ],
+						    [ &quot;Doris Wilder&quot;, &quot;Sales Assistant&quot;, &quot;Sydney&quot;, &quot;3023&quot;, &quot;2010/09/20&quot;, &quot;$85,600&quot; ],
+						    [ &quot;Angelica Ramos&quot;, &quot;Chief Executive Officer (CEO)&quot;, &quot;London&quot;, &quot;5797&quot;, &quot;2009/10/09&quot;, &quot;$1,200,000&quot; ],
+						    [ &quot;Gavin Joyce&quot;, &quot;Developer&quot;, &quot;Edinburgh&quot;, &quot;8822&quot;, &quot;2010/12/22&quot;, &quot;$92,575&quot; ],
+						    [ &quot;Jennifer Chang&quot;, &quot;Regional Director&quot;, &quot;Singapore&quot;, &quot;9239&quot;, &quot;2010/11/14&quot;, &quot;$357,650&quot; ],
+						    [ &quot;Brenden Wagner&quot;, &quot;Software Engineer&quot;, &quot;San Francisco&quot;, &quot;1314&quot;, &quot;2011/06/07&quot;, &quot;$206,850&quot; ],
+						    [ &quot;Fiona Green&quot;, &quot;Chief Operating Officer (COO)&quot;, &quot;San Francisco&quot;, &quot;2947&quot;, &quot;2010/03/11&quot;, &quot;$850,000&quot; ],
+						    [ &quot;Shou Itou&quot;, &quot;Regional Marketing&quot;, &quot;Tokyo&quot;, &quot;8899&quot;, &quot;2011/08/14&quot;, &quot;$163,000&quot; ],
+						    [ &quot;Michelle House&quot;, &quot;Integration Specialist&quot;, &quot;Sydney&quot;, &quot;2769&quot;, &quot;2011/06/02&quot;, &quot;$95,400&quot; ],
+						    [ &quot;Suki Burks&quot;, &quot;Developer&quot;, &quot;London&quot;, &quot;6832&quot;, &quot;2009/10/22&quot;, &quot;$114,500&quot; ],
+						    [ &quot;Prescott Bartlett&quot;, &quot;Technical Author&quot;, &quot;London&quot;, &quot;3606&quot;, &quot;2011/05/07&quot;, &quot;$145,000&quot; ],
+						    [ &quot;Gavin Cortez&quot;, &quot;Team Leader&quot;, &quot;San Francisco&quot;, &quot;2860&quot;, &quot;2008/10/26&quot;, &quot;$235,500&quot; ],
+						    [ &quot;Martena Mccray&quot;, &quot;Post-Sales support&quot;, &quot;Edinburgh&quot;, &quot;8240&quot;, &quot;2011/03/09&quot;, &quot;$324,050&quot; ],
+						    [ &quot;Unity Butler&quot;, &quot;Marketing Designer&quot;, &quot;San Francisco&quot;, &quot;5384&quot;, &quot;2009/12/09&quot;, &quot;$85,675&quot; ]
+						];
 
-					$(document).ready(function () {
-					  $("#example").DataTable({
-					    data: dataSet,
-					    columns: [
-					      { title: "Name" },
-					      { title: "Position" },
-					      { title: "Office" },
-					      { title: "Extn." },
-					      { title: "Start date" },
-					      { title: "Salary" },
-					    ],
-					  });
-					});</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    data: dataSet,
+						    columns: [
+						      { title: "Name" },
+						      { title: "Position" },
+						      { title: "Office" },
+						      { title: "Extn." },
+						      { title: "Start date" },
+						      { title: "Salary" },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

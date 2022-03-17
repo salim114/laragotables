@@ -27,7 +27,7 @@
 	    processing: true,
 	    serverSide: true,
 	    ajax: {
-	      url: "{{ route('simple_ss') }}",
+	      url: "{{ route('custom_vars') }}",
 	      data: function (d) {
 	        d.myKey = "myValue";
 	        // d.custom = $('#myInput').val();
@@ -115,7 +115,7 @@
 						    processing: true,
 						    serverSide: true,
 						    ajax: {
-							  url: "&#123;&#123; route('simple_ss') &#125;&#125;",
+							  url: "&#123;&#123; route('custom_vars') &#125;&#125;",
 							  data: function (d) {
 						        d.myKey = "myValue";
 						        // d.custom = $('#myInput').val();

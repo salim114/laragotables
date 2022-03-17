@@ -353,8 +353,7 @@
 
 					    public function stocks()
 					    {
-					        $datatables = Datatable::all();
-					        return view('features.basic_init.stocks', compact('datatables'));       
+					        return view('features.basic_init.stocks');       
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>
