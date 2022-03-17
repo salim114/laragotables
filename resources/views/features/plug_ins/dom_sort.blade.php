@@ -21,48 +21,56 @@
 	<script type="text/javascript" language="javascript" class="init">
 
 	/* Create an array with the values of all the input boxes in a column */
-	$.fn.dataTable.ext.order['dom-text'] = function  ( settings, col )
-	{
-		return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-			return $('input', td).val();
-		} );
-	}
+	$.fn.dataTable.ext.order["dom-text"] = function (settings, col) {
+	  return this.api()
+	    .column(col, { order: "index" })
+	    .nodes()
+	    .map(function (td, i) {
+	      return $("input", td).val();
+	    });
+	};
 
 	/* Create an array with the values of all the input boxes in a column, parsed as numbers */
-	$.fn.dataTable.ext.order['dom-text-numeric'] = function  ( settings, col )
-	{
-		return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-			return $('input', td).val() * 1;
-		} );
-	}
+	$.fn.dataTable.ext.order["dom-text-numeric"] = function (settings, col) {
+	  return this.api()
+	    .column(col, { order: "index" })
+	    .nodes()
+	    .map(function (td, i) {
+	      return $("input", td).val() * 1;
+	    });
+	};
 
 	/* Create an array with the values of all the select options in a column */
-	$.fn.dataTable.ext.order['dom-select'] = function  ( settings, col )
-	{
-		return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-			return $('select', td).val();
-		} );
-	}
+	$.fn.dataTable.ext.order["dom-select"] = function (settings, col) {
+	  return this.api()
+	    .column(col, { order: "index" })
+	    .nodes()
+	    .map(function (td, i) {
+	      return $("select", td).val();
+	    });
+	};
 
 	/* Create an array with the values of all the checkboxes in a column */
-	$.fn.dataTable.ext.order['dom-checkbox'] = function  ( settings, col )
-	{
-		return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-			return $('input', td).prop('checked') ? '1' : '0';
-		} );
-	}
+	$.fn.dataTable.ext.order["dom-checkbox"] = function (settings, col) {
+	  return this.api()
+	    .column(col, { order: "index" })
+	    .nodes()
+	    .map(function (td, i) {
+	      return $("input", td).prop("checked") ? "1" : "0";
+	    });
+	};
 
 	/* Initialise the table with the required column ordering data types */
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"columns": [
-				null,
-				{ "orderDataType": "dom-text-numeric" },
-				{ "orderDataType": "dom-text", type: 'string' },
-				{ "orderDataType": "dom-select" }
-			]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    columns: [
+	      null,
+	      { orderDataType: "dom-text-numeric" },
+	      { orderDataType: "dom-text", type: "string" },
+	      { orderDataType: "dom-select" },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -146,48 +154,56 @@
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
 						/* Create an array with the values of all the input boxes in a column */
-						$.fn.dataTable.ext.order['dom-text'] = function  ( settings, col )
-						{
-							return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-								return $('input', td).val();
-							} );
-						}
+						$.fn.dataTable.ext.order["dom-text"] = function (settings, col) {
+						  return this.api()
+						    .column(col, { order: "index" })
+						    .nodes()
+						    .map(function (td, i) {
+						      return $("input", td).val();
+						    });
+						};
 
 						/* Create an array with the values of all the input boxes in a column, parsed as numbers */
-						$.fn.dataTable.ext.order['dom-text-numeric'] = function  ( settings, col )
-						{
-							return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-								return $('input', td).val() * 1;
-							} );
-						}
+						$.fn.dataTable.ext.order["dom-text-numeric"] = function (settings, col) {
+						  return this.api()
+						    .column(col, { order: "index" })
+						    .nodes()
+						    .map(function (td, i) {
+						      return $("input", td).val() * 1;
+						    });
+						};
 
 						/* Create an array with the values of all the select options in a column */
-						$.fn.dataTable.ext.order['dom-select'] = function  ( settings, col )
-						{
-							return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-								return $('select', td).val();
-							} );
-						}
+						$.fn.dataTable.ext.order["dom-select"] = function (settings, col) {
+						  return this.api()
+						    .column(col, { order: "index" })
+						    .nodes()
+						    .map(function (td, i) {
+						      return $("select", td).val();
+						    });
+						};
 
 						/* Create an array with the values of all the checkboxes in a column */
-						$.fn.dataTable.ext.order['dom-checkbox'] = function  ( settings, col )
-						{
-							return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
-								return $('input', td).prop('checked') ? '1' : '0';
-							} );
-						}
+						$.fn.dataTable.ext.order["dom-checkbox"] = function (settings, col) {
+						  return this.api()
+						    .column(col, { order: "index" })
+						    .nodes()
+						    .map(function (td, i) {
+						      return $("input", td).prop("checked") ? "1" : "0";
+						    });
+						};
 
 						/* Initialise the table with the required column ordering data types */
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;columns&quot;: [
-									null,
-									{ &quot;orderDataType&quot;: &quot;dom-text-numeric&quot; },
-									{ &quot;orderDataType&quot;: &quot;dom-text&quot;, type: 'string' },
-									{ &quot;orderDataType&quot;: &quot;dom-select&quot; }
-								]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    columns: [
+						      null,
+						      { orderDataType: "dom-text-numeric" },
+						      { orderDataType: "dom-text", type: "string" },
+						      { orderDataType: "dom-select" },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

@@ -22,31 +22,33 @@
     <script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/1.11.5/dataRender/datetime.js"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			ajax: '{{ route('return_search') }}',
-			//In the offical documentation the columns data option does not existe in this example,
-			//although for the need of server side rendring data under Laravel it is a must.
-	        columns: [
-	            { data: 'first_name' },
-	            { data: 'last_name' },
-	            { data: 'position' },
-	            { data: 'office' },
-	            { data: 'start_date',  
-	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
-	            },  
-	            { data: 'salary', 
-	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
-	        	}
-			],
-			//end comment section.
-			processing: true,
-			search: {
-				return: true
-			},
-			serverSide: true
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    ajax: "{{ route('return_search') }}",
+	    //In the offical documentation the columns data option does not existe in this example,
+	    //although for the need of server side rendring data under Laravel it is a must.
+	    columns: [
+	      { data: "first_name" },
+	      { data: "last_name" },
+	      { data: "position" },
+	      { data: "office" },
+	      {
+	        data: "start_date",
+	        render: $.fn.dataTable.render.moment("", "Do MMM YY"),
+	      },
+	      {
+	        data: "salary",
+	        render: $.fn.dataTable.render.number(",", ".", 0, "$"),
+	      },
+	    ],
+	    //end comment section.
+	    processing: true,
+	    search: {
+	      return: true,
+	    },
+	    serverSide: true,
+	  });
+	});
 
 	</script>
 </head>
@@ -98,31 +100,33 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								ajax: '&#123;&#123; route('return_search') &#125;&#125;'
-								//In the offical documentation the columns data option does not existe in this example,
-								//although for the need of server side rendring data under Laravel it is a must.
-								columns: [
-						            { data: 'first_name' },
-						            { data: 'last_name' },
-						            { data: 'position' },
-						            { data: 'office' },
-						            { data: 'start_date',  
-						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
-						            },  
-						            { data: 'salary', 
-						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
-						        	}
-								],	
-								//end comment section.
-								processing: true,
-								search: {
-									return: true
-								},
-								serverSide: true
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+							ajax: "&#123;&#123; route('return_search') &#125;&#125;",
+							//In the offical documentation the columns data option does not existe in this example,
+							   //although for the need of server side rendring data under Laravel it is a must.
+							   columns: [
+							     { data: "first_name" },
+							     { data: "last_name" },
+							     { data: "position" },
+							     { data: "office" },
+							     {
+							       data: "start_date",
+							       render: $.fn.dataTable.render.moment("", "Do MMM YY"),
+							     },
+							     {
+							       data: "salary",
+							       render: $.fn.dataTable.render.number(",", ".", 0, "$"),
+							     },
+							   ],
+							   //end comment section.
+							   processing: true,
+							   search: {
+							     return: true,
+							   },
+							   serverSide: true,
+							 });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

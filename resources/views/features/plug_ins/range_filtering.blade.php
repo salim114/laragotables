@@ -21,31 +21,30 @@
 	<script type="text/javascript" language="javascript" class="init">
 
 	/* Custom filtering function which will search data in column four between two values */
-	$.fn.dataTable.ext.search.push(
-		function( settings, data, dataIndex ) {
-			var min = parseInt( $('#min').val(), 10 );
-			var max = parseInt( $('#max').val(), 10 );
-			var age = parseFloat( data[3] ) || 0; // use data for the age column
+	$.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+	  var min = parseInt($("#min").val(), 10);
+	  var max = parseInt($("#max").val(), 10);
+	  var age = parseFloat(data[3]) || 0; // use data for the age column
 
-			if ( ( isNaN( min ) && isNaN( max ) ) ||
-				 ( isNaN( min ) && age <= max ) ||
-				 ( min <= age   && isNaN( max ) ) ||
-				 ( min <= age   && age <= max ) )
-			{
-				return true;
-			}
-			return false;
-		}
-	);
+	  if (
+	    (isNaN(min) && isNaN(max)) ||
+	    (isNaN(min) && age <= max) ||
+	    (min <= age && isNaN(max)) ||
+	    (min <= age && age <= max)
+	  ) {
+	    return true;
+	  }
+	  return false;
+	});
 
-	$(document).ready(function() {
-		var table = $('#example').DataTable();
-		
-		// Event listener to the two range filtering inputs to redraw on input
-		$('#min, #max').keyup( function() {
-			table.draw();
-		} );
-	} );
+	$(document).ready(function () {
+	  var table = $("#example").DataTable();
+
+	  // Event listener to the two range filtering inputs to redraw on input
+	  $("#min, #max").keyup(function () {
+	    table.draw();
+	  });
+	});
 
 	</script>
 </head>
@@ -120,31 +119,30 @@
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
 						/* Custom filtering function which will search data in column four between two values */
-						$.fn.dataTable.ext.search.push(
-							function( settings, data, dataIndex ) {
-								var min = parseInt( $('#min').val(), 10 );
-								var max = parseInt( $('#max').val(), 10 );
-								var age = parseFloat( data[3] ) || 0; // use data for the age column
+						$.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+						  var min = parseInt($("#min").val(), 10);
+						  var max = parseInt($("#max").val(), 10);
+						  var age = parseFloat(data[3]) || 0; // use data for the age column
 
-								if ( ( isNaN( min ) &amp;&amp; isNaN( max ) ) ||
-									 ( isNaN( min ) &amp;&amp; age &lt;= max ) ||
-									 ( min &lt;= age   &amp;&amp; isNaN( max ) ) ||
-									 ( min &lt;= age   &amp;&amp; age &lt;= max ) )
-								{
-									return true;
-								}
-								return false;
-							}
-						);
+						  if (
+						    (isNaN(min) && isNaN(max)) ||
+						    (isNaN(min) && age <= max) ||
+						    (min <= age && isNaN(max)) ||
+						    (min <= age && age <= max)
+						  ) {
+						    return true;
+						  }
+						  return false;
+						});
 
-						$(document).ready(function() {
-							var table = $('#example').DataTable();
-							
-							// Event listener to the two range filtering inputs to redraw on input
-							$('#min, #max').keyup( function() {
-								table.draw();
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  var table = $("#example").DataTable();
+
+						  // Event listener to the two range filtering inputs to redraw on input
+						  $("#min, #max").keyup(function () {
+						    table.draw();
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

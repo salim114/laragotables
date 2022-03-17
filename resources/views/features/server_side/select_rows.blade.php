@@ -22,48 +22,50 @@
     <script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/1.11.5/dataRender/datetime.js"></script>
 	<script type="text/javascript" language="javascript" class="init">
 
-	$(document).ready(function() {
-		var selected = [];
+	$(document).ready(function () {
+	  var selected = [];
 
-		$("#example").DataTable({
-			processing: true,
-			serverSide: true,
-			ajax: '{{ route('select_rows') }}',
-			//In the offical documentation the columns data option does not existe in this example,
-			//although for the need of server side rendring data under Laravel it is a must.
-	        columns: [
-	            { data: 'first_name' },
-	            { data: 'last_name' },
-	            { data: 'position' },
-	            { data: 'office' },
-	            { data: 'start_date',  
-	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
-	            },  
-	            { data: 'salary', 
-	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
-	        	}
-			],
-			//end comment section.
-			"rowCallback": function( row, data ) {
-				if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
-					$(row).addClass('selected');
-				}
-			}
-		});
+	  $("#example").DataTable({
+	    processing: true,
+	    serverSide: true,
+	    ajax: "{{ route('select_rows') }}",
+	    //In the offical documentation the columns data option does not existe in this example,
+	    //although for the need of server side rendring data under Laravel it is a must.
+	    columns: [
+	      { data: "first_name" },
+	      { data: "last_name" },
+	      { data: "position" },
+	      { data: "office" },
+	      {
+	        data: "start_date",
+	        render: $.fn.dataTable.render.moment("", "Do MMM YY"),
+	      },
+	      {
+	        data: "salary",
+	        render: $.fn.dataTable.render.number(",", ".", 0, "$"),
+	      },
+	    ],
+	    //end comment section.
+	    rowCallback: function (row, data) {
+	      if ($.inArray(data.DT_RowId, selected) !== -1) {
+	        $(row).addClass("selected");
+	      }
+	    },
+	  });
 
-		$('#example tbody').on('click', 'tr', function () {
-			var id = this.id;
-			var index = $.inArray(id, selected);
+	  $("#example tbody").on("click", "tr", function () {
+	    var id = this.id;
+	    var index = $.inArray(id, selected);
 
-			if ( index === -1 ) {
-				selected.push( id );
-			} else {
-				selected.splice( index, 1 );
-			}
+	    if (index === -1) {
+	      selected.push(id);
+	    } else {
+	      selected.splice(index, 1);
+	    }
 
-			$(this).toggleClass('selected');
-		} );
-	} );
+	    $(this).toggleClass("selected");
+	  });
+	});
 
 	</script>
 </head>
@@ -118,48 +120,50 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							var selected = [];
+							$(document).ready(function () {
+							  var selected = [];
 
-							$(&quot;#example&quot;).DataTable({
-								processing: true,
-								serverSide: true,
-								ajax: '&#123;&#123; route('select_rows') &#125;&#125;'
+							  $("#example").DataTable({
+							    processing: true,
+							    serverSide: true,
+								ajax: "&#123;&#123; route('select_rows') &#125;&#125;",
 								//In the offical documentation the columns data option does not existe in this example,
-								//although for the need of server side rendring data under Laravel it is a must.
-								columns: [
-						            { data: 'first_name' },
-						            { data: 'last_name' },
-						            { data: 'position' },
-						            { data: 'office' },
-						            { data: 'start_date',  
-						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
-						            },  
-						            { data: 'salary', 
-						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
-						        	}
-								],
-								//end comment section.
-								&quot;rowCallback&quot;: function( row, data ) {
-									if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
-										$(row).addClass('selected');
-									}
-								}
-							});
+							    //although for the need of server side rendring data under Laravel it is a must.
+							    columns: [
+							      { data: "first_name" },
+							      { data: "last_name" },
+							      { data: "position" },
+							      { data: "office" },
+							      {
+							        data: "start_date",
+							        render: $.fn.dataTable.render.moment("", "Do MMM YY"),
+							      },
+							      {
+							        data: "salary",
+							        render: $.fn.dataTable.render.number(",", ".", 0, "$"),
+							      },
+							    ],
+							    //end comment section.
+							    rowCallback: function (row, data) {
+							      if ($.inArray(data.DT_RowId, selected) !== -1) {
+							        $(row).addClass("selected");
+							      }
+							    },
+							  });
 
-							$('#example tbody').on('click', 'tr', function () {
-								var id = this.id;
-								var index = $.inArray(id, selected);
+							  $("#example tbody").on("click", "tr", function () {
+							    var id = this.id;
+							    var index = $.inArray(id, selected);
 
-								if ( index === -1 ) {
-									selected.push( id );
-								} else {
-									selected.splice( index, 1 );
-								}
+							    if (index === -1) {
+							      selected.push(id);
+							    } else {
+							      selected.splice(index, 1);
+							    }
 
-								$(this).toggleClass('selected');
-							} );
-						} );</code>
+							    $(this).toggleClass("selected");
+							  });
+							});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

@@ -20,30 +20,32 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 
-	$.fn.dataTable.Api.register( 'column().data().sum()', function () {
-		return this.reduce( function (a, b) {
-			var x = parseFloat( a ) || 0;
-			var y = parseFloat( b ) || 0;
-			return x + y;
-		} );
-	} );
+	$.fn.dataTable.Api.register("column().data().sum()", function () {
+	  return this.reduce(function (a, b) {
+	    var x = parseFloat(a) || 0;
+	    var y = parseFloat(b) || 0;
+	    return x + y;
+	  });
+	});
 
 	/* Init the table and fire off a call to get the hidden nodes. */
-	$(document).ready(function() {
-		var table = $('#example').DataTable();
-		
-		$('<button>Click to sum age in all rows</button>')
-			.prependTo( '#demo' )
-			.on( 'click', function () {
-				alert( 'Column sum is: '+ table.column( 3 ).data().sum() );
-			} );
+	$(document).ready(function () {
+	  var table = $("#example").DataTable();
 
-		$('<button>Click to sum age of visible rows</button>')
-			.prependTo( '#demo' )
-			.on( 'click', function () {
-				alert( 'Column sum is: '+ table.column( 3, {page:'current'} ).data().sum() );
-			} );
-	} );
+	  $("<button>Click to sum age in all rows</button>")
+	    .prependTo("#demo")
+	    .on("click", function () {
+	      alert("Column sum is: " + table.column(3).data().sum());
+	    });
+
+	  $("<button>Click to sum age of visible rows</button>")
+	    .prependTo("#demo")
+	    .on("click", function () {
+	      alert(
+	        "Column sum is: " + table.column(3, { page: "current" }).data().sum()
+	      );
+	    });
+	});
 
 	</script>
 </head>
@@ -111,30 +113,32 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$.fn.dataTable.Api.register( 'column().data().sum()', function () {
-							return this.reduce( function (a, b) {
-								var x = parseFloat( a ) || 0;
-								var y = parseFloat( b ) || 0;
-								return x + y;
-							} );
-						} );
+						$.fn.dataTable.Api.register("column().data().sum()", function () {
+						  return this.reduce(function (a, b) {
+						    var x = parseFloat(a) || 0;
+						    var y = parseFloat(b) || 0;
+						    return x + y;
+						  });
+						});
 
 						/* Init the table and fire off a call to get the hidden nodes. */
-						$(document).ready(function() {
-							var table = $('#example').DataTable();
-							
-							$('&lt;button&gt;Click to sum age in all rows&lt;/button&gt;')
-								.prependTo( '#demo' )
-								.on( 'click', function () {
-									alert( 'Column sum is: '+ table.column( 3 ).data().sum() );
-								} );
+						$(document).ready(function () {
+						  var table = $("#example").DataTable();
 
-							$('&lt;button&gt;Click to sum age of visible rows&lt;/button&gt;')
-								.prependTo( '#demo' )
-								.on( 'click', function () {
-									alert( 'Column sum is: '+ table.column( 3, {page:'current'} ).data().sum() );
-								} );
-						} );</code>
+						  $("&lt;button&gt;Click to sum age in all rows&lt;/button&gt;")
+						    .prependTo("#demo")
+						    .on("click", function () {
+						      alert("Column sum is: " + table.column(3).data().sum());
+						    });
+
+						  $("&lt;button&gt;Click to sum age of visible rows&lt;/button&gt;")
+						    .prependTo("#demo")
+						    .on("click", function () {
+						      alert(
+						        "Column sum is: " + table.column(3, { page: "current" }).data().sum()
+						      );
+						    });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

@@ -20,23 +20,28 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$.fn.dataTable.ext.type.order['salary-grade-pre'] = function ( d ) {
-		switch ( d ) {
-			case 'Low':    return 1;
-			case 'Medium': return 2;
-			case 'High':   return 3;
-		}
-		return 0;
+	$.fn.dataTable.ext.type.order["salary-grade-pre"] = function (d) {
+	  switch (d) {
+	    case "Low":
+	      return 1;
+	    case "Medium":
+	      return 2;
+	    case "High":
+	      return 3;
+	  }
+	  return 0;
 	};
 
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			"columnDefs": [ {
-				"type": "salary-grade",
-				"targets": -1
-			} ]
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    columnDefs: [
+	      {
+	        type: "salary-grade",
+	        targets: -1,
+	      },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -105,23 +110,28 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$.fn.dataTable.ext.type.order['salary-grade-pre'] = function ( d ) {
-							switch ( d ) {
-								case 'Low':    return 1;
-								case 'Medium': return 2;
-								case 'High':   return 3;
-							}
-							return 0;
+						$.fn.dataTable.ext.type.order["salary-grade-pre"] = function (d) {
+						  switch (d) {
+						    case "Low":
+						      return 1;
+						    case "Medium":
+						      return 2;
+						    case "High":
+						      return 3;
+						  }
+						  return 0;
 						};
 
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								&quot;columnDefs&quot;: [ {
-									&quot;type&quot;: &quot;salary-grade&quot;,
-									&quot;targets&quot;: -1
-								} ]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    columnDefs: [
+						      {
+						        type: "salary-grade",
+						        targets: -1,
+						      },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

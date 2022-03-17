@@ -20,27 +20,25 @@
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">
 	
-	$.fn.dataTable.ext.type.detect.unshift(
-		function ( d ) {
-			return d === 'Low' || d === 'Medium' || d === 'High' ?
-				'salary-grade' :
-				null;
-		}
-	);
+	$.fn.dataTable.ext.type.detect.unshift(function (d) {
+	  return d === "Low" || d === "Medium" || d === "High" ? "salary-grade" : null;
+	});
 
-	$.fn.dataTable.ext.type.order['salary-grade-pre'] = function ( d ) {
-		switch ( d ) {
-			case 'Low':    return 1;
-			case 'Medium': return 2;
-			case 'High':   return 3;
-		}
-		return 0;
+	$.fn.dataTable.ext.type.order["salary-grade-pre"] = function (d) {
+	  switch (d) {
+	    case "Low":
+	      return 1;
+	    case "Medium":
+	      return 2;
+	    case "High":
+	      return 3;
+	  }
+	  return 0;
 	};
 
-
-	$(document).ready(function() {
-		$('#example').DataTable();
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable();
+	});
 
 	</script>
 </head>
@@ -106,27 +104,25 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$.fn.dataTable.ext.type.detect.unshift(
-							function ( d ) {
-								return d === 'Low' || d === 'Medium' || d === 'High' ?
-									'salary-grade' :
-									null;
-							}
-						);
+						$.fn.dataTable.ext.type.detect.unshift(function (d) {
+						  return d === "Low" || d === "Medium" || d === "High" ? "salary-grade" : null;
+						});
 
-						$.fn.dataTable.ext.type.order['salary-grade-pre'] = function ( d ) {
-							switch ( d ) {
-								case 'Low':    return 1;
-								case 'Medium': return 2;
-								case 'High':   return 3;
-							}
-							return 0;
+						$.fn.dataTable.ext.type.order["salary-grade-pre"] = function (d) {
+						  switch (d) {
+						    case "Low":
+						      return 1;
+						    case "Medium":
+						      return 2;
+						    case "High":
+						      return 3;
+						  }
+						  return 0;
 						};
 
-
-						$(document).ready(function() {
-							$('#example').DataTable();
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable();
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>

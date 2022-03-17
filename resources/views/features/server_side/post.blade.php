@@ -22,28 +22,30 @@
     <script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/1.11.5/dataRender/datetime.js"></script>
 	<script type="text/javascript" language="javascript" class="init">	
 
-	$(document).ready(function() {
-		$('#example').DataTable( {
-			processing: true,
-			serverSide: true,
-			ajax: {
-				url: "{{ route('post') }}",
-				//"type": "POST"
-			},
-			columns: [
-	            { data: 'first_name' },
-	            { data: 'last_name' },
-	            { data: 'position' },
-	            { data: 'office' },
-	            { data: 'start_date',  
-	            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
-	            },  
-	            { data: 'salary', 
-	            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
-	        	}
-	        ] 
-		} );
-	} );
+	$(document).ready(function () {
+	  $("#example").DataTable({
+	    processing: true,
+	    serverSide: true,
+	    ajax: {
+	      url: "{{ route('post') }}",
+	      //"type": "POST"
+	    },
+	    columns: [
+	      { data: "first_name" },
+	      { data: "last_name" },
+	      { data: "position" },
+	      { data: "office" },
+	      {
+	        data: "start_date",
+	        render: $.fn.dataTable.render.moment("", "Do MMM YY"),
+	      },
+	      {
+	        data: "salary",
+	        render: $.fn.dataTable.render.number(",", ".", 0, "$"),
+	      },
+	    ],
+	  });
+	});
 
 	</script>
 </head>
@@ -100,28 +102,30 @@
 				<div class="js">
 					<p>The Javascript shown below is used to initialise the table shown in this example:</p>
 					<code class="multiline language-js">
-						$(document).ready(function() {
-							$('#example').DataTable( {
-								processing: true,
-								serverSide: true,
-								ajax: {
-									url: '&#123;&#123; route('post') &#125;&#125;',
-									//type: 'POST'
-								},
-								columns: [
-									{ data: 'first_name' },
-						            { data: 'last_name' },
-						            { data: 'position' },
-						            { data: 'office' },
-						            { data: 'start_date',  
-						            render: $.fn.dataTable.render.moment('', 'Do MMM YY')
-						            },  
-						            { data: 'salary', 
-						            render: $.fn.dataTable.render.number( ',', '.', 0, '$' )
-						        	}
-								]
-							} );
-						} );</code>
+						$(document).ready(function () {
+						  $("#example").DataTable({
+						    processing: true,
+						    serverSide: true,
+							ajax: {
+								url: "&#123;&#123; route('post') &#125;&#125;",
+								//type: 'POST'
+							},
+							columns: [
+						      { data: "first_name" },
+						      { data: "last_name" },
+						      { data: "position" },
+						      { data: "office" },
+						      {
+						        data: "start_date",
+						        render: $.fn.dataTable.render.moment("", "Do MMM YY"),
+						      },
+						      {
+						        data: "salary",
+						        render: $.fn.dataTable.render.number(",", ".", 0, "$"),
+						      },
+						    ],
+						  });
+						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
