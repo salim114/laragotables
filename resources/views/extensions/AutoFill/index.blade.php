@@ -21,7 +21,7 @@
 		<section>
 			<h1>DataTables extensions <span>AutoFill</span></h1>
 			<div class="info">
-				<p>Spreadsheets such as Excel and Google Docs have a very handy data duplication option of an auto fill tool. The AutoFill library for DataTables provides a similar interface for DataTables and extends upon this interface paradigm to provide complex data interaction options that the user can select between.</p>
+				<p>Spreadsheets such as Excel and Google Docs have a very handy rapid data duplication auto fill UI method. The AutoFill library for DataTables provides a similar interface for DataTables (even extending upon it to provide complex data interaction options). AutoFill also provides full support for Editor allowing end users to update data very quickly.</p>
 			</div>
 		</section>
 	</div>

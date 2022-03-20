@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboard');   
 })->middleware(['auth'])->name('dashboard');
 
 //features indexes
@@ -62,8 +62,14 @@ Route::get('extensions', function () {
     return view('extensions.index');
 });
 
+//extensions --- autofill 
+
 Route::get('extensions/autofill', function () {
     return view('extensions.autofill.index');
+});
+
+Route::get('extensions/autofill/initialisation', function () {
+    return view('extensions.autofill.initialisation.index');
 });
 
 Route::get('extensions/buttons', function () {
@@ -72,6 +78,66 @@ Route::get('extensions/buttons', function () {
 
 Route::get('extensions/colreorder', function () {
     return view('extensions.colreorder.index');
+});
+
+Route::get('extensions/colvis', function () {
+    return view('extensions.colvis.index');
+});
+
+Route::get('extensions/datetime', function () {
+    return view('extensions.datetime.index');
+});
+
+Route::get('extensions/editor', function () {
+    return view('extensions.editor.index');
+});
+
+Route::get('extensions/fixedcolumns', function () {
+    return view('extensions.fixedcolumns.index');
+});
+
+Route::get('extensions/fixedheader', function () {
+    return view('extensions.fixedheader.index');
+});
+
+Route::get('extensions/keytable', function () {
+    return view('extensions.keytable.index');
+});
+
+Route::get('extensions/responsive', function () {
+    return view('extensions.responsive.index');
+});
+
+Route::get('extensions/rowgroup', function () {
+    return view('extensions.rowgroup.index');
+});
+
+Route::get('extensions/rowreorder', function () {
+    return view('extensions.rowreorder.index');
+});
+
+Route::get('extensions/scroller', function () {
+    return view('extensions.scroller.index');
+});
+
+Route::get('extensions/scroller', function () {
+    return view('extensions.scroller.index');
+});
+
+Route::get('extensions/searchpanes', function () {
+    return view('extensions.searchpanes.index');
+});
+
+Route::get('extensions/select', function () {
+    return view('extensions.select.index');
+});
+
+Route::get('extensions/staterestore', function () {
+    return view('extensions.staterestore.index');
+});
+
+Route::get('extensions/tabletools', function () {
+    return view('extensions.tabletools.index');
 });
 
 
