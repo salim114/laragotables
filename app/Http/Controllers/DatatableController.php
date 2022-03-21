@@ -14,7 +14,8 @@ class DatatableController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     //Basic initialisation
+    //Features (examples)
+    //Basic initialisation
 
     public function zero_configuration()
     {
@@ -685,6 +686,15 @@ class DatatableController extends Controller
     {
         $datatables = Datatable::all();
         return view('features.plug_ins.sorting_manual', compact('datatables'));       
+    }
+
+    //Extensions
+    //AutoFill
+
+    public function alwaysAsk()
+    {
+        $datatables = Datatable::all();
+        return view('extensions.autofill.initialisation.alwaysAsk', compact('datatables'));       
     }
     
     /**

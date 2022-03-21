@@ -9,108 +9,28 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/demo.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<style>
-   /*-----------------------------------------------------
-# Services
------------------------------------------------------*/
 
-.service-box .section-title h2 {
-    color: #444;
-    font-size: 42px;
-}
-.service-box .section-title p {
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 40px;
-    color: #666;
-}
-.service-box {
-    margin-bottom: 30px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0px 0 5px #bdbdbd;
-    float: left;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    background: linear-gradient(to right, #60bbd9, #afdfef);
-    border-radius: 88% !important;
-    width: 42%;
-}
-.service-box::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #afdfef, #60bbd9);
-    left: 0px;
-    top: -500px;
-    z-index: -1;
-    transition: 1s;
-}
-.service-box:hover::after {
-    top: 0px;
-}
-.service-box i {
-    display: flex;
-    justify-content: center;
-}
-.service-box i {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 30px;
-    background: #ffffff;
-    border-radius: 100%;
-    transition: 0.5s;
-    color: #4e50e7;
-    font-size: 35px;
-    overflow: hidden;
-    padding-top: 18px;
-    box-shadow: 0px 0 5px #bdbdbd;
-    margin: 10px auto 15px;
-}
-.service-box h3 {
-    font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 23px;
-    position: relative;
-}
-.service-box h3 a {
-    color: #fff;;
-    text-decoration: none;
-}
-.service-box h3 a:hover {
-    color: #343a40;
-}
-.service-box p {
-    line-height: 24px;
-    font-size: 15px;
-    font-weight: bold;
-}
-.service-box h3 a:hover {
-    color: #343a40;
-}
-#box1{
-    margin-right: 0 ;
-    margin-left: 50%;
-}
-#box2{
-    margin-left: 0 ; 
-    margin-right: 50%;
-}
+<style>
+
+
 .btn-dark:hover{
-  background-color: #343a40 !important; 
-  color: #fff !important; 
-  font-weight: 600 !important; 
-  font-size: larger !important;
+  box-shadow: 3px 3px 11px #fff!important;
 }
 .btn-dark{
-  background-color: #fff  !important; 
-  color: #264a6c !important; 
-  font-weight: 600 !important;
-  font-size: larger !important;
+    border-radius: 2em!important;
+    /* background: #7bcbe5 !important; */
+    background: linear-gradient(to bottom, #264a6d, #0f2b34)!important;
+    font-weight: bold !important;
+    letter-spacing: 2.5px!important;
+    padding: 0.6em 0!important;
+    margin-top: 2.5em !important;
+    color: #fff !important;
+    width: 27% !important;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 40%) !important;
+    border: none !important;
+    font-size: 1.2rem !important;
+    font-weight: bolder !important;
 }
 .flex-container {
     display: flex;
@@ -138,10 +58,13 @@ li:hover{
     font-weight: 500;
 }
 .container2 {
-  position:relative;
+  /*position:relative;
   text-align:end;
-  margin-top: 50px;
-  color: #fff;
+  margin-top: 100px;
+  color: #fff;*/
+  width: 103%;
+    margin-left: 181px;
+    margin-top: 35px;
 
 }
 #dv1, #dv2 {
@@ -154,11 +77,42 @@ li:hover{
   background: linear-gradient(to bottom, #264a6c17, #53badc);*/
  height: 116px;
 }
+#dv1{
+    margin-right: 0 !important;
+}
 #dv2{ 
     margin-left: -161px !important; 
+
 }
-
-
+.txt{
+    color:white;
+    font-size: xxx-large;
+    text-align: justify;
+    margin-top: 11px; 
+    width: 509px; 
+    margin-left: 180px;
+    margin-bottom: 89px;
+}
+py-12{
+    background: linear-gradient(to right, #3a7fd5, #6ebce2);
+}
+span{
+    color:#fff;
+    font-weight: bolder;
+    font-style: italic;
+}
+.exmpl{
+    width: 579px;
+    margin-right: -100px;
+    margin-top: 9px;
+    margin-bottom: -34px;
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: justify;    
+}
+img{
+    margin-top: -46px;
+}
 
 </style>  
 <!-- Scripts -->
@@ -168,16 +122,17 @@ li:hover{
     <script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
     <script type="text/javascript" language="javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
     <script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/1.11.5/dataRender/datetime.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>   
     <script type="text/javascript" language="javascript" class="init">
     
     $(document).ready(function () {
       $("#example").DataTable({
         processing: true,
         serverSide: true,
+        paging:   false,
+        ordering: false,
+        info:     false
         ajax: "{{ route('simple_ss') }}",
         //In the offical documentation the columns data option does not existe in this example,
         //for the need of server side rendring data under Laravel it is a must.
@@ -207,19 +162,20 @@ li:hover{
             </h2>
         </x-slot>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <div class="py-12" style="background: linear-gradient(to right, #3a7fd5, #6ebce2);">
+        <div class="py-12">
             <div class="flex-container">
 
               <div class="flex-child magenta">
                 <img  src="{{ asset('images/LaraGoTables.jpg') }}"><br>         
-                      <p style="color:white;font-size: xxx-large;text-align: justify;margin-top: -2px; width: 509px; margin-left: 180px;margin-bottom: 0;">The <span style="color:#fff;font-weight: bold;font-style: italic">LaraGoTable</span> is an immersion through the examples of <span style="font-weight: bolder;font-style: italic;">DataTable</span> adapted for the use of <span style="font-weight: bolder;font-style: italic;">Laravel</span> projects  </p>
-                     
-            <div class="container2">
-                <div id="dv1" style="margin-right: 0;">
-                    <a href="{{ url('features') }}" class="btn btn-dark center-block mt-2 mb-2" >Features &nbsp;&nbsp; »</a>
+                      <p class="txt">The <span>LaraGoTable</span> is an immersion through the examples of <span>DataTable</span> adapted for the use of <span>Laravel</span> projects  </p>
+                      
+            <div class="container2">   
+            <div class="exmpl"><i class='fas fa-hand-holding-heart'></i> here is all features (examples) and extensions of DataTables ready to explore :<i class="fa fa-hand-o-down" ></i></div><br><br>           
+                <div id="dv1" style="">
+                    <a href="{{ url('features') }}" class="btn btn-dark center-block mt-2 mb-2" >Examples »</a>
                 </div>
                 <div id="dv2">
-                <a href="{{ url('extensions') }}" class="btn btn-dark center-block mt-2 mb-2" style="    margin-left: 21px;" >Extensions »</a>
+                <a href="{{ url('extensions') }}" class="btn btn-dark center-block mt-2 mb-2">Extensions »</a>
                 </div>
             </div>
                     
@@ -237,7 +193,7 @@ li:hover{
                 <li>Controller</li>
                 <li>Model</li>
             </ul>
-            <div class="tabs" style="background:#fff">
+            <div class="tabs" style="background:#fff; box-shadow: 3px 3px 11px black!important;">
                 <div class="js">
                     <p>The Javascript shown below is used to initialise the table shown in this example:</p>
                     <code class="multiline language-js">

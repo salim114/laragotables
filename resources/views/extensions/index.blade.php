@@ -67,7 +67,7 @@
 							<li>
 		                        <a href="{{ url('extensions/basic_init/data_rendering') }}">Disable horizontal fill</a>
 		                    </li>
-		                    <h3 class="tx">Styling</h3>
+		                    <h3 class="tx"><a href="{{ url('extensions/autofill/initialisation') }}">Styling</a></h3>
 							<li>
 		                        <a href="{{ url('extensions/basic_init/alt_pagination') }}">Bootstrap 3</a>
 		                    </li>

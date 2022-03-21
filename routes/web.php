@@ -72,6 +72,7 @@ Route::get('extensions/autofill/initialisation', function () {
     return view('extensions.autofill.initialisation.index');
 });
 
+
 Route::get('extensions/buttons', function () {
     return view('extensions.buttons.index');
 });
@@ -140,7 +141,7 @@ Route::get('extensions/tabletools', function () {
     return view('extensions.tabletools.index');
 });
 
-
+//Features (examples)
 //Advanced initialisation
 
 Route::group([], function() {
@@ -286,6 +287,13 @@ Route::group([], function() {
     Route::get('features/styling/semanticui', 'App\Http\Controllers\DatatableController@semanticui');
     Route::get('features/styling/stripe', 'App\Http\Controllers\DatatableController@stripe');
     Route::get('features/styling/uikit', 'App\Http\Controllers\DatatableController@uikit');
+});
+
+//Extensions
+//AutoFill
+
+Route::group([], function() {
+    Route::get('extensions/autofill/initialisation/alwaysAsk', 'App\Http\Controllers\DatatableController@alwaysAsk');
 });
 
 require __DIR__.'/auth.php';

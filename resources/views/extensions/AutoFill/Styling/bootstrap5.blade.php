@@ -204,7 +204,74 @@
 		</section>
 	</div>
 	<section>				
-		@include('layouts.footer')								
+		<div class="footer">
+			<div class="gradient"></div>
+			<div class="liner">
+				<div class="toc">
+					<div class="toc-group">
+						<h3><a href="{{ url('extensions/autofill') }}"><i class="fa fa-arrow-circle-right"></i> AutoFill</a></h3>
+						<h3 class="tx"><a href="{{ url('extensions/autofill/initialisation') }}">Initialisation</a></h3>
+		                <ul class="toc active">
+		                    <li>
+		                        <a href="{{ url('extensions/basic_init/zero_configuration') }}">Basic initialisation</a> 
+		                    </li>          
+							<li>
+		                        <a href="{{ url('extensions/basic_init/filter_only') }}">Fill types</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/table_sorting') }}">KeyTable integration</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/multi_col_sort') }}">Events</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/multiple_tables') }}">Always confirm action</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/hidden_columns') }}">Column selector</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/complex_header') }}">Click focus</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/dom') }}">Scrolling DataTable</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/flexible_width') }}">Fill plug-ins</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/state_save') }}">Enable / disable API</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/data_rendering') }}">Disable horizontal fill</a>
+		                    </li>
+		                    <h3 class="tx" ><a href="{{ url('extensions/autofill/initialisation') }}" style="color:red !important">Styling</a></h3>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/alt_pagination') }}">Bootstrap 3</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/scroll_y') }}">Bootstrap 4</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/scroll_y_dynamic') }}">Bootstrap 5</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/scroll_x') }}">Foundation</a>
+		                    </li>							
+							<li>
+		                        <a href="{{ url('extensions/basic_init/comma_decimal') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('extensions/basic_init/scroll_xy') }}">Bulma</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/basic_init/language') }}">jQuery UI</a>
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>	
+		    </div>
+		    </div>		     							
 	</section>
 </body>
 </html>
