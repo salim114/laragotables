@@ -26,7 +26,7 @@
     padding: 0.6em 0!important;
     margin-top: 2.5em !important;
     color: #fff !important;
-    width: 27% !important;
+    width: 32% !important;
     box-shadow: 2px 2px 4px rgb(0 0 0 / 40%) !important;
     border: none !important;
     font-size: 1.2rem !important;
@@ -89,7 +89,7 @@ li:hover{
     font-size: xxx-large;
     text-align: justify;
     margin-top: 11px; 
-    width: 509px; 
+    width: 65%; 
     margin-left: 180px;
     margin-bottom: 89px;
 }
@@ -102,7 +102,7 @@ span{
     font-style: italic;
 }
 .exmpl{
-    width: 579px;
+    width: 67%;
     margin-right: -100px;
     margin-top: 9px;
     margin-bottom: -34px;

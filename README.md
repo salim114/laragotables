@@ -33,10 +33,6 @@ cp .env.example .env # Update database credentials configuration
 
 php artisan key:generate # Generate new keys for Laravel
 
-npm install
-
-npm run development # To compile assets for prod
-
 ```
 
 ## License
