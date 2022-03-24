@@ -98,229 +98,229 @@
 		            	{{-- buttons --}}
 		                <h3><a href="{{ url('extensions/buttons') }}"><i class="fa fa-arrow-circle-right"></i> Buttons</a></h3>
 		                {{-- buttons / initialisation --}}
-		                <h3 class="tx"><a href="{{ url('extensions/buttons') }}">Basic initialisation</a></h3>
+		                <h3 class="tx"><a href="{{ url('extensions/buttons/initialisation') }}">Basic initialisation</a></h3>
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Basic initialisation</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/simple') }}">Basic initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">File export</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/') }}">File export</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Custom button</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/export') }}">Custom button</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Class names</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/className') }}">Class names</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Keyboard activation</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/keys') }}">Keyboard activation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Collections</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/collections') }}">Collections</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Multi-level collections</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/collections_sub') }}">Multi-level collections</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Auto close collection</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/collections_autoClose') }}">Auto close collection</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Plug-ins</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/plugins') }}">Plug-ins</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('eextensions/buttons') }}">`new` initialisation</a>
+		                        <a href="{{ url('eextensions/buttons//initialisation/new') }}">`new` initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Multiple button groups</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/multiple') }}">Multiple button groups</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Page length (button)</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/pageLength') }}">Page length (button)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Page length (select)</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/pageLength_select') }}">Page length (select)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Custom HTML in Buttons Collection</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/customHTMLButtons') }}">Custom HTML in Buttons Collection</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Select integration - export selected rows</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/select') }}">Select integration - export selected rows</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Space between buttons</a>
+		                        <a href="{{ url('extensions/buttons//initialisation/spacer') }}">Space between buttons</a>
 		                    </li>
 		                    {{-- buttons / html5 --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/buttons/html5') }}">HTML 5 data export</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Export titles and messages</a>
+		                        <a href="{{ url('extensions/buttons/html5/titleMessage') }}">Export titles and messages</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">HTML5 export buttons</a>
+		                        <a href="{{ url('extensions/buttons/html5/simple') }}">HTML5 export buttons</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Include footer in export</a>
+		                        <a href="{{ url('extensions/buttons/html5/footer') }}">Include footer in export</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Tab separated values</a>
+		                        <a href="{{ url('extensions/buttons/html5/tsv') }}">Tab separated values</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">File name</a>
+		                        <a href="{{ url('extensions/buttons/html5/filename') }}">File name</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Copy button internationalisation</a>
+		                        <a href="{{ url('extensions/buttons/html5/copyi18n') }}">Copy button internationalisation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Column selectors</a>
+		                        <a href="{{ url('extensions/buttons/html5/columns') }}">Column selectors</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Format output data - orthogonal data</a>
+		                        <a href="{{ url('extensions/buttons/html5/outputFormat_orthogonal') }}">Format output data - orthogonal data</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Format output data - export options</a>
+		                        <a href="{{ url('extensions/buttons/html5/outputFormat_function') }}">Format output data - export options</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Excel - auto filter</a>
+		                        <a href="{{ url('extensions/buttons/html5/excelAutoFilter') }}">Excel - auto filter</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Excel - Bold text</a>
+		                        <a href="{{ url('extensions/buttons/html5/excelTextBold') }}">Excel - Bold text</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Excel - Cell background</a>
+		                        <a href="{{ url('extensions/buttons/html5/excelCellShading') }}">Excel - Cell background</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Excel - Customise borders</a>
+		                        <a href="{{ url('extensions/buttons/html5/excelBorder') }}">Excel - Customise borders</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">PDF - message</a>
+		                        <a href="{{ url('extensions/buttons/html5/pdfMessage') }}">PDF - message</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">PDF - page size and orientation</a>
+		                        <a href="{{ url('extensions/buttons/html5/pdfPage') }}">PDF - page size and orientation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">PDF - image</a>
+		                        <a href="{{ url('extensions/buttons/html5/pdfImage') }}">PDF - image</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">PDF - open in new window</a>
+		                        <a href="{{ url('extensions/buttons/html5/pdfOpen') }}">PDF - open in new window</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Custom file (JSON)</a>
+		                        <a href="{{ url('extensions/buttons/html5/customFile') }}">Custom file (JSON)</a>
 		                    </li>
 		                    {{-- buttons / column_visibility --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/buttons/column_visibility') }}">Column visibility</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Basic column visibility</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/simple') }}">Basic column visibility</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Multi-column layout</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/layout') }}">Multi-column layout</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('eextensions/buttons') }}">Customisation of column button text</a>
+		                        <a href="{{ url('eextensions/buttons/column_visibility/columnText') }}">Customisation of column button text</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Internationalisation</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/text') }}">Internationalisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Restore column visibility</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/restore') }}">Restore column visibility</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Select columns</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/columns') }}">Select columns</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Visibility toggle buttons</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/columnsToggle') }}">Visibility toggle buttons</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Column groups</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/columnGroups') }}">Column groups</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">State saving</a>
+		                        <a href="{{ url('extensions/buttons/column_visibility/stateSave') }}">State saving</a>
 		                    </li>
 		                    {{-- buttons / print --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/buttons/print') }}">Print</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Print button</a>
+		                        <a href="{{ url('extensions/buttons/print/simple') }}">Print button</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Custom message</a>
+		                        <a href="{{ url('extensions/buttons/print/message') }}">Custom message</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Export options - column selector</a>
+		                        <a href="{{ url('extensions/buttons/print/columns') }}">Export options - column selector</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Export options - row selector</a>
+		                        <a href="{{ url('extensions/buttons/print/select') }}">Export options - row selector</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Disable auto print</a>
+		                        <a href="{{ url('extensions/buttons/print/autoPrint') }}">Disable auto print</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Customisation of the print view window</a>
+		                        <a href="{{ url('extensions/buttons/print/customisation') }}">Customisation of the print view window</a>
 		                    </li>
 		                    {{-- buttons / api --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/buttons/api') }}">API</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Enable / disable</a>
+		                        <a href="{{ url('extensions/buttons/api/enable') }}">Enable / disable</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Dynamic text</a>
+		                        <a href="{{ url('extensions/buttons/api/text') }}">Dynamic text</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Adding and removing buttons dynamically</a>
+		                        <a href="{{ url('extensions/buttons/api/addRemove') }}">Adding and removing buttons dynamically</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Group selection</a>
+		                        <a href="{{ url('extensions/buttons/api/group') }}">Group selection</a>
 		                    </li>
 		                    {{-- buttons / split --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/buttons/split') }}">Split buttons</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Split Dropdown Button</a>
+		                        <a href="{{ url('extensions/buttons/split/dataTables') }}">Split Dropdown Button</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/buttons/split/bootstrap') }}">Bootstrap 3</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/buttons/split/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/buttons/split/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Foundation</a>
+		                        <a href="{{ url('extensions/buttons/split/foundation') }}">Foundation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Bulma</a>
+		                        <a href="{{ url('extensions/buttons/split/bulma') }}">Bulma</a>
 		                    </li>		                    
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/buttons/split/jqueryui') }}">jQuery UI</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Semantic UI</a>
+		                        <a href="{{ url('extensions/buttons/split/semanticui') }}">Semantic UI</a>
 		                    </li>
 		                    {{-- buttons / styling --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/buttons/styling') }}">Styling</a></h3>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/buttons/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/buttons/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/buttons/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>							
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Foundation</a>
+		                        <a href="{{ url('extensions/buttons/styling/foundation') }}">Foundation</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/buttons/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Bulma</a>
+		                        <a href="{{ url('extensions/buttons/styling/bulma') }}">Bulma</a>
 		                    </li>		                    
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/buttons/styling/jqueryui') }}">jQuery UI</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/buttons') }}">Icons</a>
+		                        <a href="{{ url('extensions/buttons/styling/icons') }}">Icons</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/buttons') }}">Dropup collection</a>
+		                        <a href="{{ url('extensions/buttons/styling/dropup') }}">Dropup collection</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -331,77 +331,77 @@
 		                <h3 class="tx"><a href="{{ url('extensions/colreorder/initialisation') }}">Initialisation and options</a></h3>
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Basic initialisation</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/simple') }}">Basic initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Scrolling table</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/scrolling') }}">Scrolling table</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Predefined column ordering</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/predefined') }}">Predefined column ordering</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Realtime updating</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/realtime') }}">Realtime updating</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Individual column filtering</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/col_filter') }}">Individual column filtering</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Initialisation using `new`</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/new_init') }}">Initialisation using `new`</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Enable / disable API</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/enableDisable') }}">Enable / disable API</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Reset ordering API</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/reset') }}">Reset ordering API</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Footer callback</a>
+		                        <a href="{{ url('extensions/colreorder/initialisation/footer_callback') }}">Footer callback</a>
 		                    </li>
 		                    {{-- colreorder / integration --}}							
 		                    <h3 class="tx"><a href="{{ url('extensions/colreorder/integration') }}">Integration with other DataTables extensions</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Column visibility integration</a>
+		                        <a href="{{ url('extensions/colreorder/integration/colvis') }}">Column visibility integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">FixedColumns integration</a>
+		                        <a href="{{ url('extensions/colreorder/integration/fixedcolumns') }}">FixedColumns integration</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">FixedHeader integration</a>
+		                        <a href="{{ url('extensions/colreorder/integration/fixedheader') }}">FixedHeader integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Responsive integration</a>
+		                        <a href="{{ url('extensions/colreorder/integration/responsive') }}">Responsive integration</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Server-side processing</a>
+		                        <a href="{{ url('extensions/colreorder/integration/server_side') }}">Server-side processing</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">State saving</a>
+		                        <a href="{{ url('extensions/colreorder/integration/state_save') }}">State saving</a>
 		                    </li>
 		                    {{-- colreorder / styling --}}		
 		                    <h3 class="tx"><a href="{{ url('extensions/colreorder/styling') }}">Styling</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/colreorder') }}">Alternative insert</a>
+		                        <a href="{{ url('extensions/colreorder/styling/alt_insert') }}">Alternative insert</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/colreorder/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/colreorder/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/colreorder/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Foundation</a>
+		                        <a href="{{ url('extensions/colreorder/styling/foundation') }}">Foundation</a>
 		                    </li>		                    
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/colreorder/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">Bulma</a>
+		                        <a href="{{ url('extensions/colreorder/styling/bulma') }}">Bulma</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/colreorder') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/colreorder/styling/jqueryui') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -410,7 +410,7 @@
 		                <h3><a href="{{ url('extensions/editor') }}"><i class="fa fa-arrow-circle-right"></i> Editor</a></h3>
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('extensions/editor') }}">Introduction</a>
+		                        <a href="{{ url('extensions/editor/introduction') }}">Introduction</a>
 		                    </li>
 		                </ul>
 		            </div>
