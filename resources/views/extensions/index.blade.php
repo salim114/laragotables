@@ -421,72 +421,72 @@
 		                <h3 class="tx"><a href="{{ url('extensions/fixedcolumns/initialisation') }}">Initialisation and options</a></h3>
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Basic initialisation</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/simple') }}">Basic initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Buttons initialisation</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/button') }}">Buttons initialisation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Multiple fixed columns</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/two_columns') }}">Multiple fixed columns</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">DataTables API</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/api') }}">DataTables API</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Right column only</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/right_column') }}">Right column only</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Left and right fixed columns</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/left_right_columns') }}">Left and right fixed columns</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Only Horizontal Scrolling</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/scrollX') }}">Only Horizontal Scrolling</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Column visibility integration</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/colvis') }}">Column visibility integration</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Server-side processing</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/server_side_processing') }}">Server-side processing</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">CSS row sizing</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/css_size') }}">CSS row sizing</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Assigned column width</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/size_fixed') }}">Assigned column width</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Fluid column width</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/size_fluid') }}">Fluid column width</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Index column</a>
+		                        <a href="{{ url('extensions/fixedcolumns/initialisation/index_column') }}">Index column</a>
 		                    </li>	
 		                    {{-- fixedcolumns / integration --}}					
 		                    <h3 class="tx"><a href="{{ url('extensions/fixedcolumns/integration') }}">Integration with other DataTables extensions</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">RowReorder</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">RowReorder</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">AutoFill</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">AutoFill</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">FixedHeader integration</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">FixedHeader integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Select - checkboxes</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">Select - checkboxes</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">Select - whole row</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">Select - whole row</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">DataTables API</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">DataTables API</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">FixedHeader/a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">FixedHeader/a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">FixedHeader with Footer</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">FixedHeader with Footer</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedcolumns') }}">KeyTable</a>
+		                        <a href="{{ url('extensions/fixedcolumns/integration/') }}">KeyTable</a>
 		                    </li>
 		                    {{-- fixedcolumns / styling --}}	
 		                    <h3 class="tx"><a href="{{ url('extensions/fixedcolumns/styling') }}">Styling</a></h3>
