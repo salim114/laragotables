@@ -587,25 +587,25 @@
 		                    {{-- fixedheader / styling --}}	
 		                    <h3 class="tx"><a href="{{ url('extensions/fixedheader/styling') }}">Styling</a></h3>							
 		                    <li>
-		                        <a href="{{ url('extensions/fixedheader') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/fixedheader/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedheader') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/fixedheader/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedheader') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/fixedheader/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedheader') }}">Foundation</a>
+		                        <a href="{{ url('extensions/fixedheader/styling/foundation') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/fixedheader') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/fixedheader/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/fixedheader') }}">Bulma</a>
+		                        <a href="{{ url('extensions/fixedheader/styling/bulma') }}">Bulma</a>
 		                    </li>		                                        		                    
 		                    <li>
-		                        <a href="{{ url('extensions/fixedheader') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/fixedheader/styling/jqueryui') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -616,25 +616,25 @@
 		                <h3 class="tx"><a href="{{ url('extensions/keytable/initialisation') }}">Initialisation</a></h3>
 		                <ul class="toc active">
 		                    <li>
-		                        <a href="{{ url('extensions/keytable') }}">Basic initialisation</a> 
+		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Basic initialisation</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Events</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Events</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Scrolling table</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Scrolling table</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Scroller integration</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Scroller integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Server-side processing</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Server-side processing</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">State saving</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/') }}">State saving</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Keep focus (no blur)</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Keep focus (no blur)</a>
 		                    </li>
 		                    {{-- keytable / styling --}}
 							<h3 class="tx"><a href="{{ url('extensions/keytable/styling') }}">Styling</a></h3>
