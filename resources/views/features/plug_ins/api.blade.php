@@ -209,7 +209,7 @@
 						namespace App\Http\Controllers;
 
 						use Illuminate\Http\Request;
-						Use App\Models\Datatable;
+						use App\Models\Datatable;
 						use DataTables;
 
 						class DatatableController extends Controller

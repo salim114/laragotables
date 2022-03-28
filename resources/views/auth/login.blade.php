@@ -1,9 +1,18 @@
 <x-guest-layout>
     <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
+        <x-slot name="logo">            
+        <div class="flex" style="margin-left: 34px;">
+                <!-- Logo -->
+                <div class="shrink-0 flex items-center">
+                    <a href="{{ url('https://laravel.com/docs/8.x') }}" target="_blank">
+                        <x-application-logo class="w-20 h-20 fill-current text-gray-500"/>
+                    </a><s+pan style='margin-left: 36px;font-size: 37px;color:#6b7280'>+</span>
+                </div>
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <a href="{{ url('https://datatables.net/') }}" target="_blank"><img src="{{ asset('images/dt-lg-gray.png') }}" style="width: 57%"></a>                    
+                </div>
+            </div>
         </x-slot>
 
         <!-- Session Status -->
