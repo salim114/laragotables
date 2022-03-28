@@ -167,7 +167,7 @@ img{
 
               <div class="flex-child magenta">
                 <img  src="{{ asset('images/LaraGoTables.jpg') }}"><br>         
-                      <p class="txt">The <span>LaraGoTable</span> is an immersion through the examples of <span>DataTable</span> adapted for the use of <span>Laravel</span> projects  </p>
+                      <p class="txt">The <span>LaraGoTable</span> is an immersion through the examples of <span>DataTables</span> adapted for the use of <span>Laravel</span> projects  </p>
                       
             <div class="container2">   
             <div class="exmpl"><i class='fas fa-hand-holding-heart'></i> here is all features (examples) and extensions of DataTables ready to explore :<i class="fa fa-hand-o-down" ></i></div><br><br>           
