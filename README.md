@@ -33,7 +33,7 @@ cp .env.example .env # Update database credentials configuration
 
 php artisan key:generate # Generate new keys for Laravel
 
-create datatables # named (laragotables)
+create database # named (laragotables)
 
 php artisan migrate
 
