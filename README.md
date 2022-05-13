@@ -33,6 +33,8 @@ cp .env.example .env # Update database credentials configuration
 
 php artisan key:generate # Generate new keys for Laravel
 
+fimd and import (datatables.sql) file in laragotables directory 
+
 ```
 
 ## License
