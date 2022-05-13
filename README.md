@@ -33,7 +33,9 @@ cp .env.example .env # Update database credentials configuration
 
 php artisan key:generate # Generate new keys for Laravel
 
-Create datatables # named (laragotables)
+create datatables # named (laragotables)
+
+php artisan migrate
 
 find and import (datatables.sql) # location (C:\xampp\htdocs\laragotables)
 
