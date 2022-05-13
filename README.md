@@ -35,7 +35,7 @@ php artisan key:generate # Generate new keys for Laravel
 
 Create datatables # named (laragotables)
 
-find and import (datatables.sql) located in laragotables directory # to your (laragotables) datatables
+find and import (datatables.sql) # location (C:\xampp\htdocs\laragotables)
 
 ```
 
