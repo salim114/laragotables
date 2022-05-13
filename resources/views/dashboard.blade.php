@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="{{ asset('images/laragotables.png') }}">
-    <title>DataTables feature - Server-side processing</title>
+    <title>Laragotables</title>
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
@@ -64,7 +64,7 @@ li:hover{
   color: #fff;*/
   width: 103%;
     margin-left: 181px;
-    margin-top: 35px;
+    margin-top: -31px;
 
 }
 #dv1, #dv2 {
@@ -88,8 +88,8 @@ li:hover{
     color:white;
     font-size: xxx-large;
     text-align: justify;
-    margin-top: 11px; 
-    width: 65%; 
+    margin-top: 0px; 
+    width: 76%; 
     margin-left: 180px;
     margin-bottom: 89px;
 }
@@ -175,7 +175,7 @@ img{
                     <a href="{{ url('features') }}" class="btn btn-dark center-block mt-2 mb-2" >Examples »</a>
                 </div>
                 <div id="dv2">
-                <a href="{{ url('extensions') }}" class="btn btn-dark center-block mt-2 mb-2">Extensions »</a>
+                <a href="#" class="btn btn-dark center-block mt-2 mb-2">Extensions »</a>
                 </div>
             </div>
                     
