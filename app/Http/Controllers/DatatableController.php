@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Datatable;
 use DataTables;
+use Auth;
 
 class DatatableController extends Controller
 {
@@ -389,7 +390,12 @@ class DatatableController extends Controller
     public function server_side(Request $request)
     {
          if ($request->ajax()) {
-            $datatables = Datatable::all();
+            if(Auth::id() == 2){
+                $datatables = Datatable::where('office', "=", "Tokyo");
+            }else{
+                $datatables = Datatable::All();
+            }
+            
             return Datatables::of($datatables)
                 ->make(true);
         }
