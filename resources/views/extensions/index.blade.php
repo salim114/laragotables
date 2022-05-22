@@ -616,51 +616,51 @@
 		                <h3 class="tx"><a href="{{ url('extensions/keytable/initialisation') }}">Initialisation</a></h3>
 		                <ul class="toc active">
 		                    <li>
-		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Basic initialisation</a> 
+		                        <a href="{{ url('extensions/keytable/initialisation/simple') }}">Basic initialisation</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Events</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/events') }}">Events</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Scrolling table</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/scrolling') }}">Scrolling table</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Scroller integration</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/scroller') }}">Scroller integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Server-side processing</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/server-side') }}">Server-side processing</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable/initialisation/') }}">State saving</a>
+		                        <a href="{{ url('extensions/keytable/initialisation/stateSave') }}">State saving</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable/initialisation/') }}">Keep focus (no blur)</a>
-		                    </li>
+		                        <a href="{{ url('extensions/keytable/initialisation/blurable') }}">Keep focus (no blur)</a>
+		                    </li>blurable
 		                    {{-- keytable / styling --}}
 							<h3 class="tx"><a href="{{ url('extensions/keytable/styling') }}">Styling</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Focus cell custom styling</a>
+		                        <a href="{{ url('extensions/keytable/styling/focusStyle') }}">Focus cell custom styling</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Bootstrap</a>
+		                        <a href="{{ url('extensions/keytable/styling/bootstrap') }}">Bootstrap</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/keytable/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/keytable/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Foundation</a>
+		                        <a href="{{ url('extensions/keytable/styling/foundation') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/keytable') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/keytable/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">Bulma</a>
+		                        <a href="{{ url('extensions/keytable/styling/bulma') }}">Bulma</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/keytable') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/keytable/styling/jqueryui') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -671,117 +671,117 @@
 		                <h3 class="tx"><a href="{{ url('extensions/responsive/initialisation') }}">Initialisation</a></h3>
 		                <ul class="toc active">
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Class name</a> 
+		                        <a href="{{ url('extensions/responsive/initialisation/className') }}">Class name</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Configuration option</a>
+		                        <a href="{{ url('extensions/responsive/initialisation/option') }}">Configuration option</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">`new` constructor</a>
+		                        <a href="{{ url('extensions/responsive/initialisation/new') }}">`new` constructor</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Ajax data</a>
+		                        <a href="{{ url('extensions/responsive/initialisation/ajax') }}">Ajax data</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Default initialisation</a>
+		                        <a href="{{ url('extensions/responsive/initialisation/default') }}">Default initialisation</a>
 		                    </li>	
 		                    {{-- responsive / display_types --}}						
 							<h3 class="tx"><a href="{{ url('extensions/responsive/display_types') }}">Display-types</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Immediately show hidden details</a>
+		                        <a href="{{ url('extensions/responsive/immediateShow') }}">Immediately show hidden details</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Modal details display</a>
+		                        <a href="{{ url('extensions/responsive/display_types/modal') }}">Modal details display</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/responsive/display_types/bootstrap_modal') }}">Bootstrap 3</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/responsive/display_types/bootstrap4_modal') }}">Bootstrap 4</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/responsive/display_types/bootstrap5_modal') }}">Bootstrap 5</a>
 		                    </li>							
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Foundation</a>
+		                        <a href="{{ url('extensions/responsive/display_types/foundation_modal') }}">Foundation</a>
 		                    </li>			                    
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Bulma</a>
+		                        <a href="{{ url('extensions/responsive/display_types/bulma_modal') }}">Bulma</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/responsive/display_types/jqueryui_modal') }}">jQuery UI</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Semantic UI</a>
+		                        <a href="{{ url('extensions/responsive/display_types/semanticui_modal') }}">Semantic UI</a>
 		                    </li>
 		                    {{-- responsive / column_control --}}	
 		                    <h3 class="tx"><a href="{{ url('extensions/responsive/column_control') }}">Column-control</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Automatic column hiding</a>
+		                        <a href="{{ url('extensions/responsive/column_control/auto') }}">Automatic column hiding</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Column priority</a>
+		                        <a href="{{ url('extensions/responsive/column_control/columnPriority') }}">Column priority</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Class control</a>
+		                        <a href="{{ url('extensions/responsive/column_control/classes') }}">Class control</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Assigned class control</a>
+		                        <a href="{{ url('extensions/responsive/column_control/init_classes') }}">Assigned class control</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">With Buttons - Column visibility</a>
+		                        <a href="{{ url('extensions/responsive/column_control/column_visibility') }}">With Buttons - Column visibility</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">With FixedHeader</a>
+		                        <a href="{{ url('extensions/responsive/column_control/fixedHeader') }}">With FixedHeader</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">With ColReorder</a>
+		                        <a href="{{ url('extensions/responsive/column_control/colreorder') }}">With ColReorder</a>
 		                    </li>
 		                    {{-- responsive / child_rows --}}	
 		                    <h3 class="tx"><a href="{{ url('extensions/responsive/child_rows') }}">Child rows</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Disable child rows</a>
+		                        <a href="{{ url('extensions/responsive/child_rows/disable_child_rows') }}">Disable child rows</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Column controlled child rows</a>
+		                        <a href="{{ url('extensions/responsive/child_rows/column_control') }}">Column controlled child rows</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Column control - right</a>
+		                        <a href="{{ url('extensions/responsive/child_rows/right_column') }}">Column control - right</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Whole row child row control</a>
+		                        <a href="{{ url('extensions/responsive/child_rows/whole_row_control') }}">Whole row child row control</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Custom child row renderer</a>
+		                        <a href="{{ url('extensions/responsive/child_rows/custom_renderer') }}">Custom child row renderer</a>
 		                    </li>	
 		                    {{-- responsive / styling --}}	
 		                    <h3 class="tx"><a href="{{ url('extensions/responsive/styling') }}">Styling</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/responsive/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/responsive/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/responsive/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Foundation</a>
+		                        <a href="{{ url('extensions/responsive/styling/foundation') }}">Foundation</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/responsive/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Bulma</a>
+		                        <a href="{{ url('extensions/responsive/styling/bulma') }}">Bulma</a>
 		                    </li>							
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/responsive/styling/jqueryui') }}">jQuery UI</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/responsive') }}">Compact</a>
+		                        <a href="{{ url('extensions/responsive/styling/compact') }}">Compact</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/responsive') }}">Vertical scrolling</a>
+		                        <a href="{{ url('extensions/responsive/styling/scrolling') }}">Vertical scrolling</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -792,60 +792,57 @@
 		                <h3 class="tx"><a href="{{ url('extensions/rowgroup/initialisation') }}">Initialisation</a></h3>
 		                <ul class="toc active">
 		                    <li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Simple initialisation</a> 
+		                        <a href="{{ url('extensions/rowgroup/initialisation/simple') }}">Simple initialisation</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">End grouping only</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/endRender') }}">End grouping only</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Start and end grouping</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/startAndEndRender') }}">Start and end grouping</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Custom row rendering / aggregates</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/customRow') }}">Custom row rendering / aggregates</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Ajax with objects</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/ajaxObjects') }}">Ajax with objects</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Fixed ordering</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/fixedOrdering') }}">Fixed ordering</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Data source change event</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/event') }}">Data source change event</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Multi-level grouping</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/multipleGroups') }}">Multi-level grouping</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Group with a range of values</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/range') }}">Group with a range of values</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Integration with Responsive</a>
+		                        <a href="{{ url('extensions/rowgroup/initialisation/responsive') }}">Integration with Responsive</a>
 		                    </li>
 		                    {{-- rowgroup / styling --}}
-							<h3 class="tx"><a href="{{ url('extensions/rowgroup/styling') }}">Styling</a></h3>
+							<h3 class="tx"><a href="{{ url('extensions/rowgroup/styling') }}">Styling</a></h3>	                    
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Focus cell custom styling</a>
-		                    </li>		                    
-							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/rowgroup/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/rowgroup/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/rowgroup/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Foundation</a>
+		                        <a href="{{ url('extensions/rowgroup/styling/foundation') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/rowgroup/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">Bulma</a>
+		                        <a href="{{ url('extensions/rowgroup/styling/bulma') }}">Bulma</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/rowgroup') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/rowgroup/styling/jqueryui') }}">jQuery UI</a>
 		                    </li> 
 		                </ul>
 		            </div>		         
@@ -856,57 +853,57 @@
 		                <h3 class="tx"><a href="{{ url('extensions/rowreorder/initialisation') }}">Initialisation</a></h3>
 		                <ul class="toc active">
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Basic initialisation</a> 
+		                        <a href="{{ url('extensions/rowreorder/initialisation/simple') }}">Basic initialisation</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Ajax data source with objects</a>
+		                        <a href="{{ url('extensions/rowreorder/initialisation/ajax') }}">Ajax data source with objects</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Restricted column ordering (sorting)</a>
+		                        <a href="{{ url('extensions/rowreorder/initialisation/restrictedOrdering') }}">Restricted column ordering (sorting)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Mobile support (Responsive integration)</a>
+		                        <a href="{{ url('extensions/rowreorder/initialisation/responsive') }}">Mobile support (Responsive integration)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Full row selection</a>
+		                        <a href="{{ url('extensions/rowreorder/initialisation/selector') }}">Full row selection</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Reorder event</a>
+		                        <a href="{{ url('extensions/rowreorder/initialisation/events') }}">Reorder event</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">DataTables Scrolling</a>
+		                        <a href="{{ url('extensions/rowreorder/initialisation/scroll') }}">DataTables Scrolling</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Defaults</a>
+		                        <a href="{{ url('extensions/rowreorder/initialisation/defaults') }}">Defaults</a>
 		                    </li>
 		                    {{-- rowreorder / styling --}}
 							<h3 class="tx"><a href="{{ url('extensions/rowreorder/styling') }}">Styling</a></h3>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Selector cell styling</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/reorderClass') }}">Selector cell styling</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Horizontal snap</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/snapX') }}">Horizontal snap</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>	
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>			                    
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Foundation</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/foundation') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>		                    	                    	
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">Bulma</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/bulma') }}">Bulma</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/rowreorder') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/rowreorder/styling/jqueryui') }}">jQuery UI</a>
 		                    </li>
 		                </ul>
 		     		</div> 
@@ -917,48 +914,48 @@
 		                <h3 class="tx"><a href="{{ url('extensions/scroller/initialisation') }}">Initialisation</a></h3>
 		                <ul class="toc active">
 		                    <li>
-		                        <a href="{{ url('extensions/scroller') }}">Basic initialisation</a> 
+		                        <a href="{{ url('extensions/scroller/initialisation/simple') }}">Basic initialisation</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">State saving</a>
+		                        <a href="{{ url('extensions/scroller/initialisation/state_saving') }}">State saving</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">Client-side data source (50,000 rows)</a>
+		                        <a href="{{ url('extensions/scroller/initialisation/large_js_source') }}">Client-side data source (50,000 rows)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">Server-side processing (5,000,000 rows)</a>
+		                        <a href="{{ url('extensions/scroller/initialisation/server_side_processing') }}">Server-side processing (5,000,000 rows)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">API</a>
+		                        <a href="{{ url('extensions/scroller/initialisation/api_scrolling') }}">API</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">FixedColumns integration</a>
+		                        <a href="{{ url('extensions/scroller/initialisation/fixedColumns') }}">FixedColumns integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">Select integration</a>
+		                        <a href="{{ url('extensions/scroller/initialisation/select') }}">Select integration</a>
 		                    </li>
 		                    {{-- scroller / styling --}}	 
 							<h3 class="tx"><a href="{{ url('extensions/scroller/styling') }}">Styling</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/scroller/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/scroller/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/scroller/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>							
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">Foundation</a>
+		                        <a href="{{ url('extensions/scroller/styling/foundation') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/scroller') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/scroller/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/scroller') }}">Bulma</a>
+		                        <a href="{{ url('extensions/scroller/styling/bulma') }}">Bulma</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/scroller') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/scroller/styling/jqueryui') }}">jQuery UI</a>
 		                    </li> 
 		                </ul>
 		       		 </div> 
