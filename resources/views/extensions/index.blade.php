@@ -966,134 +966,137 @@
 		                <h3 class="tx"><a href="{{ url('extensions/searchbuilder/initialisation') }}">Initialisation and options</a></h3>
 		                <ul class="toc active">
 		                    <li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Basic initialisation</a> 
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/simple') }}">Basic initialisation</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">API Initialisation</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/api') }}">API Initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">SearchBuilder Configuration using Buttons</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/buttonOptions') }}">SearchBuilder Configuration using Buttons</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Button Initialisation</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/button') }}">Button Initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Formatted Numbers</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/num_fmt') }}">Formatted Numbers</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Formatted Date using Moment</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/date_fmt') }}">Formatted Date using Moment</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Formatted Date using Luxon</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/date_fmt_luxon') }}">Formatted Date using Luxon</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Default Logic</a> 
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/logic') }}">Default Logic</a> 
 		                    </li>          
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Restrict Filtering to Certain Columns</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/columns') }}">Restrict Filtering to Certain Columns</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Limit Sub-Group Depth</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/depthLimit') }}">Limit Sub-Group Depth</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">PreDefined Search</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/preDefined') }}">PreDefined Search</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Interaction with Empty Cells</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/emptyCells') }}">Interaction with Empty Cells</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Force Search on Enter</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/returnSearch') }}">Force Search on Enter</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">HTML Format</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/html') }}">HTML Format</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Interaction with Rendered Cells</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/renderedCells') }}">Interaction with Rendered Cells</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Unknown Column Type</a>
+		                        <a href="{{ url('extensions/searchbuilder/initialisation/unknownType') }}">Unknown Column Type</a>
 		                    </li>
 		                    {{-- searchbuilder / performance --}}
 							<h3 class="tx"><a href="{{ url('extensions/searchbuilder/performance') }}">Performance</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">5k Rows</a>
+		                        <a href="{{ url('extensions/searchbuilder/performance/searchBuilder5k') }}">5k Rows</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">50k Rows</a>
+		                        <a href="{{ url('extensions/searchbuilder/performance/searchBuilder50k') }}">50k Rows</a>
 		                    </li> 
 		                    {{-- searchbuilder / api --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/searchbuilder/api') }}">API demonstrations</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Rebuild Demonstration</a>
+		                        <a href="{{ url('extensions/searchbuilder/api/rebuild') }}">Rebuild Demonstration</a>
 		                    </li>
 		                    {{-- searchbuilder / customisation --}}	
 		                    <h3 class="tx"><a href="{{ url('extensions/searchbuilder/customisation') }}">Customisation</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Custom Title</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">SearchBuilder Button Text</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Language Options</a>
-		                    </li>		                    
-							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Rendering Arrays</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Custom Conditions</a>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/customTitle') }}">Custom Title</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Custom Multiple Of Condition</a>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/defaultCondition') }}">Default Condition</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Using Orthogonal Data</a>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/buttonText') }}">SearchBuilder Button Text</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/language') }}">Language Options</a>
+		                    </li>		                    
+							<li>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/renderArrays') }}">Rendering Arrays</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/customConditions') }}">Custom Conditions</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/customMultiple') }}">Custom Multiple Of Condition</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/orthogonal') }}">Using Orthogonal Data</a>
 		                    </li> 		                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Plug-in Example</a>
+		                        <a href="{{ url('extensions/searchbuilder/customisation/plugin') }}">Plug-in Example</a>
 		                    </li> 
 		                    {{-- searchbuilder / styling --}}	
 		                    <h3 class="tx"><a href="{{ url('extensions/searchbuilder/styling') }}">Styling</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">GreyScale</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/greyscale') }}">GreyScale</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/bootstrap') }}">Bootstrap 3</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/bootstrap4') }}">Bootstrap 4</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/bootstrap5') }}">Bootstrap 5</a>
 		                    </li>							
 		                    <li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Foundation</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/foundation') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/semanticui') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li> 
 		                    <li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Bulma</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/bulma') }}">Bulma</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/searchbuilder/styling/jqueryui') }}">jQuery UI</a>
 		                    </li>  
 		                    {{-- searchbuilder / integration --}}	                 
 							<h3 class="tx"><a href="{{ url('extensions/searchbuilder/integration') }}">Integration</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">StateSave Integration</a>
+		                        <a href="{{ url('extensions/searchbuilder/integration/statesave') }}">StateSave Integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">Buttons Integration</a>
+		                        <a href="{{ url('extensions/searchbuilder/integration/buttons') }}">Buttons Integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">ColReorder Integration</a>
+		                        <a href="{{ url('extensions/searchbuilder/integration/colReorder') }}">ColReorder Integration</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">SearchPanes Integration</a>
+		                        <a href="{{ url('extensions/searchbuilder/integration/searchPanes') }}">SearchPanes Integration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchbuilder') }}">SearchPanes, CascadePanes and ViewTotal Integration</a>
+		                        <a href="{{ url('extensions/searchbuilder/integration/searchPanesCascadeViewTotal') }}">SearchPanes, CascadePanes and ViewTotal Integration</a>
 		                    </li>
 		                </ul>
 		       		 </div> 
@@ -1104,211 +1107,211 @@
 		                <h3 class="tx"><a href="{{ url('extensions/searchpanes/initialisation') }}">Initialisation and options</a></h3>	
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Basic Initialisation</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Basic Initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">API Initialisation</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">API Initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Button Initialisation</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Button Initialisation</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">SearchPanes Button Configuration</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">SearchPanes Button Configuration</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Collapsed Panes</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Collapsed Panes</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Change SearchPanes Layout.</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Change SearchPanes Layout.</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Force Panes to Show/Hide for Specified Columns</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Force Panes to Show/Hide for Specified Columns</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Uniqueness Threshold</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Uniqueness Threshold</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Cascade Panes</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Cascade Panes</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">View Totals and Subtotals</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">View Totals and Subtotals</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Viewing Totals, Subtotals and Cascading Panes</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Viewing Totals, Subtotals and Cascading Panes</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Pre-Select Rows with Cascade</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Pre-Select Rows with Cascade</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Pre-Select Rows</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Pre-Select Rows</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/plug_ins/range_filtering') }}">Ajax Loaded SearchPanes Options</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Ajax Loaded SearchPanes Options</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/plug_ins/dom_sort') }}">Disable Clear Buttons for Panes</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Disable Clear Buttons for Panes</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Speed Optimisation</a>
+		                        <a href="{{ url('extensions/searchpanes/initialisation/') }}">Speed Optimisation</a>
 		                    </li>
 		                    {{-- searchpanes / advanced --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/searchpanes/advanced') }}">Advanced initialisation</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">StateSave</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">StateSave</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">able with empty cells</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">able with empty cells</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Empty Table</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Empty Table</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Abstract Types</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Abstract Types</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Column Filter Integration</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Column Filter Integration</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Long Data in Panes</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Long Data in Panes</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Integration with DataTables Rendering Function</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Integration with DataTables Rendering Function</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Using Render Function to Create Custom Options</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Using Render Function to Create Custom Options</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Rendering Arrays</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Rendering Arrays</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">HTML Entities from the DOM</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">HTML Entities from the DOM</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">HTML Entities from Ajax</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">HTML Entities from Ajax</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Unencoded HTML characters with a Rendering Function from Ajax</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Unencoded HTML characters with a Rendering Function from Ajax</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">HTML Entities from an Ajax Request with a Rendering Function</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">HTML Entities from an Ajax Request with a Rendering Function</a>
 		                    </li>		                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Dealing with unusual characters</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Dealing with unusual characters</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Selection style to work with mobile devices</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Selection style to work with mobile devices</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Deleting rows Mid-search</a>
+		                        <a href="{{ url('extensions/searchpanes/advanced/') }}">Deleting rows Mid-search</a>
 		                    </li>
 		                    {{-- searchpanes / customisation --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/searchpanes/customisation') }}">Customisation</a></h3>									                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Panes Vertically Stacked next to DataTable</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Panes Vertically Stacked next to DataTable</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Panes in footer of DataTable</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Panes in footer of DataTable</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Pane customisation</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Pane customisation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Button text</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Button text</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Custom Pane Title</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Custom Pane Title</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Custom Pane Class</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Custom Pane Class</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Internationalisation Language Options</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Internationalisation Language Options</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Custom Pane Order</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Custom Pane Order</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide Count Column</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide Count Column</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide Count Column on Specific Pane</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide Count Column on Specific Pane</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide Ordering Buttons</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide Ordering Buttons</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide Ordering Buttons on Specific Pane</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide Ordering Buttons on Specific Pane</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide Collapsing Button</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide Collapsing Button</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide Collapsing Button on Specific Pane</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide Collapsing Button on Specific Pane</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide All Controls</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide All Controls</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Hide All Controls on Specific Pane</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation/') }}">Hide All Controls on Specific Pane</a>
 		                    </li>
 		                    {{-- searchpanes / integration --}}
 		                     <h3 class="tx"><a href="{{ url('extensions/searchpanes/integration') }}">Integration with other DataTables extensions</a></h3>								                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Buttons Integration</a>
+		                        <a href="{{ url('extensions/searchpanes/integration/') }}">Buttons Integration</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">ColReorder Integration</a>
+		                        <a href="{{ url('extensions/searchpanes/integration/') }}">ColReorder Integration</a>
 		                    </li>
 		                    {{-- searchpanes / customisation --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/searchpanes/customisation') }}">Creation of custom panes</a></h3>								                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Custom Filtering Options</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation') }}">Custom Filtering Options</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Custom Filtering Pane</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation') }}">Custom Filtering Pane</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Custom Filtering Pane with PreSelections</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation') }}">Custom Filtering Pane with PreSelections</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Only Custom Panes</a>
+		                        <a href="{{ url('extensions/searchpanes/customisation') }}">Only Custom Panes</a>
 		                    </li>
 		                    {{-- searchpanes / styling --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/searchpanes/styling') }}">Styling</a></h3>								                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Bootstrap 3</a>
+		                        <a href="{{ url('extensions/searchpanes/styling/') }}">Bootstrap 3</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Bootstrap 4</a>
+		                        <a href="{{ url('extensions/searchpanes/styling/') }}">Bootstrap 4</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Bootstrap 5</a>
+		                        <a href="{{ url('extensions/searchpanes/styling/') }}">Bootstrap 5</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Foundation</a>
+		                        <a href="{{ url('extensions/searchpanes/styling/') }}">Foundation</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Fomantic-UI (formally Semantic-UI)</a>
+		                        <a href="{{ url('extensions/searchpanes/styling/') }}">Fomantic-UI (formally Semantic-UI)</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">Bulma</a>
+		                        <a href="{{ url('extensions/searchpanes/styling/') }}">Bulma</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">jQuery UI</a>
+		                        <a href="{{ url('extensions/searchpanes/styling/') }}">jQuery UI</a>
 		                    </li>
 		                    {{-- searchpanes / performance --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/searchpanes/performance') }}">Performance</a></h3>								                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes') }}">5k Rows</a>
+		                        <a href="{{ url('extensions/searchpanes/performance/') }}">5k Rows</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">50k Rows</a>
+		                        <a href="{{ url('extensions/searchpanes/performance/') }}">50k Rows</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">50k Rows with cascadePanes</a>
+		                        <a href="{{ url('extensions/searchpanes/performance/') }}">50k Rows with cascadePanes</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes') }}">50k Rows with cascadePanes and viewTotal</a>
+		                        <a href="{{ url('extensions/searchpanes/performance/') }}">50k Rows with cascadePanes and viewTotal</a>
 		                    </li>
 		                </ul>
 		     		</div> 

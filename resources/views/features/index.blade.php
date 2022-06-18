@@ -88,8 +88,25 @@
 							<li>
 		                        <a href="{{ url('features/basic_init/language') }}">Language options</a>
 		                    </li>
+		                </ul>
+		            </div>
+		            <div class="toc-group">
+		                <h3><a href="{{ url('features/non_jquery') }}">Non-jQuery initialisation</a></h3>
+		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('features/basic_init/stocks') }}">Example of stocks results</a>
+		                        <a href="{{ url('features/non_jquery/init') }}">Non-jQuery initialisation</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/non_jquery/options') }}">Options</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/non_jquery/dt_events') }}">DataTables events</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/non_jquery/dom_events') }}">DOM events</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/non_jquery/ajax') }}">Ajax data source (objects)</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -126,9 +143,9 @@
 							<li>
 		                        <a href="{{ url('features/advanced_init/html5_data_options') }}">HTML5 data-* attributes - table options</a>
 		                    </li>
-							<li>
+							<!-- <li>
 		                        <a href="{{ url('features/advanced_init/language_file') }}">Language file</a>
-		                    </li>
+		                    </li> -->
 							<li>
 		                        <a href="{{ url('features/advanced_init/defaults') }}">Setting defaults</a>
 		                    </li>
@@ -147,28 +164,80 @@
 							<li>
 		                        <a href="{{ url('features/advanced_init/sort_direction_control') }}">Order direction sequence control</a>
 		                    </li>
+							<li>
+		                        <a href="{{ url('features/basic_init/stocks') }}">Example of stocks results</a>
+		                    </li>
+		                </ul>
+		            </div>	
+		            <div class="toc-group">
+		                <h3><a href="{{ url('features/data_sources') }}">Data sources</a></h3>
+		                <ul class="toc">
+							<li>
+		                        <a href="{{ url('features/data_sources/dom') }}">HTML (DOM) sourced data</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/data_sources/ajax') }}">Ajax sourced data</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/data_sources/js_array') }}">Javascript sourced data</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/data_sources/server_side') }}">Server-side processing</a>
+		                    </li>
 		                </ul>
 		            </div>
 		            <div class="toc-group">
-		                <h3><a href="{{ url('features/non_jquery') }}">Non-jQuery initialisation</a></h3>
+		                <h3><a href="{{ url('features/i18n') }}">Internationalisation</a></h3>
 		                <ul class="toc">
 							<li>
-		                        <a href="{{ url('features/non_jquery/init') }}">Non-jQuery initialisation</a>
+		                        <a href="{{ url('features/i18n/options') }}">Language options</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/non_jquery/options') }}">Options</a>
+		                        <a href="{{ url('features/i18n/ajax') }}">Remote language file</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/non_jquery/dt_events') }}">DataTables events</a>
+		                        <a href="{{ url('features/i18n/ajax+local') }}">Remote language file + local definitions</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/non_jquery/dom_events') }}">DOM events</a>
+		                        <a href="{{ url('features/i18n/numbers') }}">Locale based number display</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/non_jquery/ajax') }}">Ajax data source (objects)</a>
+		                        <a href="{{ url('features/i18n/datetime') }}">Auto-locale display</a>
 		                    </li>
 		                </ul>
-		            </div>
+		            </div>    
+		            <div class="toc-group">
+		                <h3><a href="{{ url('features/datetime') }}">DateTime</a></h3>
+		                <ul class="toc">
+							<li>
+		                        <a href="{{ url('features/datetime/iso8601') }}">ISO8601 detection</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/datetime/auto_locale_moment') }}">Auto-locale display (Moment.js)</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/datetime/auto_locale_luxon') }}">Auto-locale display (Luxon)</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/datetime/formatting_moment') }}">Date rendering (Moment.js)</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/datetime/formatting_luxon') }}">Date rendering (Luxon)</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/datetime/transform_moment') }}">Format transform (Moment.js)</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/datetime/transform_luxon') }}">Format transform (Luxon)</a>
+		                    </li>
+							<li>
+		                        <a href="{{ url('features/datetime/order_moment') }}">Ordering formatted dates (Moment.js)</a>
+		                    </li>
+		                    <li>
+		                        <a href="{{ url('features/datetime/order_luxon') }}">Ordering formatted dates (Luxon)</a>
+		                    </li>
+		                </ul>
+		            </div>         
 		            <div class="toc-group">
 		                <h3><a href="{{ url('features/styling') }}">Styling</a></h3>
 		                <ul class="toc">
@@ -222,23 +291,6 @@
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/styling/uikit') }}">UIKit 3 (Tech. preview)</a>
-		                    </li>
-		                </ul>
-		            </div>
-		            <div class="toc-group">
-		                <h3><a href="{{ url('features/data_sources') }}">Data sources</a></h3>
-		                <ul class="toc">
-							<li>
-		                        <a href="{{ url('features/data_sources/dom') }}">HTML (DOM) sourced data</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/data_sources/ajax') }}">Ajax sourced data</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/data_sources/js_array') }}">Javascript sourced data</a>
-		                    </li>
-							<li>
-		                        <a href="{{ url('features/data_sources/server_side') }}">Server-side processing</a>
 		                    </li>
 		                </ul>
 		            </div>
