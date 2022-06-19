@@ -85,9 +85,6 @@
 							<li>
 		                        <a href="{{ url('features/basic_init/comma_decimal') }}">Language - Comma decimal place</a>
 		                    </li>
-							<li>
-		                        <a href="{{ url('features/basic_init/language') }}">Language options</a>
-		                    </li>
 		                </ul>
 		            </div>
 		            <div class="toc-group">
@@ -100,10 +97,10 @@
 		                        <a href="{{ url('features/non_jquery/options') }}">Options</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/non_jquery/dt_events') }}">DataTables events</a>
+		                        <a href="{{ url('features/non_jquery/dom_events') }}">DOM events</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/non_jquery/dom_events') }}">DOM events</a>
+		                        <a href="{{ url('features/non_jquery/dt_events') }}">DataTables events</a>
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/non_jquery/ajax') }}">Ajax data source (objects)</a>
@@ -401,9 +398,6 @@
 		                        <a href="{{ url('features/server_side/row_details') }}">Row details</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/server_side/select_rows') }}">Row selection</a>
-		                    </li>
-							<li>
 		                        <a href="{{ url('features/server_side/jsonp') }}">JSONP data source for remote domains</a>
 		                    </li>
 							<li>
@@ -415,7 +409,7 @@
 		                </ul>
 		            </div>
 		            <div class="toc-group">
-		                <h3><a href="{{ url('features/plug_ins') }}">plug_ins</a></h3>
+		                <h3><a href="{{ url('features/plug_ins') }}">Plug-ins</a></h3>
 		                <ul class="toc">
 							<li>
 		                        <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
@@ -438,7 +432,7 @@
 		        <div class="epilogue">
 		            <p>Please refer to the <a href="http://www.datatables.net">DataTables documentation</a> for full information about its API properties and methods.<br>
 		            Additionally, there are a wide range of <a href="http://www.datatables.net/extensions">extensions</a> and <a href=
-		            "https://www.datatables.net/plug-ins/index">plug_ins</a> which extend the capabilities of DataTables.</p>
+		            "https://www.datatables.net/plug-ins/index">plug-ins</a> which extend the capabilities of DataTables.</p>
 		            <p class="copyright">DataTables designed and created by <a href="http://www.sprymedia.co.uk">SpryMedia Ltd</a> © 2007-2022<br>
 		            DataTables is licensed under the <a href="https://datatables.net/license/mit">MIT license</a>.</p>
 		        </div>
