@@ -44,7 +44,7 @@ find and import (datatables.sql) # location (C:\xampp\htdocs\laragotables)
 ## Youtube channel
 
 My channel : [https://www.youtube.com/c/AbdelhalimSaidi](https://www.youtube.com/c/AbdelhalimSaidi).
-LaraGoTables playlist : [https://www.youtube.com/watch?v=ex0rcUDaYuQ&list=PLKS4z7uJf8CA78oJ8nQ_fdl4pVwNfEKzz](https://www.youtube.com/watch?v=ex0rcUDaYuQ&list=PLKS4z7uJf8CA78oJ8nQ_fdl4pVwNfEKzz).
+#LaraGoTables playlist : [here](https://www.youtube.com/watch?v=ex0rcUDaYuQ&list=PLKS4z7uJf8CA78oJ8nQ_fdl4pVwNfEKzz).
 
 ## License
 
