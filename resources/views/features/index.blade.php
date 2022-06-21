@@ -415,10 +415,10 @@
 		                        <a href="{{ url('features/plug_ins/api') }}">API plug-in methods</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Ordering plug_ins (with type detection)</a>
+		                        <a href="{{ url('features/plug_ins/sorting_auto') }}">Ordering plug-ins (with type detection)</a>
 		                    </li>
 							<li>
-		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Ordering plug_ins (no type detection)</a>
+		                        <a href="{{ url('features/plug_ins/sorting_manual') }}">Ordering plug-ins (no type detection)</a>
 		                    </li>
 							<li>
 		                        <a href="{{ url('features/plug_ins/range_filtering') }}">Custom filtering - range search</a>

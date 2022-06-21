@@ -156,12 +156,12 @@ Route::group([], function() {
     Route::get('features/advanced_init/footer_callback', 'App\Http\Controllers\DatatableController@footer_callback');
     Route::get('features/advanced_init/html5_data_attributes', 'App\Http\Controllers\DatatableController@html5_data_attributes');
     Route::get('features/advanced_init/html5_data_options', 'App\Http\Controllers\DatatableController@html5_data_options');
-    Route::get('features/advanced_init/language_file', 'App\Http\Controllers\DatatableController@language_file');
     Route::get('features/advanced_init/length_menu', 'App\Http\Controllers\DatatableController@length_menu');
     Route::get('features/advanced_init/object_dom_read', 'App\Http\Controllers\DatatableController@object_dom_read');
     Route::get('features/advanced_init/row_callback', 'App\Http\Controllers\DatatableController@row_callback');
     Route::get('features/advanced_init/row_grouping', 'App\Http\Controllers\DatatableController@row_grouping');
     Route::get('features/advanced_init/sort_direction_control', 'App\Http\Controllers\DatatableController@sort_direction_control');
+    Route::get('features/advanced_init/stocks', 'App\Http\Controllers\DatatableController@stocks');
 });
 
 //Ajax
@@ -218,8 +218,6 @@ Route::group([], function() {
     Route::get('features/basic_init/scroll_x', 'App\Http\Controllers\DatatableController@scroll_x');
     Route::get('features/basic_init/scroll_xy', 'App\Http\Controllers\DatatableController@scroll_xy');
     Route::get('features/basic_init/comma_decimal', 'App\Http\Controllers\DatatableController@comma_decimal');
-    Route::get('features/basic_init/language', 'App\Http\Controllers\DatatableController@language');
-    Route::get('features/basic_init/stocks', 'App\Http\Controllers\DatatableController@stocks');
 });
 
 //Data sources
@@ -229,6 +227,30 @@ Route::group([], function() {
     Route::get('features/data_sources/dom', 'App\Http\Controllers\DatatableController@dom_ds');
     Route::get('features/data_sources/js_array', 'App\Http\Controllers\DatatableController@js_array');
     Route::get('features/data_sources/server_side', 'App\Http\Controllers\DatatableController@server_side')->name('server_side');
+});
+
+//DateTime
+
+Route::group([], function() {
+    Route::get('features/datetime/iso8601', 'App\Http\Controllers\DatatableController@iso8601');
+    Route::get('features/datetime/auto_locale_moment', 'App\Http\Controllers\DatatableController@auto_locale_moment');
+    Route::get('features/datetime/auto_locale_luxon', 'App\Http\Controllers\DatatableController@auto_locale_luxon');
+    Route::get('features/datetime/formatting_moment', 'App\Http\Controllers\DatatableController@formatting_moment');
+    Route::get('features/datetime/formatting_luxon', 'App\Http\Controllers\DatatableController@formatting_luxon');    
+    Route::get('features/datetime/transform_moment', 'App\Http\Controllers\DatatableController@transform_moment');
+    Route::get('features/datetime/transform_luxon', 'App\Http\Controllers\DatatableController@transform_luxon');
+    Route::get('features/datetime/order_moment', 'App\Http\Controllers\DatatableController@order_moment');
+    Route::get('features/datetime/order_luxon', 'App\Http\Controllers\DatatableController@order_luxon');
+});
+
+//Internationalisation
+
+Route::group([], function() {
+    Route::get('features/i18n/options', 'App\Http\Controllers\DatatableController@options');
+    Route::get('features/i18n/ajax', 'App\Http\Controllers\DatatableController@ajax');
+    Route::get('features/i18n/ajax+local', 'App\Http\Controllers\DatatableController@ajax+local');
+    Route::get('features/i18n/numbers', 'App\Http\Controllers\DatatableController@numbers');
+    Route::get('features/i18n/datetime', 'App\Http\Controllers\DatatableController@datetime');
 });
 
 //Non-jQuery initialisation
