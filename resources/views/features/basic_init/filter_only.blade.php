@@ -24,7 +24,7 @@
 	  $("#example").DataTable({
 	    paging: false,
 	    ordering: false,
-	    info: false,
+	    info: true,
 	  });
 	});
 

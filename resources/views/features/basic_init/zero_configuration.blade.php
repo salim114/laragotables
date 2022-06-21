@@ -7,7 +7,7 @@
 	<link rel="icon" href="{{ asset('images/laragotables.png') }}">	
 	<title>DataTables feature - Zero configuration</title>
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}"> 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/demo.css') }}">
 	<style type="text/css" class="init">	
@@ -15,14 +15,14 @@
 	</style>
 	<!-- Scripts -->
 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script type="text/javascript" language="javascript" src="{{ asset('js/jquery.dataTables.js') }}"></script>
+	<script type="text/javascript" language="javascript" src="{{ asset('js/jquery.dataTables.js') }}"></script> 
 	<script type="text/javascript" language="javascript" src="{{ asset('js/shCore.js') }}"></script>
 	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<script type="text/javascript" language="javascript" class="init">    
 
 	 $(document).ready(function () {
 	  $("#example").DataTable();
-	});
+	 });
 
 	</script>
 </head>
