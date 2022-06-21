@@ -1302,16 +1302,16 @@
 		                    {{-- searchpanes / performance --}}
 		                    <h3 class="tx"><a href="{{ url('extensions/searchpanes/performance') }}">Performance</a></h3>								                    
 							<li>
-		                        <a href="{{ url('extensions/searchpanes/performance/') }}">5k Rows</a>
+		                        <a href="{{ url('extensions/searchpanes/') }}">5k Rows</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes/performance/') }}">50k Rows</a>
+		                        <a href="{{ url('extensions/searchpanes/') }}">50k Rows</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes/performance/') }}">50k Rows with cascadePanes</a>
+		                        <a href="{{ url('extensions/searchpanes/') }}">50k Rows with cascadePanes</a>
 		                    </li>
 		                    <li>
-		                        <a href="{{ url('extensions/searchpanes/performance/') }}">50k Rows with cascadePanes and viewTotal</a>
+		                        <a href="{{ url('extensions/searchpanes/') }}">50k Rows with cascadePanes and viewTotal</a>
 		                    </li>
 		                </ul>
 		     		</div> 

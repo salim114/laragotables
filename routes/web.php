@@ -246,9 +246,9 @@ Route::group([], function() {
 //Internationalisation
 
 Route::group([], function() {
-    Route::get('features/i18n/options', 'App\Http\Controllers\DatatableController@options');
-    Route::get('features/i18n/ajax', 'App\Http\Controllers\DatatableController@ajax');
-    Route::get('features/i18n/ajax+local', 'App\Http\Controllers\DatatableController@ajax+local');
+    Route::get('features/i18n/options', 'App\Http\Controllers\DatatableController@options_int');
+    Route::get('features/i18n/ajax', 'App\Http\Controllers\DatatableController@ajax_int');
+    Route::get('features/i18n/ajax+local', 'App\Http\Controllers\DatatableController@ajax_local');
     Route::get('features/i18n/numbers', 'App\Http\Controllers\DatatableController@numbers');
     Route::get('features/i18n/datetime', 'App\Http\Controllers\DatatableController@datetime');
 });

@@ -15,8 +15,8 @@ class DatatableController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    //Features (examples)
-    //Basic initialisation
+ //Features (examples)
+ //Basic initialisation
 
     public function zero_configuration()
     {
@@ -130,7 +130,7 @@ class DatatableController extends Controller
         return view('features.basic_init.stocks');       
     }
     
-    //Advanced initialisation
+ //Advanced initialisation
 
     public function column_render()
     {
@@ -234,7 +234,7 @@ class DatatableController extends Controller
         return view('features.advanced_init.sort_direction_control', compact('datatables'));       
     }
 
-    //Non-jQuery initialisation
+ //Non-jQuery initialisation
 
         public function ajax()
     {
@@ -265,7 +265,7 @@ class DatatableController extends Controller
         return view('features.non_jquery.options', compact('datatables'));       
     }
 
-    //Styling
+ //Styling
 
     public function bootstrap()
     {
@@ -369,7 +369,7 @@ class DatatableController extends Controller
         return view('features.styling.uikit', compact('datatables'));       
     }
 
-    //Data sources
+ //Data sources
 
     public function ajax_ds()
     {
@@ -402,10 +402,37 @@ class DatatableController extends Controller
 
         return view('features.data_sources.server_side');
     }      
-    
+  
+ //Internationalisation
+
+    public function options_int()
+    {
+        return view('features.i18n.options');       
+    }
+
+    public function ajax_int()
+    {
+        return view('features.i18n.ajax');       
+    } 
+
+    public function ajax_local()
+    {
+        $datatables = Datatable::all();
+        return view('features.i18n.ajax+local', compact('datatables'));      
+    } 
+
+    public function numbers()
+    {
+        return view('features.i18n.numbers');       
+    }  
+
+    public function datetime()
+    {
+        return view('features.i18n.datetime');       
+    }   
 
 
-    //API
+ //API
 
     public function add_row()
     {
@@ -492,7 +519,7 @@ class DatatableController extends Controller
         return view('features.api.highcharts', compact('datatables'));       
     }
 
-    //Ajax
+ //Ajax
 
     public function custom_data_flat()
     {
@@ -539,7 +566,7 @@ class DatatableController extends Controller
         return view('features.ajax.simple');       
     }
 
-    //Server_side
+ //Server_side
 
     public function custom_vars(Request $request)
     {
@@ -662,7 +689,7 @@ class DatatableController extends Controller
         return view('features.server_side.simple');
     }   
 
-    //plug_ins
+ //plug_ins
 
     public function api()
     {
@@ -694,8 +721,8 @@ class DatatableController extends Controller
         return view('features.plug_ins.sorting_manual', compact('datatables'));       
     }
 
-    //Extensions
-    //AutoFill
+ //Extensions
+ //AutoFill
 
     public function alwaysAsk()
     {
