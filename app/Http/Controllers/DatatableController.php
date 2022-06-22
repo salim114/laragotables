@@ -412,7 +412,8 @@ class DatatableController extends Controller
 
     public function ajax_int()
     {
-        return view('features.i18n.ajax');       
+        $datatables = Datatable::all();
+        return view('features.i18n.ajax', compact('datatables'));        
     } 
 
     public function ajax_local()
