@@ -2,13 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="../resources/syntax/shCore.css">
-	<link rel="stylesheet" type="text/css" href="../resources/demo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+	<link rel="icon" href="{{ asset('images/laragotables.png') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/shCore.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/demo.css') }}">
 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script type="text/javascript" language="javascript" src="../resources/syntax/shCore.js"></script>
-	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" src="{{ asset('js/shCore.js') }}"></script>
+	<script type="text/javascript" language="javascript" src="{{ asset('js/demo.js') }}"></script>
 	<title>DataTables examples - Internationalisation</title>
 </head>
 <body class="dt-example">
@@ -28,32 +29,32 @@
 			<div class="liner">
 				<div class="toc">
 					<div class="toc-group">
-						<h3><a href="./index.html">Internationalisation</a></h3>
+						<h3><a href="{{ url('features') }}">Internationalisation</a></h3>
 						<ul class="toc">
 							<li>
-								<a href="./options.html">Language options</a>
-							</li>
+		                        <a href="{{ url('features/i18n/options') }}">Language options</a>
+		                    </li>
 							<li>
-								<a href="./ajax.html">Remote language file</a>
-							</li>
+		                        <a href="{{ url('features/i18n/ajax') }}">emote language file</a>
+		                    </li>
 							<li>
-								<a href="./ajax+local.html">Remote language file + local definitions</a>
-							</li>
+		                        <a href="{{ url('features/i18n/ajax+local') }}">Remote language file + local definitions</a>
+		                    </li>
 							<li>
-								<a href="./numbers.html">Locale based number display</a>
-							</li>
+		                        <a href="{{ url('features/i18n/numbers') }}">Locale based number display</a>
+		                    </li>
 							<li>
-								<a href="./datetime.html">Auto-locale display</a>
-							</li>
-						</ul>
+		                        <a href="{{ url('features/i18n/datetime') }}">Auto-locale display</a>
+		                    </li>
+		                </ul>
 					</div>
 				</div>
 				<div class="epilogue">
 					<p>Please refer to the <a href="http://www.datatables.net">DataTables documentation</a> for full information about its API properties and methods.<br>
 					Additionally, there are a wide range of <a href="http://www.datatables.net/extensions">extensions</a> and <a href=
-					"http://www.datatables.net/plug-ins">plug-ins</a> which extend the capabilities of DataTables.</p>
+					"https://www.datatables.net/plug-ins/index">plug_ins</a> which extend the capabilities of DataTables.</p>
 					<p class="copyright">DataTables designed and created by <a href="http://www.sprymedia.co.uk">SpryMedia Ltd</a> © 2007-2022<br>
-					DataTables is licensed under the <a href="https://www.datatables.net/license/mit">MIT license</a>.</p>
+					DataTables is licensed under the <a href="https://datatables.net/license/mit">MIT license</a>.</p>
 				</div>
 			</div>
 		</div>

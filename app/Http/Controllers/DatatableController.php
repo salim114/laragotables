@@ -429,7 +429,8 @@ class DatatableController extends Controller
 
     public function datetime()
     {
-        return view('features.i18n.datetime');       
+        $datatables = Datatable::all();
+        return view('features.i18n.datetime', compact('datatables'));      
     }   
 
 

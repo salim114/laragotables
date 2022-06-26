@@ -336,7 +336,7 @@ $.extend( internalApi, {
 	},
 
 	/**
-	 * Provide a common method for plug_ins to check the version of DataTables being used, in order
+	 * Provide a common method for plug-ins to check the version of DataTables being used, in order
 	 * to ensure compatibility.
 	 */
 	fnVersionCheck: DataTable.versionCheck

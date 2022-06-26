@@ -34,14 +34,17 @@ Route::get('features/basic_init', function () {
 Route::get('features/advanced_init', function () {
     return view('features.advanced_init.index');
 });
+Route::get('features/data_sources', function () {
+    return view('features.data_sources.index');
+});
+Route::get('features/i18n', function () {
+    return view('features.i18n.index');
+});
 Route::get('features/non_jquery', function () {
     return view('features.non_jquery.index');
 });
 Route::get('features/styling', function () {
     return view('features.styling.index');
-});
-Route::get('features/data_sources', function () {
-    return view('features.data_sources.index');
 });
 Route::get('features/api', function () {
     return view('features.api.index');
