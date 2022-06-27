@@ -95,10 +95,12 @@
 					<code class="multiline language-js">
 						$(document).ready(function () {
 						  $('#example').DataTable({
-						    language: {
-						      search: 'In der Tabelle finden',
-						      url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/de-DE.json',
-						    },
+						    columnDefs: [
+						      {
+						        target: 4,
+								render: DataTable.render.date(),
+						      },
+						    ],
 						  });
 						});</code>
 					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
@@ -154,11 +156,11 @@
 						|
 						*/
 						
-						//Internationalisation (features)
+						//DateTime (features)
 
 						Route::group([], function() {
 						    
-						    Route::get('features/i18n/ajax', 'App\Http\Controllers\DatatableController&#64;ajax_int');
+						    Route::get('features/datetime/auto_locale_moment', 'App\Http\Controllers\DatatableController&#64;auto_locale_moment');
 
 						});</code>
 					<p>In addition to the above route, the "web.php" file includes all the routes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
@@ -182,12 +184,12 @@
 						     * &#64;return \Illuminate\Http\Response
 						     */
 
-					    //Internationalisation (features)
+					    //DateTime (features)
 
-					    public function ajax_int()
+					    public function auto_locale_moment()
 					    {
 					        $datatables = Datatable::all();
-  					        return view('features.i18n.ajax', compact('datatables'));        
+      						return view('features.datetime.auto_locale_moment', compact('datatables')); );        
 					    }</code>
 					<p>In addition to the above code, the "DatatableController.php" file includes all classes from the other examples (features) which i deliberately hide to keep focus on each features separately.</p>
 					</div>
