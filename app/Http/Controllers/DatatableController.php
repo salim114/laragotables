@@ -407,7 +407,8 @@ class DatatableController extends Controller
 
     public function options_int()
     {
-        return view('features.i18n.options');       
+        $datatables = Datatable::all();
+        return view('features.i18n.options', compact('datatables'));       
     }
 
     public function ajax_int()
@@ -424,7 +425,8 @@ class DatatableController extends Controller
 
     public function numbers()
     {
-        return view('features.i18n.numbers');       
+        $datatables = Datatable::all();
+        return view('features.i18n.numbers', compact('datatables'));       
     }  
 
     public function datetime()
@@ -433,6 +435,61 @@ class DatatableController extends Controller
         return view('features.i18n.datetime', compact('datatables'));      
     }   
 
+ //Datetime
+
+    public function iso8601()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.iso8601', compact('datatables'));       
+    }
+
+    public function auto_locale_moment()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.auto_locale_moment', compact('datatables'));        
+    } 
+
+    public function auto_locale_luxon()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.auto_locale_luxon', compact('datatables'));      
+    } 
+
+    public function formatting_moment()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.formatting_moment', compact('datatables'));       
+    }  
+
+    public function formatting_luxon()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.formatting_luxon', compact('datatables'));      
+    } 
+
+    public function transform_moment()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.transform_moment', compact('datatables'));      
+    }     
+
+    public function transform_luxon()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.transform_luxon', compact('datatables'));       
+    }  
+
+    public function order_moment()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.order_moment', compact('datatables'));      
+    }   
+
+    public function order_luxon()
+    {
+        $datatables = Datatable::all();
+        return view('features.datetime.order_luxon', compact('datatables'));      
+    } 
 
  //API
 
